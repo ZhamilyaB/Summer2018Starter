@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    980358,      19562]
-NotebookOptionsPosition[    956884,      19113]
-NotebookOutlinePosition[    970333,      19407]
-CellTagsIndexPosition[    970290,      19404]
+NotebookDataLength[    953164,      18866]
+NotebookOptionsPosition[    930164,      18425]
+NotebookOutlinePosition[    943613,      18719]
+CellTagsIndexPosition[    943570,      18716]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3347,704 +3347,895 @@ hf8POFKF9A==
     BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
     Selectable->False],
    DefaultBaseStyle->"ImageGraphics",
-   ImageSize->{313.83984375, Automatic},
+   ImageSize->{389.70703125, Automatic},
    ImageSizeRaw->{552, 473},
    PlotRange->{{0, 552}, {0, 473}}]], "Input",ExpressionUUID->
   "94b3742b-57c1-4cd6-acc7-c46f0a5598f9"],
- "\n\nAmino acids:        "
-}], "Text",ExpressionUUID->"7966c5db-10b8-455f-985c-96961bb670f6"],
+ "\n\n",
+ StyleBox["Nucleobases",
+  IgnoreSpellCheck->True],
+ " that are being changed:        "
+}], "Text",
+ CellChangeTimes->{{3.739404104536812*^9, 3.739404105987458*^9}, {
+  3.7394041581032343`*^9, 
+  3.739404166740294*^9}},ExpressionUUID->"7966c5db-10b8-455f-985c-\
+96961bb670f6"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"ChemicalData", "[", "\"\<Inosine\>\"", "]"}], 
-  RowBox[{"ChemicalData", "[", "\"\<Adenine\>\"", "]"}], " ", 
-  RowBox[{"ChemicalData", "[", "\"\<Guanine\>\"", "]"}]}]], "Input",Expression\
-UUID->"59f6bd52-14d0-4fd4-b3bb-3b27f5ff9c6a"],
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Labeled", "[", 
+        RowBox[{
+         RowBox[{"ChemicalData", "[", "#", "]"}], ",", "#", ",", "Left"}], 
+        "]"}], "&"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Inosine\>\"", ",", "\"\<Adenine\>\"", ",", "\"\<Guanine\>\""}], 
+       "}"}]}], "]"}], "}"}], ",", 
+   RowBox[{"Spacings", "\[Rule]", "2"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.7394038085272293`*^9},
+ CellLabel->"In[30]:=",ExpressionUUID->"59f6bd52-14d0-4fd4-b3bb-3b27f5ff9c6a"],
 
 Cell[BoxData[
- RowBox[{
-  GraphicsBox[{{
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {467.83000000000004, 14.97}], 
-      LineBox[{{448.7927390941019, 8.839527163361687}, {
-       420.52, -0.2649999999999997}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{420.52, -0.2649999999999997}, {373.21, -15.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {467.83000000000004, 14.97}], 
-      LineBox[{{479.57188995147976`, -1.2203681356335796`}, {
-       497.01, -25.265}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{497.01, -25.265}, {526.1899999999999, -65.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {467.83000000000004, 14.97}], 
-      LineBox[{{474.0421993026248, 33.98074906005728}, {477.46000000000004`, 
-       44.44}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.08676503507910369],
-         FontWeight->Plain], {487.09, 73.91}], 
-       LineBox[{{477.46000000000004`, 44.44}, {480.8778006973753, 
-        54.89925093994272}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {467.83000000000004, -145.97}], 
-      LineBox[{{448.7927390941018, -139.83952716336168`}, {
-       420.52, -130.735}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{420.52, -130.735}, {373.21, -115.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {467.83000000000004, -145.97}], 
-      LineBox[{{{475.54838995147975`, -126.86163186436642`}, {
-       492.9865, -102.81700000000001`}}, {{
-       483.5953899514798, -132.69763186436643`}, {
-       501.0335, -108.65299999999999`}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{492.9865, -102.81700000000001`}, {
-        522.1664999999999, -62.58200000000001}}, {{
-        501.0335, -108.65299999999999`}, {530.2135, -68.41799999999999}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {286.6, -165.5}], 
-      LineBox[{{303.9208810206263, -155.50064598739965`}, {329.905, -140.5}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{329.905, -140.5}, {373.21, -115.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {286.6, -165.5}], 
-      LineBox[{{{266.77961894742526`, -159.82977999273976`}, {
-       240.8, -144.83}}, {{271.77961894742526`, -151.16977999273973`}, {
-       245.8, -136.17}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{240.8, -144.83}, {197.5, -119.83}}, {{245.8, -136.17}, {
-        202.5, -111.17}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {200., -15.5}], 
-      LineBox[{{{214.8203810525748, -1.169779992739734}, {240.8, 
-       13.830000000000002`}}, {{219.8203810525748, -9.829779992739738}, {
-       245.8, 5.169999999999999}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{240.8, 13.830000000000002`}, {284.1, 38.83}}, {{245.8, 
-        5.169999999999999}, {289.1, 30.169999999999998`}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {200., -15.5}], 
-      LineBox[{{200., -35.5}, {200., -65.5}}], 
-      {RGBColor[0.4, 0.4, 0.4], LineBox[{{200., -65.5}, {200., -115.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {286.6, 134.5}], 
-      LineBox[{{286.6, 114.5}, {286.6, 84.5}}], 
-      {RGBColor[0.4, 0.4, 0.4], LineBox[{{286.6, 84.5}, {286.6, 34.5}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {286.6, 134.5}], 
-      LineBox[{{269.2797802551531, 144.5004993870414}, {259.755, 150.}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.08676503507910369],
-         FontWeight->Plain], {232.91, 165.5}], 
-       LineBox[{{259.755, 150.}, {250.2302197448469, 155.49950061295857`}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.08676503507910369],
-        FontWeight->Plain], {286.6, 134.5}], 
-      LineBox[{{303.9210261483136, 144.4991026182071}, {313.45000000000005`, 
-       150.}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.08676503507910369],
-         FontWeight->Plain], {340.3, 165.5}], 
-       LineBox[{{313.45000000000005`, 150.}, {322.9789738516864, 
-        155.50089738179287`}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{378.21, -15.5}, {378.21, -65.5}}, {{368.21, -15.5}, {
-       368.21, -65.5}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{378.21, -65.5}, {378.21, -115.5}}, {{368.21, -65.5}, {
-        368.21, -115.5}}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{373.21, -15.5}, {329.905, 9.5}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{329.905, 9.5}, {286.6, 34.5}}]}}}, {}, {}},
-   ImageSize->{{0., 115.2538}, {0., 123.29938207805996`}},
-   PlotRange->{{177.5, 535.9757}, {-195.5, 188.}}], " ", 
-  GraphicsBox[{{
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {104.61, 41.32}], 
-      LineBox[{{104.61, 21.32}, {104.61, 0.08500000000000085}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{104.61, 0.08500000000000085}, {104.61, -41.15}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {104.61, 41.32}], 
-      LineBox[{{87.29085396297108, 51.3223587492184}, {68.91499999999999, 
-       61.935}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{68.91499999999999, 61.935}, {33.22, 82.55}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {104.61, 41.32}], 
-      LineBox[{{121.93068407902106`, 51.319695147090535`}, {140.335, 
-       61.94499999999999}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {176.06, 82.57}], 
-       LineBox[{{140.335, 61.94499999999999}, {158.73931592097892`, 
-        72.57030485290946}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{106.6785, -44.7195}, {
-       70.98349999999999, -65.40450000000001}}, {{102.5415, -37.5805}, {
-       66.84649999999999, -58.26550000000001}}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {33.22, -82.52000000000001}], 
-       LineBox[{{{70.98349999999999, -65.40450000000001}, {
-        52.59293074179571, -76.0617047935553}}, {{
-        66.84649999999999, -58.26550000000001}, {
-        48.45593074179571, -68.92270479355528}}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{104.61, -41.15}, {140.45, -61.83500000000001}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {176.29, -82.52000000000001}], 
-       LineBox[{{140.45, -61.83500000000001}, {
-        158.96797825282655`, -72.52262221427785}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {33.22, -82.52000000000001}], 
-      LineBox[{{
-       15.90584405418868, -72.5090058493611}, {-2.5549999999999997`, \
+ TagBox[GridBox[{
+    {
+     TemplateBox[{GraphicsBox[{{{{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {440.26, 73.69}], 
+            
+            LineBox[{{452.7522692310102, 56.429233661877234`}, {469.575, 
+             33.185}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{469.575, 33.185}, {498.89, -7.32}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {440.26, 73.69}], 
+            
+            LineBox[{{452.81259959734916`, 90.90694190232243}, {469.715, 
+             114.09}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{469.715, 114.09}, {499.17, 154.49}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {674.85, -35.5}], 
+            
+            LineBox[{{694.3302620164724, -26.868068762501586`}, {
+             703.195, -22.94}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {731.54, -10.38}], 
+            LineBox[{{703.195, -22.94}, {
+             713.5372010949369, -18.357250105753845`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {675.23, 182.06}], 
+            
+            LineBox[{{694.6790357984104, 173.35793980534103`}, {703.525, 
+             169.4}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {731.82, 156.74}], 
+            
+            LineBox[{{703.525, 169.4}, {713.8460589883196, 
+             164.78206019465895`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {535.48, 323.84}], 
+            
+            LineBox[{{521.1957475008595, 308.0301620609155}, {501.96, 
+             286.74}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{501.96, 286.74}, {468.44, 249.64}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {535.48, 323.84}], 
+            
+            LineBox[{{528.9300386927782, 344.1153261870978}, {525.95, 
+             353.34}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {516.42, 382.84}], 
+            
+            LineBox[{{525.95, 353.34}, {522.4731853293424, 
+             364.1024378577542}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -382.84}], 
+            
+            LineBox[{{{281.6, -361.5329390783403}, {281.6, -332.84}}, {{
+             291.6, -361.5329390783403}, {291.6, -332.84}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{281.6, -332.84}, {281.6, -282.84}}, {{
+             291.6, -332.84}, {291.6, -282.84}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83, -102.37}], 
+            
+            LineBox[{{449.086635016809, -108.40519318437947`}, {
+             420.515, -117.605}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{420.515, -117.605}, {373.2, -132.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83, -102.37}], 
+            
+            LineBox[{{479.39050468490615`, -118.31026408489372`}, {
+             497.01, -142.605}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{497.01, -142.605}, {526.19, -182.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -82.84}], 
+            
+            LineBox[{{303.6528208942562, -92.68573954633729}, {
+             329.9, -107.84}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{329.9, -107.84}, {373.2, -132.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -82.84}], 
+            
+            LineBox[{{269.54717910574385`, -92.68573954633727}, {
+             243.3, -107.84}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{243.3, -107.84}, {200., -132.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -82.84}], 
+            LineBox[{{286.6, -63.14895412463093}, {286.6, -51.84}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -20.84}], 
+            LineBox[{{286.6, -51.84}, {286.6, -40.531045875369074`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83, -263.32}], 
+            
+            LineBox[{{{475.36556329360144`, -244.46105322362843`}, {
+             492.986, -220.162}}, {{
+             483.41356329360144`, -250.29705322362844`}, {
+             501.034, -225.99800000000002`}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{492.986, -220.162}, {522.166, -179.922}}, {{
+             501.034, -225.99800000000002`}, {530.214, -185.758}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83, -263.32}], 
+            
+            LineBox[{{449.08721294125576`, -257.28301226301886`}, {
+             420.515, -248.08}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{420.515, -248.08}, {373.2, -232.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {200., -232.84}], 
+            LineBox[{{217.05282089425617`, -242.68573954633726`}, {
+             243.3, -257.84}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{243.3, -257.84}, {286.6, -282.84}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {200., -232.84}], 
+            
+            LineBox[{{{195., -213.14895412463093`}, {195., -182.84}}, {{
+             205., -213.14895412463093`}, {205., -182.84}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{195., -182.84}, {195., -132.84}}, {{205., -182.84}, {
+             205., -132.84}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.05, 23.42}, {634.45, -6.04}}], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {674.85, -35.5}], 
+            
+            LineBox[{{634.45, -6.04}, {
+             657.6340724427546, -22.94600926147403}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.05, 23.42}, {546.47, 8.05}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{546.47, 8.05}, {498.89, -7.32}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.05, 23.42}, {594.135, 73.42}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.135, 73.42}, {594.22, 123.42}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{498.89, -7.32}, {483.36, -54.845}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83, -102.37}], 
+            
+            LineBox[{{483.36, -54.845}, {
+             473.9462755227501, -83.65293662468129}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.22, 123.42}, {634.725, 152.74}}], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.05212093280024903], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {675.23, 182.06}], 
+            
+            LineBox[{{634.725, 152.74}, {657.9702456480894, 
+             169.56633261083766`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{594.22, 123.42}, {546.695, 138.955}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{546.695, 138.955}, {499.17, 154.49}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{499.17, 154.49}, {483.805, 202.065}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{483.805, 202.065}, {468.44, 249.64}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{378.2, -132.84}, {378.2, -182.84}}, {{
+             368.2, -132.84}, {368.2, -182.84}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{378.2, -182.84}, {378.2, -232.84}}, {{
+             368.2, -182.84}, {368.2, -232.84}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{373.2, -232.84}, {329.9, -257.84}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{329.9, -257.84}, {286.6, -282.84}}]}}}, {}, {}}, {
+        ImageSize -> {{0., 191.86149331449073`}, {0., 278.0941083077464}}, 
+         PlotRange -> {{184.0454, 747.7746000000001}, {-412.2220917507381, 
+          404.8765688130536}}}],"\"Inosine\""},
+      "Labeled",
+      DisplayFunction->(GridBox[{{
+          ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+          TagBox[
+           ItemBox[
+            PaneBox[
+             TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline},
+              BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+           "SkipImageSizeLevel"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+        AutoDelete -> False, 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+        BaselinePosition -> {1, 2}]& ),
+      InterpretationFunction->(RowBox[{"Labeled", "[", 
+         RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], 
+     TemplateBox[{GraphicsBox[{{{{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83000000000004`,
+              14.97}], 
+            
+            LineBox[{{448.7927390941019, 8.839527163361687}, {
+             420.52, -0.2649999999999997}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{420.52, -0.2649999999999997}, {373.21, -15.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83000000000004`,
+              14.97}], 
+            
+            LineBox[{{479.57188995147976`, -1.2203681356335796`}, {
+             497.01, -25.265}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{497.01, -25.265}, {526.1899999999999, -65.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {467.83000000000004`,
+              14.97}], 
+            
+            LineBox[{{474.0421993026248, 33.98074906005728}, {
+             477.46000000000004`, 44.44}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {487.09, 73.91}], 
+            
+            LineBox[{{477.46000000000004`, 44.44}, {480.8778006973753, 
+             54.89925093994272}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             467.83000000000004`, -145.97}], 
+            
+            LineBox[{{448.7927390941018, -139.83952716336168`}, {
+             420.52, -130.735}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{420.52, -130.735}, {373.21, -115.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             467.83000000000004`, -145.97}], 
+            
+            LineBox[{{{475.54838995147975`, -126.86163186436642`}, {
+             492.9865, -102.81700000000001`}}, {{
+             483.5953899514798, -132.69763186436643`}, {
+             501.0335, -108.65299999999999`}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{492.9865, -102.81700000000001`}, {
+             522.1664999999999, -62.58200000000001}}, {{
+             501.0335, -108.65299999999999`}, {
+             530.2135, -68.41799999999999}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -165.5}], 
+            
+            LineBox[{{303.9208810206263, -155.50064598739965`}, {
+             329.905, -140.5}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{329.905, -140.5}, {373.21, -115.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, -165.5}], 
+            
+            LineBox[{{{266.77961894742526`, -159.82977999273976`}, {
+             240.8, -144.83}}, {{271.77961894742526`, -151.16977999273973`}, {
+             245.8, -136.17}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{240.8, -144.83}, {197.5, -119.83}}, {{
+             245.8, -136.17}, {202.5, -111.17}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {200., -15.5}], 
+            
+            LineBox[{{{214.8203810525748, -1.169779992739734}, {240.8, 
+             13.830000000000002`}}, {{
+             219.8203810525748, -9.829779992739738}, {245.8, 
+             5.169999999999999}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{240.8, 13.830000000000002`}, {284.1, 38.83}}, {{245.8, 
+             5.169999999999999}, {289.1, 30.169999999999998`}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {200., -15.5}], 
+            LineBox[{{200., -35.5}, {200., -65.5}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{200., -65.5}, {200., -115.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, 134.5}], 
+            LineBox[{{286.6, 114.5}, {286.6, 84.5}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{286.6, 84.5}, {286.6, 34.5}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, 134.5}], 
+            
+            LineBox[{{269.2797802551531, 144.5004993870414}, {259.755, 
+             150.}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {232.91, 165.5}], 
+            
+            LineBox[{{259.755, 150.}, {250.2302197448469, 
+             155.49950061295857`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {286.6, 134.5}], 
+            
+            LineBox[{{303.9210261483136, 144.4991026182071}, {
+             313.45000000000005`, 150.}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.08676503507910369], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {340.3, 165.5}], 
+            
+            LineBox[{{313.45000000000005`, 150.}, {322.9789738516864, 
+             155.50089738179287`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{378.21, -15.5}, {378.21, -65.5}}, {{368.21, -15.5}, {
+             368.21, -65.5}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{378.21, -65.5}, {378.21, -115.5}}, {{368.21, -65.5}, {
+             368.21, -115.5}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{373.21, -15.5}, {329.905, 9.5}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{329.905, 9.5}, {286.6, 34.5}}]}}}, {}, {}}, {
+        ImageSize -> {{0., 115.2538}, {0., 123.29938207805996`}}, 
+         PlotRange -> {{177.5, 535.9757}, {-195.5, 188.}}}],"\"Adenine\""},
+      "Labeled",
+      DisplayFunction->(GridBox[{{
+          ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+          TagBox[
+           ItemBox[
+            PaneBox[
+             TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline},
+              BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+           "SkipImageSizeLevel"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+        AutoDelete -> False, 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+        BaselinePosition -> {1, 2}]& ),
+      InterpretationFunction->(RowBox[{"Labeled", "[", 
+         RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], 
+     TemplateBox[{GraphicsBox[{{{{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {104.61, 41.32}], 
+            LineBox[{{104.61, 21.32}, {104.61, 0.08500000000000085}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{104.61, 0.08500000000000085}, {104.61, -41.15}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {104.61, 41.32}], 
+            LineBox[{{87.29085396297108, 51.3223587492184}, {
+             68.91499999999999, 61.935}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{68.91499999999999, 61.935}, {33.22, 82.55}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {104.61, 41.32}], 
+            
+            LineBox[{{121.93068407902106`, 51.319695147090535`}, {140.335, 
+             61.94499999999999}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {176.06, 82.57}], 
+            
+            LineBox[{{140.335, 61.94499999999999}, {158.73931592097892`, 
+             72.57030485290946}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{106.6785, -44.7195}, {
+             70.98349999999999, -65.40450000000001}}, {{102.5415, -37.5805}, {
+             66.84649999999999, -58.26550000000001}}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             33.22, -82.52000000000001}], 
+            
+            LineBox[{{{70.98349999999999, -65.40450000000001}, {
+             52.59293074179571, -76.0617047935553}}, {{
+             66.84649999999999, -58.26550000000001}, {
+             48.45593074179571, -68.92270479355528}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{104.61, -41.15}, {140.45, -61.83500000000001}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             176.29, -82.52000000000001}], 
+            
+            LineBox[{{140.45, -61.83500000000001}, {
+             158.96797825282655`, -72.52262221427785}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             33.22, -82.52000000000001}], 
+            
+            LineBox[{{
+             15.90584405418868, -72.5090058493611}, {-2.5549999999999997`, \
 -61.83500000000001}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{-2.5549999999999997`, -61.83500000000001}, {-38.33, \
--41.15}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{-42.4535, -41.15}, {-42.4535, 
-       0.08500000000000085}}, {{-34.2065, -41.15}, {-34.2065, 
-       0.08500000000000085}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{-42.4535, 0.08500000000000085}, {-42.4535, 
-        41.32}}, {{-34.2065, 0.08500000000000085}, {-34.2065, 41.32}}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{-38.33, -41.15}, {-77.525, -53.894999999999996`}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {-116.72, -66.64}], 
-       LineBox[{{-77.525, -53.894999999999996`}, {-97.70026385504065, \
--60.4553709103838}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{-38.33, 41.32}, {-2.5549999999999997`, 61.935}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{-2.5549999999999997`, 61.935}, {33.22, 82.55}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{-38.33, 41.32}, {-77.525, 54.07000000000001}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {-116.72, 66.82000000000001}], 
-       LineBox[{{-77.525, 54.07000000000001}, {-97.70097746798163, 
-        60.63317675001316}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{29.0965, 82.55}, {29.0965, 123.785}}, {{37.3435, 82.55}, {
-       37.3435, 123.785}}}], 
-      {RGBColor[0.800498, 0.201504, 0.192061], InsetBox[
-        StyleBox["\<\"O\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {33.22, 165.01999999999998}], 
-       LineBox[{{{29.0965, 123.785}, {29.0965, 143.36999999999998`}}, {{
-        37.3435, 123.785}, {37.3435, 143.36999999999998`}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {-116.72, -66.64}], 
-      LineBox[{{-128.48285734821974`, -50.46485898035406}, \
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{-2.5549999999999997`, -61.83500000000001}, {-38.33, \
+-41.15}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{-42.4535, -41.15}, {-42.4535, 
+             0.08500000000000085}}, {{-34.2065, -41.15}, {-34.2065, 
+             0.08500000000000085}}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{-42.4535, 0.08500000000000085}, {-42.4535, 
+             41.32}}, {{-34.2065, 0.08500000000000085}, {-34.2065, 
+             41.32}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{-38.33, -41.15}, {-77.525, -53.894999999999996`}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-116.72, -66.64}], 
+            
+            LineBox[{{-77.525, -53.894999999999996`}, {-97.70026385504065, \
+-60.4553709103838}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{-38.33, 41.32}, {-2.5549999999999997`, 61.935}}], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{-2.5549999999999997`, 61.935}, {33.22, 82.55}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{-38.33, 41.32}, {-77.525, 54.07000000000001}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-116.72, 
+             66.82000000000001}], 
+            
+            LineBox[{{-77.525, 54.07000000000001}, {-97.70097746798163, 
+             60.63317675001316}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{29.0965, 82.55}, {29.0965, 123.785}}, {{37.3435, 
+             82.55}, {37.3435, 123.785}}}], 
+            RGBColor[0.800498, 0.201504, 0.192061], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"O\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {33.22, 
+             165.01999999999998`}], 
+            
+            LineBox[{{{29.0965, 123.785}, {29.0965, 143.36999999999998`}}, {{
+             37.3435, 123.785}, {37.3435, 143.36999999999998`}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-116.72, -66.64}], 
+            
+            LineBox[{{-128.48285734821974`, -50.46485898035406}, \
 {-140.98000000000002`, -33.28}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{-140.98000000000002`, -33.28}, {-165.24, 0.08}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {-116.72, -66.64}], 
-      LineBox[{{-122.8945401021457, -85.66301381293181}, \
+            RGBColor[0.4, 0.4, 0.4], 
+            LineBox[{{-140.98000000000002`, -33.28}, {-165.24, 0.08}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-116.72, -66.64}], 
+            
+            LineBox[{{-122.8945401021457, -85.66301381293181}, \
 {-129.45499999999998`, -105.875}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {-142.19, -145.11}], 
-       LineBox[{{-129.45499999999998`, -105.875}, {-136.0154598978543, \
--126.0869861870682}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{-168.577, 2.5060000000000007`}, {-144.317, 
-       35.876000000000005`}}, {{-161.90300000000002`, -2.3460000000000005`}, \
-{-137.64300000000003`, 31.024}}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {-116.72, 66.82000000000001}], 
-       LineBox[{{{-144.317, 35.876000000000005`}, {-131.81755134286502`, 
-        53.0691822625142}}, {{-137.64300000000003`, 
-        31.024}, {-125.14355134286504`, 48.2171822625142}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {176.29, -82.52000000000001}], 
-      LineBox[{{193.61068407902104`, -72.52030485290948}, {
-       212.015, -61.89500000000001}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {247.73999999999998, -41.27}], 
-       LineBox[{{212.015, -61.89500000000001}, {
-        230.41931592097893`, -51.269695147090545`}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.06853088961318425],
-        FontWeight->Plain], {176.29, -82.52000000000001}], 
-      LineBox[{{176.2924242424064, -102.51999985307623`}, {
-       176.295, -123.77}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.06853088961318425],
-         FontWeight->Plain], {176.29999999999998, -165.01999999999998}], 
-       LineBox[{{176.295, -123.77}, {
-        176.29757575759356`, -145.02000014692376`}}]}}}, {}, {}},
-   ImageSize->{{0., 145.91959999999997`}, {0., 125.89972105427208`}},
-   PlotRange->{{-177.6294, 265.74}, {-195.01999999999998`, 
-    187.51999999999998`}}], " ", 
-  GraphicsBox[{{
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {440.26, 73.69}], 
-      LineBox[{{452.7522692310102, 56.429233661877234`}, {469.575, 33.185}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{469.575, 33.185}, {498.89, -7.32}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {440.26, 73.69}], 
-      LineBox[{{452.81259959734916`, 90.90694190232243}, {469.715, 114.09}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{469.715, 114.09}, {499.17, 154.49}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {674.85, -35.5}], 
-      LineBox[{{694.3302620164724, -26.868068762501586`}, {703.195, -22.94}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {731.54, -10.38}], 
-       LineBox[{{703.195, -22.94}, {
-        713.5372010949369, -18.357250105753845`}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {675.23, 182.06}], 
-      LineBox[{{694.6790357984104, 173.35793980534103`}, {703.525, 169.4}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {731.82, 156.74}], 
-       LineBox[{{703.525, 169.4}, {713.8460589883196, 
-        164.78206019465895`}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {535.48, 323.84}], 
-      LineBox[{{521.1957475008595, 308.0301620609155}, {501.96, 286.74}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{501.96, 286.74}, {468.44, 249.64}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {535.48, 323.84}], 
-      LineBox[{{528.9300386927782, 344.1153261870978}, {525.95, 353.34}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {516.42, 382.84}], 
-       LineBox[{{525.95, 353.34}, {522.4731853293424, 364.1024378577542}}]}}, 
-     {RGBColor[0.800498, 0.201504, 0.192061], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"O\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {286.6, -382.84}], 
-      LineBox[{{{281.6, -361.5329390783403}, {281.6, -332.84}}, {{
-       291.6, -361.5329390783403}, {291.6, -332.84}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{281.6, -332.84}, {281.6, -282.84}}, {{291.6, -332.84}, {
-        291.6, -282.84}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {467.83, -102.37}], 
-      LineBox[{{449.086635016809, -108.40519318437947`}, {
-       420.515, -117.605}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{420.515, -117.605}, {373.2, -132.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {467.83, -102.37}], 
-      LineBox[{{479.39050468490615`, -118.31026408489372`}, {
-       497.01, -142.605}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{497.01, -142.605}, {526.19, -182.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {286.6, -82.84}], 
-      LineBox[{{303.6528208942562, -92.68573954633729}, {329.9, -107.84}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{329.9, -107.84}, {373.2, -132.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {286.6, -82.84}], 
-      LineBox[{{269.54717910574385`, -92.68573954633727}, {243.3, -107.84}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{243.3, -107.84}, {200., -132.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {286.6, -82.84}], 
-      LineBox[{{286.6, -63.14895412463093}, {286.6, -51.84}}], 
-      {RGBColor[0.43333333333333335`, 0.4666666666666667, 0.4666666666666667],
-        InsetBox[
-        StyleBox["\<\"H\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {286.6, -20.84}], 
-       LineBox[{{286.6, -51.84}, {286.6, -40.531045875369074`}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {467.83, -263.32}], 
-      LineBox[{{{475.36556329360144`, -244.46105322362843`}, {
-       492.986, -220.162}}, {{483.41356329360144`, -250.29705322362844`}, {
-       501.034, -225.99800000000002`}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{492.986, -220.162}, {522.166, -179.922}}, {{
-        501.034, -225.99800000000002`}, {530.214, -185.758}}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {467.83, -263.32}], 
-      LineBox[{{449.08721294125576`, -257.28301226301886`}, {
-       420.515, -248.08}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{420.515, -248.08}, {373.2, -232.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {200., -232.84}], 
-      LineBox[{{217.05282089425617`, -242.68573954633726`}, {
-       243.3, -257.84}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{243.3, -257.84}, {286.6, -282.84}}]}}, 
-     {RGBColor[0.291989, 0.437977, 0.888609], AbsoluteThickness[0.55], 
-      InsetBox[
-       StyleBox["\<\"N\"\>",
-        StripOnInput->False,
-        ScriptSizeMultipliers->0.8,
-        ScriptMinSize->8,
-        FontSize->Scaled[0.05212093280024903],
-        FontWeight->Plain], {200., -232.84}], 
-      LineBox[{{{195., -213.14895412463093`}, {195., -182.84}}, {{
-       205., -213.14895412463093`}, {205., -182.84}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{195., -182.84}, {195., -132.84}}, {{205., -182.84}, {
-        205., -132.84}}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{594.05, 23.42}, {634.45, -6.04}}], 
-      {RGBColor[0.800498, 0.201504, 0.192061], InsetBox[
-        StyleBox["\<\"O\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {674.85, -35.5}], 
-       LineBox[{{634.45, -6.04}, {657.6340724427546, -22.94600926147403}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{594.05, 23.42}, {546.47, 8.05}}], 
-      {RGBColor[0.4, 0.4, 0.4], LineBox[{{546.47, 8.05}, {498.89, -7.32}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{594.05, 23.42}, {594.135, 73.42}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{594.135, 73.42}, {594.22, 123.42}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{498.89, -7.32}, {483.36, -54.845}}], 
-      {RGBColor[0.291989, 0.437977, 0.888609], InsetBox[
-        StyleBox["\<\"N\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {467.83, -102.37}], 
-       LineBox[{{483.36, -54.845}, {
-        473.9462755227501, -83.65293662468129}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{594.22, 123.42}, {634.725, 152.74}}], 
-      {RGBColor[0.800498, 0.201504, 0.192061], InsetBox[
-        StyleBox["\<\"O\"\>",
-         StripOnInput->False,
-         ScriptSizeMultipliers->0.8,
-         ScriptMinSize->8,
-         FontSize->Scaled[0.05212093280024903],
-         FontWeight->Plain], {675.23, 182.06}], 
-       LineBox[{{634.725, 152.74}, {657.9702456480894, 
-        169.56633261083766`}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{594.22, 123.42}, {546.695, 138.955}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{546.695, 138.955}, {499.17, 154.49}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{499.17, 154.49}, {483.805, 202.065}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{483.805, 202.065}, {468.44, 249.64}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{{378.2, -132.84}, {378.2, -182.84}}, {{368.2, -132.84}, {
-       368.2, -182.84}}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{{378.2, -182.84}, {378.2, -232.84}}, {{368.2, -182.84}, {
-        368.2, -232.84}}}]}}, 
-     {RGBColor[0.4, 0.4, 0.4], AbsoluteThickness[0.55], 
-      LineBox[{{373.2, -232.84}, {329.9, -257.84}}], 
-      {RGBColor[0.4, 0.4, 0.4], 
-       LineBox[{{329.9, -257.84}, {286.6, -282.84}}]}}}, {}, {}},
-   ImageSize->{{0., 191.86149331449073`}, {0., 278.0941083077464}},
-   PlotRange->{{184.0454, 747.7746000000001}, {-412.2220917507381, 
-    404.8765688130536}}]}]], "Output",
- CellLabel->
-  "Out[257]=",ExpressionUUID->"0a83e092-234e-4f88-a708-b5b4e64d54a3"]
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-142.19, -145.11}], 
+            
+            LineBox[{{-129.45499999999998`, -105.875}, {-136.0154598978543, \
+-126.0869861870682}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.4, 0.4, 0.4], 
+            
+            LineBox[{{{-168.577, 2.5060000000000007`}, {-144.317, 
+             35.876000000000005`}}, {{-161.90300000000002`, \
+-2.3460000000000005`}, {-137.64300000000003`, 31.024}}}], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {-116.72, 
+             66.82000000000001}], 
+            
+            LineBox[{{{-144.317, 35.876000000000005`}, {-131.81755134286502`, 
+             53.0691822625142}}, {{-137.64300000000003`, 
+             31.024}, {-125.14355134286504`, 48.2171822625142}}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             176.29, -82.52000000000001}], 
+            
+            LineBox[{{193.61068407902104`, -72.52030485290948}, {
+             212.015, -61.89500000000001}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             247.73999999999998`, -41.27}], 
+            
+            LineBox[{{212.015, -61.89500000000001}, {
+             230.41931592097893`, -51.269695147090545`}}]}}, {{
+            AbsoluteThickness[0.55], 
+            RGBColor[0.291989, 0.437977, 0.888609], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"N\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             176.29, -82.52000000000001}], 
+            
+            LineBox[{{176.2924242424064, -102.51999985307623`}, {
+             176.295, -123.77}}], 
+            RGBColor[
+            0.43333333333333335`, 0.4666666666666667, 0.4666666666666667], 
+            InsetBox[
+             FormBox[
+              StyleBox[
+              "\"H\"", FontSize -> Scaled[0.06853088961318425], FontWeight -> 
+               Plain, ScriptSizeMultipliers -> 0.8, ScriptMinSize -> 8, 
+               StripOnInput -> False], TraditionalForm], {
+             176.29999999999998`, -165.01999999999998`}], 
+            
+            LineBox[{{176.295, -123.77}, {
+             176.29757575759356`, -145.02000014692376`}}]}}}, {}, {}}, {
+        ImageSize -> {{0., 145.91959999999997`}, {0., 125.89972105427208`}}, 
+         PlotRange -> {{-177.6294, 265.74}, {-195.01999999999998`, 
+          187.51999999999998`}}}],"\"Guanine\""},
+      "Labeled",
+      DisplayFunction->(GridBox[{{
+          ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+          TagBox[
+           ItemBox[
+            PaneBox[
+             TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline},
+              BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+           "SkipImageSizeLevel"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+        AutoDelete -> False, 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+        BaselinePosition -> {1, 2}]& ),
+      InterpretationFunction->(RowBox[{"Labeled", "[", 
+         RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{2}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.7394038774830713`*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"dfc85a57-cdeb-4fce-aaab-85b9253fb103"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -18194,770 +18385,6 @@ Cell[BoxData[
  CellLabel->"Out[63]=",ExpressionUUID->"9dacd4b4-5a4d-4a67-aa62-7b9175563e6c"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"bars", "=", 
-  RowBox[{"BarChart", "[", 
-   RowBox[{
-    RowBox[{"datagrouped", "[", 
-     RowBox[{"[", 
-      RowBox[{"\"\<human\>\"", ",", "All", ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Frequency\>\"", ",", "\"\<Change\>\""}], "}"}]}], "]"}], 
-     "]"}], " ", ",", 
-    RowBox[{"ChartLegends", "\[Rule]", "Automatic"}], ",", 
-    RowBox[{"PlotRange", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{"Automatic", ",", "Automatic"}], "}"}]}]}], "]"}]}]], "Input",
- CellLabel->"In[64]:=",ExpressionUUID->"cb6b2584-eb84-4e14-8202-3d435d9c53df"],
-
-Cell[BoxData[
- TemplateBox[{GraphicsBox[{{
-      Opacity[0], 
-      PointBox[{{0.9296889436402842, 0.}, {63.20403449337847, 
-       0.}}]}, {{}, {{{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{2.1507545426547585`, 0.}, {2.490452725592855, 
-                 0.142487047}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.142487047]& , TagBoxNote -> "0.142487047"], 
-             StyleBox["0.142487047`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.142487047, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{6.131659993840469, 0.}, {6.4713581767785655`, 
-                 0.097797927}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.097797927]& , TagBoxNote -> "0.097797927"], 
-             StyleBox["0.097797927`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.097797927, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{10.11256544502618, 0.}, {10.452263627964276`, 
-                 0.024611399}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.024611399]& , TagBoxNote -> "0.024611399"], 
-             StyleBox["0.024611399`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.024611399, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{14.09347089621189, 0.}, {14.433169079149987`, 
-                 0.095854922}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.095854922]& , TagBoxNote -> "0.095854922"], 
-             StyleBox["0.095854922`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.095854922, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{18.0743763473976, 0.}, {18.414074530335697`, 
-                 0.065414508}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.065414508]& , TagBoxNote -> "0.065414508"], 
-             StyleBox["0.065414508`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.065414508, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{22.05528179858331, 0.}, {22.394979981521406`, 
-                 0.02007772}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.02007772]& , TagBoxNote -> "0.02007772"], 
-             StyleBox["0.02007772`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.02007772, {}], "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{26.036187249769018`, 0.}, {26.375885432707115`, 
-                 0.027202073}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.027202073]& , TagBoxNote -> "0.027202073"], 
-             StyleBox["0.027202073`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.027202073, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{30.017092700954727`, 0.}, {30.356790883892824`, 
-                 0.060233161}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.060233161]& , TagBoxNote -> "0.060233161"], 
-             StyleBox["0.060233161`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.060233161, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{33.99799815214044, 0.}, {34.33769633507853, 
-                 0.05634715}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.05634715]& , TagBoxNote -> "0.05634715"], 
-             StyleBox["0.05634715`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.05634715, {}], "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{37.978903603326145`, 0.}, {38.31860178626424, 
-                 0.082901554}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.082901554]& , TagBoxNote -> "0.082901554"], 
-             StyleBox["0.082901554`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.082901554, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                RectangleBox[{41.95980905451185, 0.}, {42.299507237449944`, 
-                 0.113989637}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.113989637]& , TagBoxNote -> "0.113989637"], 
-             StyleBox["0.113989637`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.113989637, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{45.94071450569756, 0.}, {46.28041268863565, 
-                 0.073834197}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.073834197]& , TagBoxNote -> "0.073834197"], 
-             StyleBox["0.073834197`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.073834197, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{49.92161995688326, 0.}, {50.261318139821356`, 
-                 0.064119171}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.064119171]& , TagBoxNote -> "0.064119171"], 
-             StyleBox["0.064119171`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.064119171, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{53.90252540806897, 0.}, {54.24222359100706, 
-                 0.041450777}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.041450777]& , TagBoxNote -> "0.041450777"], 
-             StyleBox["0.041450777`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.041450777, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{57.88343085925467, 0.}, {58.22312904219277, 
-                 0.030440415}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.030440415]& , TagBoxNote -> "0.030440415"], 
-             StyleBox["0.030440415`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.030440415, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}, {{}, {{}, {{
-           Directive[
-            EdgeForm[
-             Directive[
-              Thickness[Small], 
-              Opacity[0.476]]], 
-            RGBColor[0.982864, 0.7431472, 0.3262672]], 
-           TagBox[
-            TooltipBox[
-             TagBox[
-              DynamicBox[{
-                FEPrivate`If[
-                 CurrentValue["MouseOver"], 
-                 EdgeForm[{
-                   GrayLevel[0.5], 
-                   AbsoluteThickness[1.5], 
-                   Opacity[0.66]}], {}, {}], 
-                
-                RectangleBox[{61.86433631044038, 0.}, {62.20403449337847, 
-                 0.003238342}, "RoundingRadius" -> 0]}], 
-              StatusArea[#, 0.003238342]& , TagBoxNote -> "0.003238342"], 
-             StyleBox["0.003238342`", {}, StripOnInput -> False]], 
-            Annotation[#, 
-             Style[0.003238342, {}], 
-             "Tooltip"]& ]}, {}}}, {}, {}}}, {}, {}}, {}, {}, {}, {}, {
-      StyleBox[{Antialiasing -> False, {
-         Directive[
-          Thickness[Tiny]], {
-          LineBox[{{0.9296889436402842, 0.}, {64.44952140437321, 0.}}]}, 
-         StyleBox[{}, "GraphicsLabel", StripOnInput -> False]}, 
-        StyleBox[{{
-           Directive[
-            Thickness[Tiny]], 
-           LineBox[{{2.1507545426547585`, 0.}, 
-             
-             Offset[{-1.102182119232618*^-15, -6.}, {2.1507545426547585`, 
-              0.}]}], 
-           LineBox[{{63.20403449337846, 0.}, 
-             
-             Offset[{-1.102182119232618*^-15, -6.}, {63.20403449337846, 
-              0.}]}], {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
-             LineBox[{{3.4904527255928546`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {3.4904527255928546`, 
-                0.}]}], 
-             LineBox[{{6.131659993840469, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {6.131659993840469, 
-                0.}]}], 
-             LineBox[{{7.471358176778565, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {7.471358176778565, 
-                0.}]}], 
-             LineBox[{{10.112565445026178`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {10.112565445026178`, 
-                0.}]}], 
-             LineBox[{{11.452263627964275`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {11.452263627964275`, 
-                0.}]}], 
-             LineBox[{{14.093470896211887`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {14.093470896211887`, 
-                0.}]}], 
-             LineBox[{{15.433169079149984`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {15.433169079149984`, 
-                0.}]}], 
-             LineBox[{{18.0743763473976, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {18.0743763473976, 
-                0.}]}], 
-             LineBox[{{19.414074530335693`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {19.414074530335693`, 
-                0.}]}], 
-             LineBox[{{22.055281798583305`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {22.055281798583305`, 
-                0.}]}], 
-             LineBox[{{23.394979981521402`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {23.394979981521402`, 
-                0.}]}], 
-             LineBox[{{26.036187249769014`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {26.036187249769014`, 
-                0.}]}], 
-             LineBox[{{27.37588543270711, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {27.37588543270711, 
-                0.}]}], 
-             LineBox[{{30.017092700954723`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {30.017092700954723`, 
-                0.}]}], 
-             LineBox[{{31.35679088389282, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {31.35679088389282, 
-                0.}]}], 
-             LineBox[{{33.99799815214043, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {33.99799815214043, 
-                0.}]}], 
-             LineBox[{{35.33769633507852, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {35.33769633507852, 
-                0.}]}], 
-             LineBox[{{37.97890360332613, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {37.97890360332613, 
-                0.}]}], 
-             LineBox[{{39.318601786264225`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {39.318601786264225`, 
-                0.}]}], 
-             LineBox[{{41.95980905451184, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {41.95980905451184, 
-                0.}]}], 
-             LineBox[{{43.29950723744993, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {43.29950723744993, 
-                0.}]}], 
-             LineBox[{{45.94071450569754, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {45.94071450569754, 
-                0.}]}], 
-             LineBox[{{47.280412688635636`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {47.280412688635636`, 
-                0.}]}], 
-             LineBox[{{49.92161995688325, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {49.92161995688325, 
-                0.}]}], 
-             LineBox[{{51.26131813982134, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {51.26131813982134, 
-                0.}]}], 
-             LineBox[{{53.90252540806895, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {53.90252540806895, 
-                0.}]}], 
-             LineBox[{{55.24222359100705, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {55.24222359100705, 
-                0.}]}], 
-             LineBox[{{57.88343085925466, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {57.88343085925466, 
-                0.}]}], 
-             LineBox[{{59.22312904219275, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {59.22312904219275, 
-                0.}]}], 
-             LineBox[{{61.864336310440365`, 0.}, 
-               
-               Offset[{-1.102182119232618*^-15, -6.}, {61.864336310440365`, 
-                0.}]}]}}}, 
-          StyleBox[{}, "GraphicsLabel", StripOnInput -> False]}, 
-         "GraphicsTicks", StripOnInput -> False]}, "GraphicsAxes", 
-       StripOnInput -> False]}}, {
-    DisplayFunction -> Identity, AspectRatio -> 
-     NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {False, True}, 
-     AxesLabel -> {None, None}, AxesOrigin -> {0.9296889436402842, 0.}, 
-     CoordinatesToolOptions -> {"DisplayFunction" -> ({
-         Identity[
-          Part[#, 1]], 
-         Identity[
-          Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-         Identity[
-          Part[#, 1]], 
-         Identity[
-          Part[#, 2]]}& )}, FrameLabel -> {{None, None}, {None, None}}, 
-     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
-     GridLines -> {None, None}, GridLinesStyle -> Directive[
-       GrayLevel[0.5, 0.4]], PlotRange -> {{All, All}, {All, All}}, 
-     PlotRangePadding -> {{
-        Scaled[0.02], 
-        Scaled[0.02]}, {
-        Scaled[0.02], 
-        Scaled[0.05]}}, Ticks -> {None, Automatic}}],FormBox[
-    FormBox[
-     TemplateBox[{"\"Frequency\"", "\"Change\""}, "SwatchLegend", 
-      DisplayFunction -> (FormBox[
-        StyleBox[
-         StyleBox[
-          PaneBox[
-           TagBox[
-            GridBox[{{
-               TagBox[
-                GridBox[{{
-                   GraphicsBox[{
-                    Directive[
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    EdgeForm[
-                    Directive[
-                    GrayLevel[0], 
-                    Thickness[Small], 
-                    Opacity[0.476]]], 
-                    RGBColor[0.982864, 0.7431472, 0.3262672]], 
-                    RectangleBox[{0, 0}, {10, 10}, "RoundingRadius" -> 0]}, 
-                    AspectRatio -> Full, ImageSize -> {10, 10}, 
-                    PlotRangePadding -> None, ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #}, {
-                   GraphicsBox[{
-                    Directive[
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    EdgeForm[
-                    Directive[
-                    GrayLevel[0], 
-                    Thickness[Small], 
-                    Opacity[0.476]]], 
-                    RGBColor[0.4992, 0.5552, 0.8309304]], 
-                    RectangleBox[{0, 0}, {10, 10}, "RoundingRadius" -> 0]}, 
-                    AspectRatio -> Full, ImageSize -> {10, 10}, 
-                    PlotRangePadding -> None, ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}}, 
-                 GridBoxAlignment -> {
-                  "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
-                 AutoDelete -> False, 
-                 GridBoxDividers -> {
-                  "Columns" -> {{False}}, "Rows" -> {{False}}}, 
-                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
-                  GridBoxSpacings -> {
-                  "Columns" -> {{0.5}}, "Rows" -> {{0.5}}}], "Grid"]}}, 
-             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-             AutoDelete -> False, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{0}}}], 
-            "Grid"], Alignment -> Left, AppearanceElements -> None, 
-           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
-           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
-         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
-         False], TraditionalForm]& ), 
-      InterpretationFunction :> (RowBox[{"SwatchLegend", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"EdgeForm", "[", 
-                    RowBox[{"Directive", "[", 
-                    RowBox[{
-                    RowBox[{"Thickness", "[", "Small", "]"}], ",", 
-                    RowBox[{"Opacity", "[", "0.476`", "]"}]}], "]"}], "]"}], 
-                   ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[0.982864, 0.7431472, 0.3262672], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> 
-                    RGBColor[
-                    0.6552426666666666, 0.4954314666666667, 
-                    0.21751146666666665`], FrameTicks -> None, 
-                    PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    StyleBox[
-                    RowBox[{"RGBColor", "[", 
-                    
-                    RowBox[{
-                    "0.982864`", ",", "0.7431472`", ",", "0.3262672`"}], 
-                    "]"}], NumberMarks -> False]], Appearance -> None, 
-                    BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[0.982864, 0.7431472, 0.3262672]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[0.982864, 0.7431472, 0.3262672], Editable -> 
-                    False, Selectable -> False]}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"EdgeForm", "[", 
-                    RowBox[{"Directive", "[", 
-                    RowBox[{
-                    RowBox[{"Thickness", "[", "Small", "]"}], ",", 
-                    RowBox[{"Opacity", "[", "0.476`", "]"}]}], "]"}], "]"}], 
-                   ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[0.4992, 0.5552, 0.8309304], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> 
-                    RGBColor[0.3328, 0.37013333333333337`, 0.5539536], 
-                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    StyleBox[
-                    RowBox[{"RGBColor", "[", 
-                    RowBox[{"0.4992`", ",", "0.5552`", ",", "0.8309304`"}], 
-                    "]"}], NumberMarks -> False]], Appearance -> None, 
-                    BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[0.4992, 0.5552, 0.8309304]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[0.4992, 0.5552, 0.8309304], Editable -> False, 
-                    Selectable -> False]}], "]"}]}], "}"}], ",", 
-           RowBox[{"{", 
-             RowBox[{#, ",", #2}], "}"}], ",", 
-           RowBox[{"LegendMarkers", "\[Rule]", 
-             RowBox[{"{", 
-               RowBox[{"{", 
-                 RowBox[{"Automatic", ",", "Automatic"}], "}"}], "}"}]}], ",", 
-           RowBox[{"LabelStyle", "\[Rule]", 
-             RowBox[{"{", 
-               RowBox[{
-                 RowBox[{"{", "}"}], ",", 
-                 RowBox[{"{", "}"}]}], "}"}]}], ",", 
-           RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}]}], "]"}]& ), 
-      Editable -> True], TraditionalForm], TraditionalForm]},
-  "Legended",
-  DisplayFunction->(GridBox[{{
-      TagBox[
-       ItemBox[
-        PaneBox[
-         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
-         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
-       "SkipImageSizeLevel"], 
-      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}}, 
-    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
-    AutoDelete -> False, GridBoxItemSize -> Automatic, 
-    BaselinePosition -> {1, 1}]& ),
-  Editable->True,
-  InterpretationFunction->(RowBox[{"Legended", "[", 
-     RowBox[{#, ",", 
-       RowBox[{"Placed", "[", 
-         RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
- CellLabel->"Out[64]=",ExpressionUUID->"c6fb97a7-ece7-4705-8134-c68e1ac61236"]
-}, Open  ]],
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"Normal", "[", 
@@ -18988,121 +18415,6 @@ Cell[BoxData[{
     RowBox[{"AspectRatio", "\[Rule]", 
      RowBox[{"3", "/", "4"}]}]}], "]"}], " "}]}], "Input",ExpressionUUID->\
 "32e6d59b-ca5f-40e9-b8be-e0187b3586eb"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Normal", "[", 
-  RowBox[{"datagrouped", "[", 
-   RowBox[{"[", 
-    RowBox[{"\"\<human\>\"", ",", "All", ",", 
-     RowBox[{"{", 
-      RowBox[{
-      "\"\<Expected_frequency\>\"", ",", "\"\<Frequency\>\"", ",", 
-       "\"\<Change\>\""}], "}"}]}], "]"}], "]"}], "]"}]], "Input",
- CellLabel->"In[11]:=",ExpressionUUID->"b0b45f43-3342-4b73-9ffb-93df3150e331"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.142487047`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"KR\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.097797927`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"SG\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.03030303`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.024611399`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"IM\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.121212121`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.095854922`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"TA\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.090909091`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.065414508`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"IV\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.03030303`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.02007772`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"MV\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.027202073`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"HR\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.060233161`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"NS\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.05634715`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"ND\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.082901554`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"QR\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.113989637`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"KE\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.073834197`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"EG\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.064119171`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"RG\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.041450777`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"YC\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.030440415`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"DG\"\>"}]}], 
-    "\[RightAssociation]"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Expected_frequency\"\>", "\[Rule]", "0.060606061`"}], ",", 
-     RowBox[{"\<\"Frequency\"\>", "\[Rule]", "0.003238342`"}], ",", 
-     RowBox[{"\<\"Change\"\>", "\[Rule]", "\<\"stop-W\"\>"}]}], 
-    "\[RightAssociation]"}]}], "}"}]], "Output",
- CellLabel->"Out[11]=",ExpressionUUID->"9ecf420a-1bd2-41d2-b3fb-8c60cceecc7a"]
-}, Open  ]],
 
 Cell[BoxData["BoxWhiskerChart"], "Input",
  CellChangeTimes->{{3.739303589742978*^9, 
@@ -19410,158 +18722,150 @@ Cell[CellGroupData[{
 Cell[580, 22, 131, 0, 202, "Title",ExpressionUUID->"755e0098-9782-4df5-8299-7f54266c54d6"],
 Cell[714, 24, 109, 0, 47, "Abstract",ExpressionUUID->"db4efd27-b72d-4835-a486-b18956bba0cb"],
 Cell[826, 26, 111, 0, 44, "AuthorInfo",ExpressionUUID->"59a63784-4e95-46b9-9a1d-2c013f47161b"],
-Cell[940, 28, 202712, 3326, 582, "Text",ExpressionUUID->"7966c5db-10b8-455f-985c-96961bb670f6"],
+Cell[940, 28, 202903, 3333, 647, "Text",ExpressionUUID->"7966c5db-10b8-455f-985c-96961bb670f6"],
 Cell[CellGroupData[{
-Cell[203677, 3358, 270, 5, 28, "Input",ExpressionUUID->"59f6bd52-14d0-4fd4-b3bb-3b27f5ff9c6a"],
-Cell[203950, 3365, 29771, 681, 295, "Output",ExpressionUUID->"0a83e092-234e-4f88-a708-b5b4e64d54a3"]
+Cell[203868, 3365, 603, 17, 28, "Input",ExpressionUUID->"59f6bd52-14d0-4fd4-b3bb-3b27f5ff9c6a"],
+Cell[204474, 3384, 39735, 853, 295, "Output",ExpressionUUID->"dfc85a57-cdeb-4fce-aaab-85b9253fb103"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[233758, 4051, 98, 0, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
-Cell[233859, 4053, 114, 0, 34, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
-Cell[233976, 4055, 1077, 18, 195, "Text",ExpressionUUID->"efb827fc-a893-441c-9ea6-fec1aeab991e"],
-Cell[235056, 4075, 88696, 1460, 304, "Text",ExpressionUUID->"8872d348-b100-4702-91e1-11567048ba7e"],
-Cell[323755, 5537, 781, 12, 149, "Text",ExpressionUUID->"65ae3372-3440-4e21-ba0f-ab65baa15046"]
+Cell[244246, 4242, 98, 0, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
+Cell[244347, 4244, 114, 0, 34, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
+Cell[244464, 4246, 1077, 18, 195, "Text",ExpressionUUID->"efb827fc-a893-441c-9ea6-fec1aeab991e"],
+Cell[245544, 4266, 88696, 1460, 304, "Text",ExpressionUUID->"8872d348-b100-4702-91e1-11567048ba7e"],
+Cell[334243, 5728, 781, 12, 149, "Text",ExpressionUUID->"65ae3372-3440-4e21-ba0f-ab65baa15046"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[324573, 5554, 78, 0, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
+Cell[335061, 5745, 78, 0, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
 Cell[CellGroupData[{
-Cell[324676, 5558, 249, 4, 28, "Input",ExpressionUUID->"8c26b8f1-f3c9-42c0-b9e5-909a6b25e336"],
-Cell[324928, 5564, 220, 3, 32, "Output",ExpressionUUID->"700c4c90-470b-4d4a-8520-bd6f73ee64ee"]
+Cell[335164, 5749, 249, 4, 28, "Input",ExpressionUUID->"8c26b8f1-f3c9-42c0-b9e5-909a6b25e336"],
+Cell[335416, 5755, 220, 3, 32, "Output",ExpressionUUID->"700c4c90-470b-4d4a-8520-bd6f73ee64ee"]
 }, Open  ]],
-Cell[325163, 5570, 513, 14, 50, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"],
+Cell[335651, 5761, 513, 14, 50, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"],
 Cell[CellGroupData[{
-Cell[325701, 5588, 340, 8, 28, "Input",ExpressionUUID->"7979d311-061d-491d-ba38-03cf71348bd0"],
-Cell[326044, 5598, 105470, 2160, 583, "Output",ExpressionUUID->"f34e16b9-b496-4297-8512-5cd71b1f3517"]
+Cell[336189, 5779, 340, 8, 28, "Input",ExpressionUUID->"7979d311-061d-491d-ba38-03cf71348bd0"],
+Cell[336532, 5789, 105470, 2160, 583, "Output",ExpressionUUID->"f34e16b9-b496-4297-8512-5cd71b1f3517"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[431551, 7763, 264, 6, 28, "Input",ExpressionUUID->"66758ac8-66ec-46d6-84b1-d412ee794bf0"],
-Cell[431818, 7771, 140409, 2822, 703, "Output",ExpressionUUID->"b05a1e65-ddf8-4645-b6c0-95b39f31b84f"]
+Cell[442039, 7954, 264, 6, 28, "Input",ExpressionUUID->"66758ac8-66ec-46d6-84b1-d412ee794bf0"],
+Cell[442306, 7962, 140409, 2822, 703, "Output",ExpressionUUID->"b05a1e65-ddf8-4645-b6c0-95b39f31b84f"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[572276, 10599, 103, 0, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
+Cell[582764, 10790, 103, 0, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
 Cell[CellGroupData[{
-Cell[572404, 10603, 139, 1, 33, "Subsubsection",ExpressionUUID->"9459be29-4cf5-41f2-96e9-a8f4c74657c9"],
+Cell[582892, 10794, 139, 1, 33, "Subsubsection",ExpressionUUID->"9459be29-4cf5-41f2-96e9-a8f4c74657c9"],
 Cell[CellGroupData[{
-Cell[572568, 10608, 1789, 44, 155, "Input",ExpressionUUID->"90a34831-7993-4130-8e8c-cc8e9d4ad7cb"],
-Cell[574360, 10654, 17230, 353, 419, "Output",ExpressionUUID->"0d2c05a7-988c-4ff3-8a56-dcb6a3df8438"]
+Cell[583056, 10799, 1789, 44, 155, "Input",ExpressionUUID->"90a34831-7993-4130-8e8c-cc8e9d4ad7cb"],
+Cell[584848, 10845, 17230, 353, 419, "Output",ExpressionUUID->"0d2c05a7-988c-4ff3-8a56-dcb6a3df8438"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[591639, 11013, 137, 1, 33, "Subsubsection",ExpressionUUID->"dfedf0e6-f4f5-40ad-aa08-e64823e57432"],
-Cell[591779, 11016, 298, 4, 57, "Text",ExpressionUUID->"76ead7ce-925d-4c38-8de9-8d0ca2222a6b"],
-Cell[592080, 11022, 187, 5, 28, "Input",ExpressionUUID->"a12667cb-1910-444b-83d8-0d2892686eff"],
-Cell[592270, 11029, 319, 5, 80, "Text",ExpressionUUID->"23bcec35-c0bf-482f-a612-9ae88406850a"],
-Cell[592592, 11036, 148, 3, 28, "Input",ExpressionUUID->"facb202e-e8ab-47b7-ab4a-8547aa91e48b"],
-Cell[592743, 11041, 360, 7, 103, "Text",ExpressionUUID->"c842159c-a0dd-4342-9eee-26c8930424de"]
+Cell[602127, 11204, 137, 1, 33, "Subsubsection",ExpressionUUID->"dfedf0e6-f4f5-40ad-aa08-e64823e57432"],
+Cell[602267, 11207, 298, 4, 57, "Text",ExpressionUUID->"76ead7ce-925d-4c38-8de9-8d0ca2222a6b"],
+Cell[602568, 11213, 187, 5, 28, "Input",ExpressionUUID->"a12667cb-1910-444b-83d8-0d2892686eff"],
+Cell[602758, 11220, 319, 5, 80, "Text",ExpressionUUID->"23bcec35-c0bf-482f-a612-9ae88406850a"],
+Cell[603080, 11227, 148, 3, 28, "Input",ExpressionUUID->"facb202e-e8ab-47b7-ab4a-8547aa91e48b"],
+Cell[603231, 11232, 360, 7, 103, "Text",ExpressionUUID->"c842159c-a0dd-4342-9eee-26c8930424de"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[593140, 11053, 139, 1, 33, "Subsubsection",ExpressionUUID->"0e9e68ab-c5a4-4cc2-9777-3d370938801c"],
-Cell[593282, 11056, 148, 3, 28, "Input",ExpressionUUID->"e179378a-a219-4364-8c30-05136a9c72be"],
-Cell[593433, 11061, 225, 4, 57, "Text",ExpressionUUID->"359d82da-f182-437b-b3b5-02b6a8b46061"],
-Cell[593661, 11067, 148, 3, 28, "Input",ExpressionUUID->"6673350c-b0f3-4ac4-9912-65f52ce93683"]
+Cell[603628, 11244, 139, 1, 33, "Subsubsection",ExpressionUUID->"0e9e68ab-c5a4-4cc2-9777-3d370938801c"],
+Cell[603770, 11247, 148, 3, 28, "Input",ExpressionUUID->"e179378a-a219-4364-8c30-05136a9c72be"],
+Cell[603921, 11252, 225, 4, 57, "Text",ExpressionUUID->"359d82da-f182-437b-b3b5-02b6a8b46061"],
+Cell[604149, 11258, 148, 3, 28, "Input",ExpressionUUID->"6673350c-b0f3-4ac4-9912-65f52ce93683"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[593846, 11075, 112, 0, 33, "Subsubsection",ExpressionUUID->"75a23c89-3c0b-4141-9728-8c294dbbfc9b"],
-Cell[593961, 11077, 149, 3, 57, "Text",ExpressionUUID->"b703d608-6d9c-49e5-9ca4-f2ef23ffdb78"],
-Cell[594113, 11082, 187, 5, 28, "Input",ExpressionUUID->"4ce55cee-46bf-4d69-81d2-5578cd470fb4"],
-Cell[594303, 11089, 450, 7, 80, "Text",ExpressionUUID->"1c5660bd-c5a8-4d0f-b729-30b34f60828a"],
-Cell[594756, 11098, 38937, 643, 158, "Text",ExpressionUUID->"f7431ea0-d863-4838-8346-448cffe3b092"]
+Cell[604334, 11266, 112, 0, 33, "Subsubsection",ExpressionUUID->"75a23c89-3c0b-4141-9728-8c294dbbfc9b"],
+Cell[604449, 11268, 149, 3, 57, "Text",ExpressionUUID->"b703d608-6d9c-49e5-9ca4-f2ef23ffdb78"],
+Cell[604601, 11273, 187, 5, 28, "Input",ExpressionUUID->"4ce55cee-46bf-4d69-81d2-5578cd470fb4"],
+Cell[604791, 11280, 450, 7, 80, "Text",ExpressionUUID->"1c5660bd-c5a8-4d0f-b729-30b34f60828a"],
+Cell[605244, 11289, 38937, 643, 158, "Text",ExpressionUUID->"f7431ea0-d863-4838-8346-448cffe3b092"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[633742, 11747, 94, 0, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
-Cell[633839, 11749, 241, 6, 34, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"]
+Cell[644230, 11938, 94, 0, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
+Cell[644327, 11940, 241, 6, 34, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[634117, 11760, 100, 0, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
-Cell[634220, 11762, 102, 0, 34, "Text",ExpressionUUID->"44146aed-2d19-4c66-bfba-1e67f1c1dfb3"],
+Cell[644605, 11951, 100, 0, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
+Cell[644708, 11953, 102, 0, 34, "Text",ExpressionUUID->"44146aed-2d19-4c66-bfba-1e67f1c1dfb3"],
 Cell[CellGroupData[{
-Cell[634347, 11766, 86, 0, 32, "Item",ExpressionUUID->"3d27619a-637d-405d-b02d-8b70dfdd9049"],
-Cell[634436, 11768, 81, 0, 32, "Item",ExpressionUUID->"822fed98-613f-4b49-8b58-a0f6aa512fe1"],
-Cell[634520, 11770, 83, 0, 32, "Item",ExpressionUUID->"633ac3d2-08ee-4f92-b695-b55e0c80957b"],
-Cell[634606, 11772, 95, 0, 32, "Item",ExpressionUUID->"a4f29298-d52c-4cd1-b50e-00ce7b184488"],
-Cell[634704, 11774, 90, 0, 32, "Item",ExpressionUUID->"0d6cb4fd-31cb-4541-b3a7-b2d99d2aabd8"],
-Cell[634797, 11776, 91, 0, 32, "Item",ExpressionUUID->"7e5ff825-f0bf-48f4-90e0-022973883d09"]
+Cell[644835, 11957, 86, 0, 32, "Item",ExpressionUUID->"3d27619a-637d-405d-b02d-8b70dfdd9049"],
+Cell[644924, 11959, 81, 0, 32, "Item",ExpressionUUID->"822fed98-613f-4b49-8b58-a0f6aa512fe1"],
+Cell[645008, 11961, 83, 0, 32, "Item",ExpressionUUID->"633ac3d2-08ee-4f92-b695-b55e0c80957b"],
+Cell[645094, 11963, 95, 0, 32, "Item",ExpressionUUID->"a4f29298-d52c-4cd1-b50e-00ce7b184488"],
+Cell[645192, 11965, 90, 0, 32, "Item",ExpressionUUID->"0d6cb4fd-31cb-4541-b3a7-b2d99d2aabd8"],
+Cell[645285, 11967, 91, 0, 32, "Item",ExpressionUUID->"7e5ff825-f0bf-48f4-90e0-022973883d09"]
 }, Open  ]],
-Cell[634903, 11779, 455, 6, 80, "Text",ExpressionUUID->"1fee1280-53c6-4307-aa00-579c0a0de28f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[635395, 11790, 106, 0, 99, "Chapter",ExpressionUUID->"9beda6c9-df48-4d55-89ba-2044ea627e6d"],
-Cell[635504, 11792, 152, 3, 28, "Input",ExpressionUUID->"90ab1dc0-8f96-4400-af34-cf8a622f02c7"],
-Cell[CellGroupData[{
-Cell[635681, 11799, 246, 7, 28, "Input",ExpressionUUID->"759a3db1-e5f5-4846-89c6-787e4aca663a"],
-Cell[635930, 11808, 19934, 514, 32, "Output",ExpressionUUID->"b472f155-1f04-497d-80f8-a1324d93a267"]
-}, Open  ]],
-Cell[655879, 12325, 197, 4, 28, "Input",ExpressionUUID->"6cfaf767-d8b6-417d-8813-7845394fa10b"],
-Cell[CellGroupData[{
-Cell[656101, 12333, 621, 16, 50, "Input",ExpressionUUID->"8845ebbe-422d-484d-b466-a9e049b2c31b"],
-Cell[656725, 12351, 32423, 835, 54, "Output",ExpressionUUID->"a76450d8-67f5-4877-9835-61c776711aad"]
+Cell[645391, 11970, 455, 6, 80, "Text",ExpressionUUID->"1fee1280-53c6-4307-aa00-579c0a0de28f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[689185, 13191, 807, 23, 50, "Input",ExpressionUUID->"8c21ecb1-73d2-4010-9dd8-157d2e7e995a"],
-Cell[689995, 13216, 379, 8, 35, "Output",ExpressionUUID->"19d9a1a3-ff8a-43cd-9115-8209bd311c02"],
-Cell[690377, 13226, 2156, 57, 32, "Output",ExpressionUUID->"223f45f6-99ed-46e8-9386-b22f97ece4fe"]
+Cell[645883, 11981, 106, 0, 99, "Chapter",ExpressionUUID->"9beda6c9-df48-4d55-89ba-2044ea627e6d"],
+Cell[645992, 11983, 152, 3, 28, "Input",ExpressionUUID->"90ab1dc0-8f96-4400-af34-cf8a622f02c7"],
+Cell[CellGroupData[{
+Cell[646169, 11990, 246, 7, 28, "Input",ExpressionUUID->"759a3db1-e5f5-4846-89c6-787e4aca663a"],
+Cell[646418, 11999, 19934, 514, 32, "Output",ExpressionUUID->"b472f155-1f04-497d-80f8-a1324d93a267"]
+}, Open  ]],
+Cell[666367, 12516, 197, 4, 28, "Input",ExpressionUUID->"6cfaf767-d8b6-417d-8813-7845394fa10b"],
+Cell[CellGroupData[{
+Cell[666589, 12524, 621, 16, 50, "Input",ExpressionUUID->"8845ebbe-422d-484d-b466-a9e049b2c31b"],
+Cell[667213, 12542, 32423, 835, 54, "Output",ExpressionUUID->"a76450d8-67f5-4877-9835-61c776711aad"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[692570, 13288, 1045, 30, 71, "Input",ExpressionUUID->"e0a8bd28-478e-42a9-bc61-38c05a59a72b"],
-Cell[693618, 13320, 2151, 39, 119, "Output",ExpressionUUID->"0367ff2e-a6dc-49e0-b929-d9487fd85b0f"]
+Cell[699673, 13382, 807, 23, 50, "Input",ExpressionUUID->"8c21ecb1-73d2-4010-9dd8-157d2e7e995a"],
+Cell[700483, 13407, 379, 8, 35, "Output",ExpressionUUID->"19d9a1a3-ff8a-43cd-9115-8209bd311c02"],
+Cell[700865, 13417, 2156, 57, 32, "Output",ExpressionUUID->"223f45f6-99ed-46e8-9386-b22f97ece4fe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[695806, 13364, 503, 12, 28, "Input",ExpressionUUID->"c5737d63-d6d2-44ed-a938-84e9dcb6674f"],
-Cell[696312, 13378, 1516, 38, 96, "Output",ExpressionUUID->"eea4ed9a-b969-473a-95d4-04c37c827af6"]
-}, Open  ]],
-Cell[697843, 13419, 34558, 873, 50, "Input",ExpressionUUID->"f2b0581a-e0ee-469b-bd77-f5427d01c32d"],
-Cell[CellGroupData[{
-Cell[732426, 14296, 746, 18, 50, "Input",ExpressionUUID->"6f469130-a74f-48d6-a1c9-231c2120b5e5"],
-Cell[733175, 14316, 53081, 1103, 211, "Output",ExpressionUUID->"dbe5aa3f-585c-4938-8826-c70bf42147ab"]
+Cell[703058, 13479, 1045, 30, 71, "Input",ExpressionUUID->"e0a8bd28-478e-42a9-bc61-38c05a59a72b"],
+Cell[704106, 13511, 2151, 39, 119, "Output",ExpressionUUID->"0367ff2e-a6dc-49e0-b929-d9487fd85b0f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[786293, 15424, 906, 19, 50, InheritFromParent,ExpressionUUID->"e099d612-1d8f-4124-9906-2d2972952edd"],
-Cell[787202, 15445, 1096, 23, 54, "Output",ExpressionUUID->"e2f2af5a-c521-4381-9a6c-5297df4e14a9"]
+Cell[706294, 13555, 503, 12, 28, "Input",ExpressionUUID->"c5737d63-d6d2-44ed-a938-84e9dcb6674f"],
+Cell[706800, 13569, 1516, 38, 96, "Output",ExpressionUUID->"eea4ed9a-b969-473a-95d4-04c37c827af6"]
 }, Open  ]],
-Cell[788313, 15471, 340, 8, 28, "Input",ExpressionUUID->"bc2923a8-8dc7-497b-937c-0f2be90e952b"],
+Cell[708331, 13610, 34558, 873, 50, "Input",ExpressionUUID->"f2b0581a-e0ee-469b-bd77-f5427d01c32d"],
 Cell[CellGroupData[{
-Cell[788678, 15483, 329, 7, 28, "Input",ExpressionUUID->"fa822b12-fc70-4d78-b01e-b2e5e30a98d3"],
-Cell[789010, 15492, 2771, 67, 54, "Output",ExpressionUUID->"c75ef5fa-8559-4cbf-a0c3-fd346357a060"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[791818, 15564, 1611, 39, 113, "Input",ExpressionUUID->"04cd9dce-720d-493d-aca9-b857f8ba4a1f"],
-Cell[793432, 15605, 15841, 281, 365, "Output",ExpressionUUID->"74cfc3be-94f6-4c55-81a9-f3609c309422"]
+Cell[742914, 14487, 746, 18, 50, "Input",ExpressionUUID->"6f469130-a74f-48d6-a1c9-231c2120b5e5"],
+Cell[743663, 14507, 53081, 1103, 211, "Output",ExpressionUUID->"dbe5aa3f-585c-4938-8826-c70bf42147ab"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[809310, 15891, 1505, 33, 176, "Input",ExpressionUUID->"447049be-1759-4775-9a2e-601587825328"],
-Cell[810818, 15926, 64741, 1346, 371, "Output",ExpressionUUID->"20f428f4-557e-4b02-9806-09b7176d1aab"]
+Cell[796781, 15615, 906, 19, 50, "Input",ExpressionUUID->"e099d612-1d8f-4124-9906-2d2972952edd"],
+Cell[797690, 15636, 1096, 23, 54, "Output",ExpressionUUID->"e2f2af5a-c521-4381-9a6c-5297df4e14a9"]
+}, Open  ]],
+Cell[798801, 15662, 340, 8, 28, "Input",ExpressionUUID->"bc2923a8-8dc7-497b-937c-0f2be90e952b"],
+Cell[CellGroupData[{
+Cell[799166, 15674, 329, 7, 28, "Input",ExpressionUUID->"fa822b12-fc70-4d78-b01e-b2e5e30a98d3"],
+Cell[799498, 15683, 2771, 67, 54, "Output",ExpressionUUID->"c75ef5fa-8559-4cbf-a0c3-fd346357a060"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[875596, 17277, 513, 13, 50, "Input",ExpressionUUID->"e2cee827-9626-4639-9d6d-52a4c9aa00a7"],
-Cell[876112, 17292, 1742, 42, 109, "Output",ExpressionUUID->"4b69da3f-ba14-4b38-a71b-8a3391cd5861"]
-}, Open  ]],
-Cell[877869, 17337, 877, 18, 92, "Input",ExpressionUUID->"d29e3cd7-9abd-4cd6-a45f-d707901185f4"],
-Cell[878749, 17357, 858, 27, 92, "Input",ExpressionUUID->"22fafb38-c628-4209-a527-21e2a6c934dc"],
-Cell[CellGroupData[{
-Cell[879632, 17388, 452, 13, 28, "Input",ExpressionUUID->"c5cabd8c-77cb-4bb9-8426-a2c08ae3f21a"],
-Cell[880087, 17403, 10637, 229, 88, "Output",ExpressionUUID->"6ec89411-4d8f-4d10-b4a8-be14b5185577"]
-}, Open  ]],
-Cell[890739, 17635, 687, 17, 71, "Input",ExpressionUUID->"b13cf40e-672e-40e2-9847-e3982c7e475c"],
-Cell[CellGroupData[{
-Cell[891451, 17656, 845, 22, 50, "Input",ExpressionUUID->"f8fb13d9-5a38-40bb-8b95-bb1b8ab57355"],
-Cell[892299, 17680, 2246, 36, 374, "Output",ExpressionUUID->"b12c004f-6f81-4694-be05-faf9f8887f74"]
+Cell[802306, 15755, 1611, 39, 113, "Input",ExpressionUUID->"04cd9dce-720d-493d-aca9-b857f8ba4a1f"],
+Cell[803920, 15796, 15841, 281, 365, "Output",ExpressionUUID->"74cfc3be-94f6-4c55-81a9-f3609c309422"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[894582, 17721, 320, 8, 28, "Input",ExpressionUUID->"ad574260-c155-497d-b26b-91b8b0684ccc"],
-Cell[894905, 17731, 23537, 462, 457, "Output",ExpressionUUID->"9dacd4b4-5a4d-4a67-aa62-7b9175563e6c"]
+Cell[819798, 16082, 1505, 33, 176, "Input",ExpressionUUID->"447049be-1759-4775-9a2e-601587825328"],
+Cell[821306, 16117, 64741, 1346, 371, "Output",ExpressionUUID->"20f428f4-557e-4b02-9806-09b7176d1aab"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[918479, 18198, 572, 14, 50, "Input",ExpressionUUID->"cb6b2584-eb84-4e14-8202-3d435d9c53df"],
-Cell[919054, 18214, 31403, 743, 233, "Output",ExpressionUUID->"c6fb97a7-ece7-4705-8134-c68e1ac61236"]
+Cell[886084, 17468, 513, 13, 50, "Input",ExpressionUUID->"e2cee827-9626-4639-9d6d-52a4c9aa00a7"],
+Cell[886600, 17483, 1742, 42, 109, "Output",ExpressionUUID->"4b69da3f-ba14-4b38-a71b-8a3391cd5861"]
 }, Open  ]],
-Cell[950472, 18960, 1019, 29, 71, "Input",ExpressionUUID->"32e6d59b-ca5f-40e9-b8be-e0187b3586eb"],
+Cell[888357, 17528, 877, 18, 92, "Input",ExpressionUUID->"d29e3cd7-9abd-4cd6-a45f-d707901185f4"],
+Cell[889237, 17548, 858, 27, 92, "Input",ExpressionUUID->"22fafb38-c628-4209-a527-21e2a6c934dc"],
 Cell[CellGroupData[{
-Cell[951516, 18993, 381, 9, 28, "Input",ExpressionUUID->"b0b45f43-3342-4b73-9ffb-93df3150e331"],
-Cell[951900, 19004, 4772, 99, 380, "Output",ExpressionUUID->"9ecf420a-1bd2-41d2-b3fb-8c60cceecc7a"]
+Cell[890120, 17579, 452, 13, 28, "Input",ExpressionUUID->"c5cabd8c-77cb-4bb9-8426-a2c08ae3f21a"],
+Cell[890575, 17594, 10637, 229, 88, "Output",ExpressionUUID->"6ec89411-4d8f-4d10-b4a8-be14b5185577"]
 }, Open  ]],
-Cell[956687, 19106, 169, 3, 28, "Input",ExpressionUUID->"36b9b4dc-b325-4516-ade4-48e7d86e7ea6"]
+Cell[901227, 17826, 687, 17, 71, "Input",ExpressionUUID->"b13cf40e-672e-40e2-9847-e3982c7e475c"],
+Cell[CellGroupData[{
+Cell[901939, 17847, 845, 22, 50, "Input",ExpressionUUID->"f8fb13d9-5a38-40bb-8b95-bb1b8ab57355"],
+Cell[902787, 17871, 2246, 36, 374, "Output",ExpressionUUID->"b12c004f-6f81-4694-be05-faf9f8887f74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[905070, 17912, 320, 8, 28, "Input",ExpressionUUID->"ad574260-c155-497d-b26b-91b8b0684ccc"],
+Cell[905393, 17922, 23537, 462, 457, "Output",ExpressionUUID->"9dacd4b4-5a4d-4a67-aa62-7b9175563e6c"]
+}, Open  ]],
+Cell[928945, 18387, 1019, 29, 71, "Input",ExpressionUUID->"32e6d59b-ca5f-40e9-b8be-e0187b3586eb"],
+Cell[929967, 18418, 169, 3, 28, "Input",ExpressionUUID->"36b9b4dc-b325-4516-ade4-48e7d86e7ea6"]
 }, Open  ]]
 }, Open  ]]
 }
