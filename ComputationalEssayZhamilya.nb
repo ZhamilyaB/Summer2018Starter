@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    953164,      18866]
-NotebookOptionsPosition[    930164,      18425]
-NotebookOutlinePosition[    943613,      18719]
-CellTagsIndexPosition[    943570,      18716]
+NotebookDataLength[    994170,      19858]
+NotebookOptionsPosition[    969560,      19391]
+NotebookOutlinePosition[    983009,      19685]
+CellTagsIndexPosition[    982966,      19682]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4236,6 +4236,972 @@ Cell[BoxData[
   "Grid"]], "Output",
  CellChangeTimes->{3.7394038774830713`*^9},
  CellLabel->"Out[30]=",ExpressionUUID->"dfc85a57-cdeb-4fce-aaab-85b9253fb103"]
+}, Open  ]],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryParseResults",
+  DynamicModuleBox[{Typeset`q$$ = "Cys", Typeset`newq$$ = "Cys", 
+   Typeset`chosen$$ = "Entity[\"Chemical\", \"LCysteine\"]", Typeset`open$$ = 
+   False}, 
+   PaneSelectorBox[{False->
+    DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+     WolframAlphaClient`Private`assumptionsQ$$ = True}, 
+     TagBox[
+      FrameBox[
+       TagBox[GridBox[{
+          {
+           InputFieldBox[Dynamic[Typeset`newq$$], String,
+            Appearance->None,
+            BaseStyle->{"CalculateInput"},
+            ContinuousAction->True,
+            Enabled->True,
+            FieldSize->{{1, 40}, {1, 
+               DirectedInfinity[1]}},
+            TrapSelection->False], 
+           ButtonBox[
+            TagBox[
+             TooltipBox[
+              StyleBox["\<\"\[RightGuillemet]\"\>",
+               StripOnInput->False,
+               LineColor->RGBColor[1, 0.5, 0],
+               FrontFaceColor->RGBColor[1, 0.5, 0],
+               BackFaceColor->RGBColor[1, 0.5, 0],
+               GraphicsColor->RGBColor[1, 0.5, 0],
+               FontColor->RGBColor[1, 0.5, 0]],
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource[
+                "WAStrings", "InterpretationAssumptions"], StandardForm]]],
+             Annotation[#, 
+              Dynamic[
+               FEPrivate`FrontEndResource[
+               "WAStrings", "InterpretationAssumptions"]], "Tooltip"]& ],
+            Appearance->None,
+            BaselinePosition->Baseline,
+            ButtonFunction:>(Quiet[
+               WolframAlpha[]]; Typeset`open$$ = True; 
+             WolframAlphaClient`Private`extrudeFromFastParse["Cys", 
+               Defer[
+                Entity["Chemical", "LCysteine"]], "Fast parse"]; 
+             Typeset`open$$ = False),
+            ContentPadding->False,
+            Evaluator->Automatic,
+            Method->"Queued"], 
+           ItemBox[
+            ButtonBox[
+             PaneSelectorBox[{True->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "OrangeSquarePlus"],
+                 ImageSizeCache->{10., {3., 8.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ], False->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "GraySquarePlus"],
+                 ImageSizeCache->{10., {3., 8.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ]}, Dynamic[WolframAlphaClient`Private`show$$],
+              ImageSize->All],
+             Appearance->None,
+             ButtonFunction:>(Quiet[
+                WolframAlpha[]]; If[
+                Or[
+                 CurrentValue["OptionKey"], 
+                 CurrentValue["AltKey"]], SelectionMove[
+                  ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                  Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                   "TextForm"], All], Typeset`open$$ = True; 
+                WolframAlphaClient`Private`extrudeFromFastParse["Cys", 
+                  Defer[
+                   Entity["Chemical", "LCysteine"]], "Fast parse"]; 
+                Typeset`open$$ = False]),
+             Evaluator->Automatic,
+             Method->"Queued"],
+            Alignment->{Right, Top},
+            StripOnInput->False]},
+          {
+           PaneBox[
+            TagBox[
+             TooltipBox[
+              ButtonBox[
+               PaneSelectorBox[{False->
+                StyleBox[
+                 TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+                   "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"",
+                   "\"chemical\""},
+                  "Entity"],
+                 StripOnInput->False,
+                 NumberMarks->False], True->
+                StyleBox[
+                 TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+                   "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"",
+                   "\"chemical\""},
+                  "Entity"],
+                 StripOnInput->False,
+                 ShowSyntaxStyles->False,
+                 NumberMarks->False,
+                 FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                 CurrentValue["MouseOver"]],
+                BaseStyle->{ShowStringCharacters -> True},
+                FrameMargins->0,
+                ImageSize->Automatic],
+               Alignment->Left,
+               Appearance->None,
+               BaseStyle->{},
+               ButtonFunction:>(SelectionMove[
+                  ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                   BoxData[
+                    TemplateBox[{"\"L-cysteine\"", 
+                    RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}], 
+                    "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"", 
+                    "\"chemical\""}, "Entity"]], "Input"], All]; SelectionMove[
+                  ButtonNotebook[], After, CellContents]),
+               Evaluator->Automatic,
+               ImageSize->Automatic,
+               Method->"Preemptive"],
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                StandardForm]]],
+             Annotation[#, 
+              Dynamic[
+               FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+              "Tooltip"]& ],
+            AppearanceElements->{},
+            BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+            ImageSize->{Automatic, {1, 100}},
+            Scrollbars->{False, Automatic}], "\[SpanFromLeft]", 
+           "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         BaselinePosition->{1, 1},
+         FrameStyle->GrayLevel[0.85],
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxDividers->{
+          "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       Alignment->Top,
+       Background->Dynamic[
+         FEPrivate`If[
+          FEPrivate`And[
+           FEPrivate`SameQ[
+            FEPrivate`Head[Typeset`newq$$], String], 
+           FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+          RGBColor[1., 0.975, 0.95], 
+          GrayLevel[1]]],
+       BaselinePosition->Baseline,
+       FrameStyle->GrayLevel[0.85],
+       ImageSize->Automatic,
+       RoundingRadius->5,
+       StripOnInput->False],
+      EventHandlerTag[{
+       "MouseEntered" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, True], "MouseExited" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+        "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+     DynamicModuleValues:>{}], True->
+    TagBox[GridBox[{
+       {
+        DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+         WolframAlphaClient`Private`assumptionsQ$$ = True}, 
+         TagBox[
+          FrameBox[
+           TagBox[GridBox[{
+              {
+               InputFieldBox[Dynamic[Typeset`newq$$], String,
+                Appearance->None,
+                BaseStyle->{"CalculateInput"},
+                ContinuousAction->True,
+                Enabled->True,
+                FieldSize->{{1, 40}, {1, 
+                   DirectedInfinity[1]}},
+                TrapSelection->False], 
+               ButtonBox[
+                TagBox[
+                 TooltipBox[
+                  StyleBox["\<\"\[RightGuillemet]\"\>",
+                   StripOnInput->False,
+                   LineColor->RGBColor[1, 0.5, 0],
+                   FrontFaceColor->RGBColor[1, 0.5, 0],
+                   BackFaceColor->RGBColor[1, 0.5, 0],
+                   GraphicsColor->RGBColor[1, 0.5, 0],
+                   FontColor->RGBColor[1, 0.5, 0]],
+                  DynamicBox[
+                   ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "InterpretationAssumptions"], StandardForm]]],
+                 Annotation[#, 
+                  Dynamic[
+                   FEPrivate`FrontEndResource[
+                   "WAStrings", "InterpretationAssumptions"]], "Tooltip"]& ],
+                Appearance->None,
+                BaselinePosition->Baseline,
+                ButtonFunction:>(Quiet[
+                   WolframAlpha[]]; Typeset`open$$ = True; 
+                 WolframAlphaClient`Private`extrudeFromFastParse["Cys", 
+                   Defer[
+                    Entity["Chemical", "LCysteine"]], "Fast parse"]; 
+                 Typeset`open$$ = False),
+                ContentPadding->False,
+                Evaluator->Automatic,
+                Method->"Queued"], 
+               ItemBox[
+                ButtonBox[
+                 PaneSelectorBox[{True->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "OrangeSquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ], False->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "GraySquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ]}, Dynamic[
+                  WolframAlphaClient`Private`show$$],
+                  ImageSize->All],
+                 Appearance->None,
+                 ButtonFunction:>(Quiet[
+                    WolframAlpha[]]; If[
+                    Or[
+                    CurrentValue["OptionKey"], 
+                    CurrentValue["AltKey"]], SelectionMove[
+                    ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                    NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                    "TextForm"], All], Typeset`open$$ = True; 
+                    WolframAlphaClient`Private`extrudeFromFastParse["Cys", 
+                    Defer[
+                    Entity["Chemical", "LCysteine"]], "Fast parse"]; 
+                    Typeset`open$$ = False]),
+                 Evaluator->Automatic,
+                 Method->"Queued"],
+                Alignment->{Right, Top},
+                StripOnInput->False]},
+              {
+               PaneBox[
+                TagBox[
+                 TooltipBox[
+                  ButtonBox[
+                   PaneSelectorBox[{False->
+                    StyleBox[
+                    TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+                    "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"",
+                    "\"chemical\""},
+                    "Entity"],
+                    StripOnInput->False,
+                    NumberMarks->False], True->
+                    StyleBox[
+                    TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+                    "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"",
+                    "\"chemical\""},
+                    "Entity"],
+                    StripOnInput->False,
+                    ShowSyntaxStyles->False,
+                    NumberMarks->False,
+                    FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    BaseStyle->{ShowStringCharacters -> True},
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                   Alignment->Left,
+                   Appearance->None,
+                   BaseStyle->{},
+                   ButtonFunction:>(SelectionMove[
+                    ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    BoxData[
+                    TemplateBox[{"\"L-cysteine\"", 
+                    RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}], 
+                    "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"", 
+                    "\"chemical\""}, "Entity"]], "Input"], All]; SelectionMove[
+                    ButtonNotebook[], After, CellContents]),
+                   Evaluator->Automatic,
+                   ImageSize->Automatic,
+                   Method->"Preemptive"],
+                  DynamicBox[
+                   ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                    StandardForm]]],
+                 Annotation[#, 
+                  Dynamic[
+                   FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+                  "Tooltip"]& ],
+                AppearanceElements->{},
+                BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+                ImageSize->{Automatic, {1, 100}},
+                Scrollbars->{False, Automatic}], "\[SpanFromLeft]", 
+               "\[SpanFromLeft]"}
+             },
+             AutoDelete->False,
+             BaselinePosition->{1, 1},
+             FrameStyle->GrayLevel[0.85],
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxDividers->{
+              "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Grid"],
+           Alignment->Top,
+           Background->Dynamic[
+             FEPrivate`If[
+              FEPrivate`And[
+               FEPrivate`SameQ[
+                FEPrivate`Head[Typeset`newq$$], String], 
+               FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+              RGBColor[1., 0.975, 0.95], 
+              GrayLevel[1]]],
+           BaselinePosition->Baseline,
+           FrameStyle->GrayLevel[0.85],
+           ImageSize->Automatic,
+           RoundingRadius->5,
+           StripOnInput->False],
+          
+          EventHandlerTag[{
+           "MouseEntered" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, True], 
+            "MouseExited" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+            "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+         DynamicModuleValues:>{}]},
+       {
+        InterpretationBox[
+         StyleBox[
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEExpressions", "NecklaceAnimator"][20]],
+          AnimatorBoxOptions->{ImageSize->20}],
+         Animator[Appearance -> "Necklace", ImageSize -> 20],
+         BaseStyle->{"Deploy"}]}
+      },
+      BaselinePosition->{1, 1},
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"]}, Dynamic[
+     TrueQ[Typeset`open$$]],
+    BaseStyle->{Deployed -> True},
+    ImageSize->Automatic],
+   DynamicModuleValues:>{}],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "WolframAlphaShortInput",
+ CellLabel->
+  "In[325]:=",ExpressionUUID->"1af90d51-a601-46d7-824c-19678d275394"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryParseResults",
+  DynamicModuleBox[{Typeset`q$$ = "Aminoacids", Typeset`newq$$ = "Aminoacids",
+    Typeset`chosen$$ = "Entity[\"Word\", \"aminoacid\"]", Typeset`open$$ = 
+   False}, 
+   PaneSelectorBox[{False->
+    DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+     WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+     TagBox[
+      FrameBox[
+       TagBox[GridBox[{
+          {
+           InputFieldBox[Dynamic[Typeset`newq$$], String,
+            Appearance->None,
+            BaseStyle->{"CalculateInput"},
+            ContinuousAction->True,
+            Enabled->True,
+            FieldSize->{{1, 40}, {1, 
+               DirectedInfinity[1]}},
+            TrapSelection->False], 
+           ItemBox[
+            ButtonBox[
+             PaneSelectorBox[{True->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "OrangeSquarePlus"],
+                 ImageSizeCache->{10., {3., 8.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ], False->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "GraySquarePlus"],
+                 ImageSizeCache->{10., {3., 8.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ]}, Dynamic[WolframAlphaClient`Private`show$$],
+              ImageSize->All],
+             Appearance->None,
+             ButtonFunction:>(Quiet[
+                WolframAlpha[]]; If[
+                Or[
+                 CurrentValue["OptionKey"], 
+                 CurrentValue["AltKey"]], SelectionMove[
+                  ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                  Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                   "TextForm"], All], Typeset`open$$ = True; 
+                WolframAlphaClient`Private`extrudeFromFastParse["Aminoacids", 
+                  Defer[
+                   Entity["Word", "aminoacid"]], "Fast parse"]; 
+                Typeset`open$$ = False]),
+             Evaluator->Automatic,
+             Method->"Queued"],
+            Alignment->{Right, Top},
+            StripOnInput->False]},
+          {
+           PaneBox[
+            TagBox[
+             TooltipBox[
+              ButtonBox[
+               PaneSelectorBox[{False->
+                StyleBox[
+                 TemplateBox[{"\"aminoacid\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}],
+                   "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"","\"word\""},
+                  "Entity"],
+                 StripOnInput->False,
+                 NumberMarks->False], True->
+                StyleBox[
+                 TemplateBox[{"\"aminoacid\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}],
+                   "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"","\"word\""},
+                  "Entity"],
+                 StripOnInput->False,
+                 ShowSyntaxStyles->False,
+                 NumberMarks->False,
+                 FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                 CurrentValue["MouseOver"]],
+                BaseStyle->{ShowStringCharacters -> True},
+                FrameMargins->0,
+                ImageSize->Automatic],
+               Alignment->Left,
+               Appearance->None,
+               BaseStyle->{},
+               ButtonFunction:>(SelectionMove[
+                  ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                   BoxData[
+                    TemplateBox[{"\"aminoacid\"", 
+                    RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}], 
+                    "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"", 
+                    "\"word\""}, "Entity"]], "Input"], All]; SelectionMove[
+                  ButtonNotebook[], After, CellContents]),
+               Evaluator->Automatic,
+               ImageSize->Automatic,
+               Method->"Preemptive"],
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                StandardForm]]],
+             Annotation[#, 
+              Dynamic[
+               FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+              "Tooltip"]& ],
+            AppearanceElements->{},
+            BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+            ImageSize->{Automatic, {1, 100}},
+            Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         BaselinePosition->{1, 1},
+         FrameStyle->GrayLevel[0.85],
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxDividers->{
+          "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       Alignment->Top,
+       Background->Dynamic[
+         FEPrivate`If[
+          FEPrivate`And[
+           FEPrivate`SameQ[
+            FEPrivate`Head[Typeset`newq$$], String], 
+           FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+          RGBColor[1., 0.975, 0.95], 
+          GrayLevel[1]]],
+       BaselinePosition->Baseline,
+       FrameStyle->GrayLevel[0.85],
+       ImageSize->Automatic,
+       RoundingRadius->5,
+       StripOnInput->False],
+      EventHandlerTag[{
+       "MouseEntered" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, True], "MouseExited" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+        "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+     DynamicModuleValues:>{}], True->
+    TagBox[GridBox[{
+       {
+        DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+         WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+         TagBox[
+          FrameBox[
+           TagBox[GridBox[{
+              {
+               InputFieldBox[Dynamic[Typeset`newq$$], String,
+                Appearance->None,
+                BaseStyle->{"CalculateInput"},
+                ContinuousAction->True,
+                Enabled->True,
+                FieldSize->{{1, 40}, {1, 
+                   DirectedInfinity[1]}},
+                TrapSelection->False], 
+               ItemBox[
+                ButtonBox[
+                 PaneSelectorBox[{True->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "OrangeSquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ], False->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "GraySquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ]}, Dynamic[
+                  WolframAlphaClient`Private`show$$],
+                  ImageSize->All],
+                 Appearance->None,
+                 ButtonFunction:>(Quiet[
+                    WolframAlpha[]]; If[
+                    Or[
+                    CurrentValue["OptionKey"], 
+                    CurrentValue["AltKey"]], SelectionMove[
+                    ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                    NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                    "TextForm"], All], Typeset`open$$ = True; 
+                    WolframAlphaClient`Private`extrudeFromFastParse[
+                    "Aminoacids", 
+                    Defer[
+                    Entity["Word", "aminoacid"]], "Fast parse"]; 
+                    Typeset`open$$ = False]),
+                 Evaluator->Automatic,
+                 Method->"Queued"],
+                Alignment->{Right, Top},
+                StripOnInput->False]},
+              {
+               PaneBox[
+                TagBox[
+                 TooltipBox[
+                  ButtonBox[
+                   PaneSelectorBox[{False->
+                    StyleBox[
+                    TemplateBox[{"\"aminoacid\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}],
+                    "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"","\"word\""},
+                    "Entity"],
+                    StripOnInput->False,
+                    NumberMarks->False], True->
+                    StyleBox[
+                    TemplateBox[{"\"aminoacid\"",RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}],
+                    "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"","\"word\""},
+                    "Entity"],
+                    StripOnInput->False,
+                    ShowSyntaxStyles->False,
+                    NumberMarks->False,
+                    FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    BaseStyle->{ShowStringCharacters -> True},
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                   Alignment->Left,
+                   Appearance->None,
+                   BaseStyle->{},
+                   ButtonFunction:>(SelectionMove[
+                    ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    BoxData[
+                    TemplateBox[{"\"aminoacid\"", 
+                    RowBox[{"Entity", "[", 
+                    RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}], 
+                    "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"", 
+                    "\"word\""}, "Entity"]], "Input"], All]; SelectionMove[
+                    ButtonNotebook[], After, CellContents]),
+                   Evaluator->Automatic,
+                   ImageSize->Automatic,
+                   Method->"Preemptive"],
+                  DynamicBox[
+                   ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                    StandardForm]]],
+                 Annotation[#, 
+                  Dynamic[
+                   FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+                  "Tooltip"]& ],
+                AppearanceElements->{},
+                BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+                ImageSize->{Automatic, {1, 100}},
+                Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+             },
+             AutoDelete->False,
+             BaselinePosition->{1, 1},
+             FrameStyle->GrayLevel[0.85],
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxDividers->{
+              "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Grid"],
+           Alignment->Top,
+           Background->Dynamic[
+             FEPrivate`If[
+              FEPrivate`And[
+               FEPrivate`SameQ[
+                FEPrivate`Head[Typeset`newq$$], String], 
+               FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+              RGBColor[1., 0.975, 0.95], 
+              GrayLevel[1]]],
+           BaselinePosition->Baseline,
+           FrameStyle->GrayLevel[0.85],
+           ImageSize->Automatic,
+           RoundingRadius->5,
+           StripOnInput->False],
+          
+          EventHandlerTag[{
+           "MouseEntered" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, True], 
+            "MouseExited" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+            "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+         DynamicModuleValues:>{}]},
+       {
+        InterpretationBox[
+         StyleBox[
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEExpressions", "NecklaceAnimator"][20]],
+          AnimatorBoxOptions->{ImageSize->20}],
+         Animator[Appearance -> "Necklace", ImageSize -> 20],
+         BaseStyle->{"Deploy"}]}
+      },
+      BaselinePosition->{1, 1},
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"]}, Dynamic[
+     TrueQ[Typeset`open$$]],
+    BaseStyle->{Deployed -> True},
+    ImageSize->Automatic],
+   DynamicModuleValues:>{}],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "WolframAlphaShortInput",
+ CellLabel->
+  "In[328]:=",ExpressionUUID->"7d5203d4-a44a-4248-a747-deb7470c15d9"],
+
+Cell[BoxData[
+ TemplateBox[{"\"aminoacid\"",RowBox[{"Entity", "[", 
+     RowBox[{"\"Word\"", ",", "\"aminoacid\""}], "]"}],
+   "\"Entity[\\\"Word\\\", \\\"aminoacid\\\"]\"","\"word\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{3.7394039822232428`*^9},
+ CellLabel->
+  "Out[328]=",ExpressionUUID->"92a1ec6a-839e-488f-ba13-a017c22cef8a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"codons\"",RowBox[{"EntityProperty", "[", 
+      RowBox[{"\"Chemical\"", ",", "\"Codons\""}], "]"}],
+    "\"EntityProperty[\\\"Chemical\\\", \\\"Codons\\\"]\""},
+   "EntityProperty"], "//", "FullForm"}]], "Input",
+ CellChangeTimes->{{3.7394046926348877`*^9, 3.739404699567544*^9}},
+ CellLabel->
+  "In[351]:=",ExpressionUUID->"64ad55e4-56b5-4350-9f13-fc856a326a60"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   RowBox[{"EntityProperty", "[", 
+    RowBox[{"\"\<Chemical\>\"", ",", "\"\<Codons\>\""}], "]"}],
+   ShowSpecialCharacters->False,
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  FullForm]], "Output",
+ CellChangeTimes->{{3.7394046949130077`*^9, 3.739404699973826*^9}},
+ CellLabel->
+  "Out[351]//FullForm=",ExpressionUUID->"fb957cd5-ebdb-4171-9519-\
+4272925520e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+      RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+    "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"","\"chemical\""},
+   "Entity"], "[", 
+  TemplateBox[{"\"codons\"",RowBox[{"EntityProperty", "[", 
+      RowBox[{"\"Chemical\"", ",", "\"Codons\""}], "]"}],
+    "\"EntityProperty[\\\"Chemical\\\", \\\"Codons\\\"]\""},
+   "EntityProperty"], "]"}]], "Input",
+ CellChangeTimes->{{3.7394039268154373`*^9, 3.739403958956328*^9}},
+ CellLabel->
+  "In[327]:=",ExpressionUUID->"ededba7a-f713-49db-932e-aba6c62e4c25"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"UGU\"\>", ",", "\<\"UGC\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7394039355689983`*^9, 3.739403960432788*^9}},
+ CellLabel->
+  "Out[327]=",ExpressionUUID->"951b9591-5ab0-4c96-b275-05823d9e7540"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Interpreter", "[", "\"\<Chemical\>\"", "]"}], "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Ser\>\"", ",", "\"\<gly\>\"", ",", "\"\<cys\>\"", ",", 
+    "\"\<Inosine\>\"", ",", "\"\<Adenine\>\"", ",", "\"\<Guanine\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7394043292128143`*^9, 3.73940448816889*^9}, {
+  3.739404519526184*^9, 3.739404523456613*^9}, {3.739404580544826*^9, 
+  3.739404636011216*^9}},
+ CellLabel->
+  "In[348]:=",ExpressionUUID->"43a914a7-101f-423c-b06f-cd980bb4d9ca"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"\"L-serine\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Chemical\"", ",", "\"LSerine\""}], "]"}],
+     "\"Entity[\\\"Chemical\\\", \\\"LSerine\\\"]\"","\"chemical\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"glycine\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Chemical\"", ",", "\"Glycine\""}], "]"}],
+     "\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+    "Entity"], ",", 
+   RowBox[{"{", 
+    TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+      "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"","\"chemical\""},
+     "Entity"], "}"}], ",", 
+   TemplateBox[{"\"inosine\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Chemical\"", ",", "\"Inosine\""}], "]"}],
+     "\"Entity[\\\"Chemical\\\", \\\"Inosine\\\"]\"","\"chemical\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"adenine\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Chemical\"", ",", "\"Adenine\""}], "]"}],
+     "\"Entity[\\\"Chemical\\\", \\\"Adenine\\\"]\"","\"chemical\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"guanine\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Chemical\"", ",", "\"Guanine\""}], "]"}],
+     "\"Entity[\\\"Chemical\\\", \\\"Guanine\\\"]\"","\"chemical\""},
+    "Entity"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.739404388802285*^9, 3.73940448854208*^9}, 
+   3.7394045249125023`*^9, {3.739404586416319*^9, 3.739404637555354*^9}},
+ CellLabel->
+  "Out[348]=",ExpressionUUID->"2ee122eb-c000-48e9-b0d3-564f5d25c165"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"glycine\"",RowBox[{"Entity", "[", 
+      RowBox[{"\"Chemical\"", ",", "\"Glycine\""}], "]"}],
+    "\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+   "Entity"], "[", 
+  StyleBox[
+   RowBox[{"EntityProperty", "[", 
+    RowBox[{"\"\<Chemical\>\"", ",", "\"\<Codons\>\""}], "]"}],
+   ShowSpecialCharacters->False,
+   ShowStringCharacters->True,
+   NumberMarks->True], "]"}]], "Input",
+ CellChangeTimes->{{3.739404670876005*^9, 3.7394046779077263`*^9}, 
+   3.739404708752296*^9},
+ CellLabel->
+  "In[352]:=",ExpressionUUID->"94e25e38-101c-4b99-976e-ad83408a4076"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"GGU\"\>", ",", "\<\"GGC\"\>", ",", "\<\"GGA\"\>", 
+   ",", "\<\"GGG\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.739404679245779*^9, 3.739404717455907*^9},
+ CellLabel->
+  "Out[352]=",ExpressionUUID->"d52ee3e0-04ff-409b-ba6d-f8bd7fda892d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"glycine\"",RowBox[{"Entity", "[", 
+      RowBox[{"\"Chemical\"", ",", "\"Glycine\""}], "]"}],
+    "\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+   "Entity"], "[", "\"\<Properties\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.739404906529468*^9, 3.7394049092656403`*^9}},
+ CellLabel->
+  "In[359]:=",ExpressionUUID->"cf51ac34-8b3c-4d9b-8ef1-9bd9f46b5166"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "@", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#", ",", 
+       RowBox[{"#", "[", 
+        StyleBox[
+         RowBox[{"EntityProperty", "[", 
+          RowBox[{"\"\<Chemical\>\"", ",", "\"\<Codons\>\""}], "]"}],
+         ShowSpecialCharacters->False,
+         ShowStringCharacters->True,
+         NumberMarks->True], "]"}]}], "}"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[{"\"L-serine\"",RowBox[{"Entity", "[", 
+          RowBox[{"\"Chemical\"", ",", "\"LSerine\""}], "]"}],
+        "\"Entity[\\\"Chemical\\\", \\\"LSerine\\\"]\"","\"chemical\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"glycine\"",RowBox[{"Entity", "[", 
+          RowBox[{"\"Chemical\"", ",", "\"Glycine\""}], "]"}],
+        "\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+          RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+        "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"","\"chemical\""},
+       "Entity"]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739404814915416*^9, 3.739404886641514*^9}, {
+  3.7394049377986183`*^9, 3.7394049633607807`*^9}, {3.739405016603896*^9, 
+  3.739405030095993*^9}},
+ CellLabel->
+  "In[363]:=",ExpressionUUID->"3d6a170a-8224-42ed-b2c9-18c39bb00ee0"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     TemplateBox[{"\"L-serine\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Chemical\"", ",", "\"LSerine\""}], "]"}],
+       "\"Entity[\\\"Chemical\\\", \\\"LSerine\\\"]\"","\"chemical\""},
+      "Entity"], 
+     RowBox[{"{", 
+      RowBox[{"\<\"UCU\"\>", ",", "\<\"UCC\"\>", ",", "\<\"UCA\"\>", 
+       ",", "\<\"UCG\"\>", ",", "\<\"AGU\"\>", ",", "\<\"AGC\"\>"}], "}"}]},
+    {
+     TemplateBox[{"\"glycine\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Chemical\"", ",", "\"Glycine\""}], "]"}],
+       "\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+      "Entity"], 
+     RowBox[{"{", 
+      RowBox[{"\<\"GGU\"\>", ",", "\<\"GGC\"\>", ",", "\<\"GGA\"\>", 
+       ",", "\<\"GGG\"\>"}], "}"}]},
+    {
+     TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Chemical\"", ",", "\"LCysteine\""}], "]"}],
+       "\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"","\"chemical\""},
+      "Entity"], 
+     RowBox[{"{", 
+      RowBox[{"\<\"UGU\"\>", ",", "\<\"UGC\"\>"}], "}"}]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.739404853624723*^9, 3.7394048875026913`*^9}, {
+  3.7394049409756603`*^9, 3.739404964508449*^9}, {3.7394050232135468`*^9, 
+  3.739405030536647*^9}},
+ CellLabel->
+  "Out[363]=",ExpressionUUID->"ecae8b2b-65dd-4415-a76a-7a401a6667d3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -18727,145 +19693,171 @@ Cell[CellGroupData[{
 Cell[203868, 3365, 603, 17, 28, "Input",ExpressionUUID->"59f6bd52-14d0-4fd4-b3bb-3b27f5ff9c6a"],
 Cell[204474, 3384, 39735, 853, 295, "Output",ExpressionUUID->"dfc85a57-cdeb-4fce-aaab-85b9253fb103"]
 }, Open  ]],
+Cell[244224, 4240, 16834, 401, 72, "WolframAlphaShortInput",ExpressionUUID->"1af90d51-a601-46d7-824c-19678d275394"],
 Cell[CellGroupData[{
-Cell[244246, 4242, 98, 0, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
-Cell[244347, 4244, 114, 0, 34, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
-Cell[244464, 4246, 1077, 18, 195, "Text",ExpressionUUID->"efb827fc-a893-441c-9ea6-fec1aeab991e"],
-Cell[245544, 4266, 88696, 1460, 304, "Text",ExpressionUUID->"8872d348-b100-4702-91e1-11567048ba7e"],
-Cell[334243, 5728, 781, 12, 149, "Text",ExpressionUUID->"65ae3372-3440-4e21-ba0f-ab65baa15046"]
+Cell[261083, 4645, 14131, 338, 72, "WolframAlphaShortInput",ExpressionUUID->"7d5203d4-a44a-4248-a747-deb7470c15d9"],
+Cell[275217, 4985, 336, 7, 41, "Output",ExpressionUUID->"92a1ec6a-839e-488f-ba13-a017c22cef8a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[335061, 5745, 78, 0, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
-Cell[CellGroupData[{
-Cell[335164, 5749, 249, 4, 28, "Input",ExpressionUUID->"8c26b8f1-f3c9-42c0-b9e5-909a6b25e336"],
-Cell[335416, 5755, 220, 3, 32, "Output",ExpressionUUID->"700c4c90-470b-4d4a-8520-bd6f73ee64ee"]
-}, Open  ]],
-Cell[335651, 5761, 513, 14, 50, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"],
-Cell[CellGroupData[{
-Cell[336189, 5779, 340, 8, 28, "Input",ExpressionUUID->"7979d311-061d-491d-ba38-03cf71348bd0"],
-Cell[336532, 5789, 105470, 2160, 583, "Output",ExpressionUUID->"f34e16b9-b496-4297-8512-5cd71b1f3517"]
+Cell[275590, 4997, 405, 8, 37, "Input",ExpressionUUID->"64ad55e4-56b5-4350-9f13-fc856a326a60"],
+Cell[275998, 5007, 407, 12, 32, "Output",ExpressionUUID->"fb957cd5-ebdb-4171-9519-4272925520e5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[442039, 7954, 264, 6, 28, "Input",ExpressionUUID->"66758ac8-66ec-46d6-84b1-d412ee794bf0"],
-Cell[442306, 7962, 140409, 2822, 703, "Output",ExpressionUUID->"b05a1e65-ddf8-4645-b6c0-95b39f31b84f"]
+Cell[276442, 5024, 600, 12, 38, InheritFromParent,ExpressionUUID->"ededba7a-f713-49db-932e-aba6c62e4c25"],
+Cell[277045, 5038, 244, 5, 32, "Output",ExpressionUUID->"951b9591-5ab0-4c96-b275-05823d9e7540"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[277326, 5048, 527, 12, 28, "Input",ExpressionUUID->"43a914a7-101f-423c-b06f-cd980bb4d9ca"],
+Cell[277856, 5062, 1541, 31, 42, "Output",ExpressionUUID->"2ee122eb-c000-48e9-b0d3-564f5d25c165"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[279434, 5098, 616, 15, 37, "Input",ExpressionUUID->"94e25e38-101c-4b99-976e-ad83408a4076"],
+Cell[280053, 5115, 284, 6, 32, "Output",ExpressionUUID->"d52ee3e0-04ff-409b-ba6d-f8bd7fda892d"]
+}, Open  ]],
+Cell[280352, 5124, 413, 8, 37, "Input",ExpressionUUID->"cf51ac34-8b3c-4d9b-8ef1-9bd9f46b5166"],
+Cell[CellGroupData[{
+Cell[280790, 5136, 1383, 32, 66, "Input",ExpressionUUID->"3d6a170a-8224-42ed-b2c9-18c39bb00ee0"],
+Cell[282176, 5170, 1429, 33, 99, "Output",ExpressionUUID->"ecae8b2b-65dd-4415-a76a-7a401a6667d3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[283642, 5208, 98, 0, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
+Cell[283743, 5210, 114, 0, 34, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
+Cell[283860, 5212, 1077, 18, 195, "Text",ExpressionUUID->"efb827fc-a893-441c-9ea6-fec1aeab991e"],
+Cell[284940, 5232, 88696, 1460, 304, "Text",ExpressionUUID->"8872d348-b100-4702-91e1-11567048ba7e"],
+Cell[373639, 6694, 781, 12, 149, "Text",ExpressionUUID->"65ae3372-3440-4e21-ba0f-ab65baa15046"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[374457, 6711, 78, 0, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
+Cell[CellGroupData[{
+Cell[374560, 6715, 249, 4, 28, "Input",ExpressionUUID->"8c26b8f1-f3c9-42c0-b9e5-909a6b25e336"],
+Cell[374812, 6721, 220, 3, 32, "Output",ExpressionUUID->"700c4c90-470b-4d4a-8520-bd6f73ee64ee"]
+}, Open  ]],
+Cell[375047, 6727, 513, 14, 50, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"],
+Cell[CellGroupData[{
+Cell[375585, 6745, 340, 8, 28, "Input",ExpressionUUID->"7979d311-061d-491d-ba38-03cf71348bd0"],
+Cell[375928, 6755, 105470, 2160, 583, "Output",ExpressionUUID->"f34e16b9-b496-4297-8512-5cd71b1f3517"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[481435, 8920, 264, 6, 28, "Input",ExpressionUUID->"66758ac8-66ec-46d6-84b1-d412ee794bf0"],
+Cell[481702, 8928, 140409, 2822, 703, "Output",ExpressionUUID->"b05a1e65-ddf8-4645-b6c0-95b39f31b84f"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[582764, 10790, 103, 0, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
+Cell[622160, 11756, 103, 0, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
 Cell[CellGroupData[{
-Cell[582892, 10794, 139, 1, 33, "Subsubsection",ExpressionUUID->"9459be29-4cf5-41f2-96e9-a8f4c74657c9"],
+Cell[622288, 11760, 139, 1, 33, "Subsubsection",ExpressionUUID->"9459be29-4cf5-41f2-96e9-a8f4c74657c9"],
 Cell[CellGroupData[{
-Cell[583056, 10799, 1789, 44, 155, "Input",ExpressionUUID->"90a34831-7993-4130-8e8c-cc8e9d4ad7cb"],
-Cell[584848, 10845, 17230, 353, 419, "Output",ExpressionUUID->"0d2c05a7-988c-4ff3-8a56-dcb6a3df8438"]
+Cell[622452, 11765, 1789, 44, 155, "Input",ExpressionUUID->"90a34831-7993-4130-8e8c-cc8e9d4ad7cb"],
+Cell[624244, 11811, 17230, 353, 419, "Output",ExpressionUUID->"0d2c05a7-988c-4ff3-8a56-dcb6a3df8438"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[602127, 11204, 137, 1, 33, "Subsubsection",ExpressionUUID->"dfedf0e6-f4f5-40ad-aa08-e64823e57432"],
-Cell[602267, 11207, 298, 4, 57, "Text",ExpressionUUID->"76ead7ce-925d-4c38-8de9-8d0ca2222a6b"],
-Cell[602568, 11213, 187, 5, 28, "Input",ExpressionUUID->"a12667cb-1910-444b-83d8-0d2892686eff"],
-Cell[602758, 11220, 319, 5, 80, "Text",ExpressionUUID->"23bcec35-c0bf-482f-a612-9ae88406850a"],
-Cell[603080, 11227, 148, 3, 28, "Input",ExpressionUUID->"facb202e-e8ab-47b7-ab4a-8547aa91e48b"],
-Cell[603231, 11232, 360, 7, 103, "Text",ExpressionUUID->"c842159c-a0dd-4342-9eee-26c8930424de"]
+Cell[641523, 12170, 137, 1, 33, "Subsubsection",ExpressionUUID->"dfedf0e6-f4f5-40ad-aa08-e64823e57432"],
+Cell[641663, 12173, 298, 4, 57, "Text",ExpressionUUID->"76ead7ce-925d-4c38-8de9-8d0ca2222a6b"],
+Cell[641964, 12179, 187, 5, 28, "Input",ExpressionUUID->"a12667cb-1910-444b-83d8-0d2892686eff"],
+Cell[642154, 12186, 319, 5, 80, "Text",ExpressionUUID->"23bcec35-c0bf-482f-a612-9ae88406850a"],
+Cell[642476, 12193, 148, 3, 28, "Input",ExpressionUUID->"facb202e-e8ab-47b7-ab4a-8547aa91e48b"],
+Cell[642627, 12198, 360, 7, 103, "Text",ExpressionUUID->"c842159c-a0dd-4342-9eee-26c8930424de"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[603628, 11244, 139, 1, 33, "Subsubsection",ExpressionUUID->"0e9e68ab-c5a4-4cc2-9777-3d370938801c"],
-Cell[603770, 11247, 148, 3, 28, "Input",ExpressionUUID->"e179378a-a219-4364-8c30-05136a9c72be"],
-Cell[603921, 11252, 225, 4, 57, "Text",ExpressionUUID->"359d82da-f182-437b-b3b5-02b6a8b46061"],
-Cell[604149, 11258, 148, 3, 28, "Input",ExpressionUUID->"6673350c-b0f3-4ac4-9912-65f52ce93683"]
+Cell[643024, 12210, 139, 1, 33, "Subsubsection",ExpressionUUID->"0e9e68ab-c5a4-4cc2-9777-3d370938801c"],
+Cell[643166, 12213, 148, 3, 28, "Input",ExpressionUUID->"e179378a-a219-4364-8c30-05136a9c72be"],
+Cell[643317, 12218, 225, 4, 57, "Text",ExpressionUUID->"359d82da-f182-437b-b3b5-02b6a8b46061"],
+Cell[643545, 12224, 148, 3, 28, "Input",ExpressionUUID->"6673350c-b0f3-4ac4-9912-65f52ce93683"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[604334, 11266, 112, 0, 33, "Subsubsection",ExpressionUUID->"75a23c89-3c0b-4141-9728-8c294dbbfc9b"],
-Cell[604449, 11268, 149, 3, 57, "Text",ExpressionUUID->"b703d608-6d9c-49e5-9ca4-f2ef23ffdb78"],
-Cell[604601, 11273, 187, 5, 28, "Input",ExpressionUUID->"4ce55cee-46bf-4d69-81d2-5578cd470fb4"],
-Cell[604791, 11280, 450, 7, 80, "Text",ExpressionUUID->"1c5660bd-c5a8-4d0f-b729-30b34f60828a"],
-Cell[605244, 11289, 38937, 643, 158, "Text",ExpressionUUID->"f7431ea0-d863-4838-8346-448cffe3b092"]
+Cell[643730, 12232, 112, 0, 33, "Subsubsection",ExpressionUUID->"75a23c89-3c0b-4141-9728-8c294dbbfc9b"],
+Cell[643845, 12234, 149, 3, 57, "Text",ExpressionUUID->"b703d608-6d9c-49e5-9ca4-f2ef23ffdb78"],
+Cell[643997, 12239, 187, 5, 28, "Input",ExpressionUUID->"4ce55cee-46bf-4d69-81d2-5578cd470fb4"],
+Cell[644187, 12246, 450, 7, 80, "Text",ExpressionUUID->"1c5660bd-c5a8-4d0f-b729-30b34f60828a"],
+Cell[644640, 12255, 38937, 643, 158, "Text",ExpressionUUID->"f7431ea0-d863-4838-8346-448cffe3b092"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[644230, 11938, 94, 0, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
-Cell[644327, 11940, 241, 6, 34, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"]
+Cell[683626, 12904, 94, 0, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
+Cell[683723, 12906, 241, 6, 34, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[644605, 11951, 100, 0, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
-Cell[644708, 11953, 102, 0, 34, "Text",ExpressionUUID->"44146aed-2d19-4c66-bfba-1e67f1c1dfb3"],
+Cell[684001, 12917, 100, 0, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
+Cell[684104, 12919, 102, 0, 34, "Text",ExpressionUUID->"44146aed-2d19-4c66-bfba-1e67f1c1dfb3"],
 Cell[CellGroupData[{
-Cell[644835, 11957, 86, 0, 32, "Item",ExpressionUUID->"3d27619a-637d-405d-b02d-8b70dfdd9049"],
-Cell[644924, 11959, 81, 0, 32, "Item",ExpressionUUID->"822fed98-613f-4b49-8b58-a0f6aa512fe1"],
-Cell[645008, 11961, 83, 0, 32, "Item",ExpressionUUID->"633ac3d2-08ee-4f92-b695-b55e0c80957b"],
-Cell[645094, 11963, 95, 0, 32, "Item",ExpressionUUID->"a4f29298-d52c-4cd1-b50e-00ce7b184488"],
-Cell[645192, 11965, 90, 0, 32, "Item",ExpressionUUID->"0d6cb4fd-31cb-4541-b3a7-b2d99d2aabd8"],
-Cell[645285, 11967, 91, 0, 32, "Item",ExpressionUUID->"7e5ff825-f0bf-48f4-90e0-022973883d09"]
+Cell[684231, 12923, 86, 0, 32, "Item",ExpressionUUID->"3d27619a-637d-405d-b02d-8b70dfdd9049"],
+Cell[684320, 12925, 81, 0, 32, "Item",ExpressionUUID->"822fed98-613f-4b49-8b58-a0f6aa512fe1"],
+Cell[684404, 12927, 83, 0, 32, "Item",ExpressionUUID->"633ac3d2-08ee-4f92-b695-b55e0c80957b"],
+Cell[684490, 12929, 95, 0, 32, "Item",ExpressionUUID->"a4f29298-d52c-4cd1-b50e-00ce7b184488"],
+Cell[684588, 12931, 90, 0, 32, "Item",ExpressionUUID->"0d6cb4fd-31cb-4541-b3a7-b2d99d2aabd8"],
+Cell[684681, 12933, 91, 0, 32, "Item",ExpressionUUID->"7e5ff825-f0bf-48f4-90e0-022973883d09"]
 }, Open  ]],
-Cell[645391, 11970, 455, 6, 80, "Text",ExpressionUUID->"1fee1280-53c6-4307-aa00-579c0a0de28f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[645883, 11981, 106, 0, 99, "Chapter",ExpressionUUID->"9beda6c9-df48-4d55-89ba-2044ea627e6d"],
-Cell[645992, 11983, 152, 3, 28, "Input",ExpressionUUID->"90ab1dc0-8f96-4400-af34-cf8a622f02c7"],
-Cell[CellGroupData[{
-Cell[646169, 11990, 246, 7, 28, "Input",ExpressionUUID->"759a3db1-e5f5-4846-89c6-787e4aca663a"],
-Cell[646418, 11999, 19934, 514, 32, "Output",ExpressionUUID->"b472f155-1f04-497d-80f8-a1324d93a267"]
-}, Open  ]],
-Cell[666367, 12516, 197, 4, 28, "Input",ExpressionUUID->"6cfaf767-d8b6-417d-8813-7845394fa10b"],
-Cell[CellGroupData[{
-Cell[666589, 12524, 621, 16, 50, "Input",ExpressionUUID->"8845ebbe-422d-484d-b466-a9e049b2c31b"],
-Cell[667213, 12542, 32423, 835, 54, "Output",ExpressionUUID->"a76450d8-67f5-4877-9835-61c776711aad"]
+Cell[684787, 12936, 455, 6, 80, "Text",ExpressionUUID->"1fee1280-53c6-4307-aa00-579c0a0de28f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[699673, 13382, 807, 23, 50, "Input",ExpressionUUID->"8c21ecb1-73d2-4010-9dd8-157d2e7e995a"],
-Cell[700483, 13407, 379, 8, 35, "Output",ExpressionUUID->"19d9a1a3-ff8a-43cd-9115-8209bd311c02"],
-Cell[700865, 13417, 2156, 57, 32, "Output",ExpressionUUID->"223f45f6-99ed-46e8-9386-b22f97ece4fe"]
+Cell[685279, 12947, 106, 0, 99, "Chapter",ExpressionUUID->"9beda6c9-df48-4d55-89ba-2044ea627e6d"],
+Cell[685388, 12949, 152, 3, 28, "Input",ExpressionUUID->"90ab1dc0-8f96-4400-af34-cf8a622f02c7"],
+Cell[CellGroupData[{
+Cell[685565, 12956, 246, 7, 28, "Input",ExpressionUUID->"759a3db1-e5f5-4846-89c6-787e4aca663a"],
+Cell[685814, 12965, 19934, 514, 32, "Output",ExpressionUUID->"b472f155-1f04-497d-80f8-a1324d93a267"]
+}, Open  ]],
+Cell[705763, 13482, 197, 4, 28, "Input",ExpressionUUID->"6cfaf767-d8b6-417d-8813-7845394fa10b"],
+Cell[CellGroupData[{
+Cell[705985, 13490, 621, 16, 50, "Input",ExpressionUUID->"8845ebbe-422d-484d-b466-a9e049b2c31b"],
+Cell[706609, 13508, 32423, 835, 54, "Output",ExpressionUUID->"a76450d8-67f5-4877-9835-61c776711aad"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[703058, 13479, 1045, 30, 71, "Input",ExpressionUUID->"e0a8bd28-478e-42a9-bc61-38c05a59a72b"],
-Cell[704106, 13511, 2151, 39, 119, "Output",ExpressionUUID->"0367ff2e-a6dc-49e0-b929-d9487fd85b0f"]
+Cell[739069, 14348, 807, 23, 50, "Input",ExpressionUUID->"8c21ecb1-73d2-4010-9dd8-157d2e7e995a"],
+Cell[739879, 14373, 379, 8, 35, "Output",ExpressionUUID->"19d9a1a3-ff8a-43cd-9115-8209bd311c02"],
+Cell[740261, 14383, 2156, 57, 32, "Output",ExpressionUUID->"223f45f6-99ed-46e8-9386-b22f97ece4fe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[706294, 13555, 503, 12, 28, "Input",ExpressionUUID->"c5737d63-d6d2-44ed-a938-84e9dcb6674f"],
-Cell[706800, 13569, 1516, 38, 96, "Output",ExpressionUUID->"eea4ed9a-b969-473a-95d4-04c37c827af6"]
-}, Open  ]],
-Cell[708331, 13610, 34558, 873, 50, "Input",ExpressionUUID->"f2b0581a-e0ee-469b-bd77-f5427d01c32d"],
-Cell[CellGroupData[{
-Cell[742914, 14487, 746, 18, 50, "Input",ExpressionUUID->"6f469130-a74f-48d6-a1c9-231c2120b5e5"],
-Cell[743663, 14507, 53081, 1103, 211, "Output",ExpressionUUID->"dbe5aa3f-585c-4938-8826-c70bf42147ab"]
+Cell[742454, 14445, 1045, 30, 71, "Input",ExpressionUUID->"e0a8bd28-478e-42a9-bc61-38c05a59a72b"],
+Cell[743502, 14477, 2151, 39, 119, "Output",ExpressionUUID->"0367ff2e-a6dc-49e0-b929-d9487fd85b0f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[796781, 15615, 906, 19, 50, "Input",ExpressionUUID->"e099d612-1d8f-4124-9906-2d2972952edd"],
-Cell[797690, 15636, 1096, 23, 54, "Output",ExpressionUUID->"e2f2af5a-c521-4381-9a6c-5297df4e14a9"]
+Cell[745690, 14521, 503, 12, 28, "Input",ExpressionUUID->"c5737d63-d6d2-44ed-a938-84e9dcb6674f"],
+Cell[746196, 14535, 1516, 38, 96, "Output",ExpressionUUID->"eea4ed9a-b969-473a-95d4-04c37c827af6"]
 }, Open  ]],
-Cell[798801, 15662, 340, 8, 28, "Input",ExpressionUUID->"bc2923a8-8dc7-497b-937c-0f2be90e952b"],
+Cell[747727, 14576, 34558, 873, 50, "Input",ExpressionUUID->"f2b0581a-e0ee-469b-bd77-f5427d01c32d"],
 Cell[CellGroupData[{
-Cell[799166, 15674, 329, 7, 28, "Input",ExpressionUUID->"fa822b12-fc70-4d78-b01e-b2e5e30a98d3"],
-Cell[799498, 15683, 2771, 67, 54, "Output",ExpressionUUID->"c75ef5fa-8559-4cbf-a0c3-fd346357a060"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[802306, 15755, 1611, 39, 113, "Input",ExpressionUUID->"04cd9dce-720d-493d-aca9-b857f8ba4a1f"],
-Cell[803920, 15796, 15841, 281, 365, "Output",ExpressionUUID->"74cfc3be-94f6-4c55-81a9-f3609c309422"]
+Cell[782310, 15453, 746, 18, 50, "Input",ExpressionUUID->"6f469130-a74f-48d6-a1c9-231c2120b5e5"],
+Cell[783059, 15473, 53081, 1103, 211, "Output",ExpressionUUID->"dbe5aa3f-585c-4938-8826-c70bf42147ab"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[819798, 16082, 1505, 33, 176, "Input",ExpressionUUID->"447049be-1759-4775-9a2e-601587825328"],
-Cell[821306, 16117, 64741, 1346, 371, "Output",ExpressionUUID->"20f428f4-557e-4b02-9806-09b7176d1aab"]
+Cell[836177, 16581, 906, 19, 50, "Input",ExpressionUUID->"e099d612-1d8f-4124-9906-2d2972952edd"],
+Cell[837086, 16602, 1096, 23, 54, "Output",ExpressionUUID->"e2f2af5a-c521-4381-9a6c-5297df4e14a9"]
+}, Open  ]],
+Cell[838197, 16628, 340, 8, 28, "Input",ExpressionUUID->"bc2923a8-8dc7-497b-937c-0f2be90e952b"],
+Cell[CellGroupData[{
+Cell[838562, 16640, 329, 7, 28, "Input",ExpressionUUID->"fa822b12-fc70-4d78-b01e-b2e5e30a98d3"],
+Cell[838894, 16649, 2771, 67, 54, "Output",ExpressionUUID->"c75ef5fa-8559-4cbf-a0c3-fd346357a060"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[886084, 17468, 513, 13, 50, "Input",ExpressionUUID->"e2cee827-9626-4639-9d6d-52a4c9aa00a7"],
-Cell[886600, 17483, 1742, 42, 109, "Output",ExpressionUUID->"4b69da3f-ba14-4b38-a71b-8a3391cd5861"]
-}, Open  ]],
-Cell[888357, 17528, 877, 18, 92, "Input",ExpressionUUID->"d29e3cd7-9abd-4cd6-a45f-d707901185f4"],
-Cell[889237, 17548, 858, 27, 92, "Input",ExpressionUUID->"22fafb38-c628-4209-a527-21e2a6c934dc"],
-Cell[CellGroupData[{
-Cell[890120, 17579, 452, 13, 28, "Input",ExpressionUUID->"c5cabd8c-77cb-4bb9-8426-a2c08ae3f21a"],
-Cell[890575, 17594, 10637, 229, 88, "Output",ExpressionUUID->"6ec89411-4d8f-4d10-b4a8-be14b5185577"]
-}, Open  ]],
-Cell[901227, 17826, 687, 17, 71, "Input",ExpressionUUID->"b13cf40e-672e-40e2-9847-e3982c7e475c"],
-Cell[CellGroupData[{
-Cell[901939, 17847, 845, 22, 50, "Input",ExpressionUUID->"f8fb13d9-5a38-40bb-8b95-bb1b8ab57355"],
-Cell[902787, 17871, 2246, 36, 374, "Output",ExpressionUUID->"b12c004f-6f81-4694-be05-faf9f8887f74"]
+Cell[841702, 16721, 1611, 39, 113, "Input",ExpressionUUID->"04cd9dce-720d-493d-aca9-b857f8ba4a1f"],
+Cell[843316, 16762, 15841, 281, 365, "Output",ExpressionUUID->"74cfc3be-94f6-4c55-81a9-f3609c309422"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[905070, 17912, 320, 8, 28, "Input",ExpressionUUID->"ad574260-c155-497d-b26b-91b8b0684ccc"],
-Cell[905393, 17922, 23537, 462, 457, "Output",ExpressionUUID->"9dacd4b4-5a4d-4a67-aa62-7b9175563e6c"]
+Cell[859194, 17048, 1505, 33, 176, "Input",ExpressionUUID->"447049be-1759-4775-9a2e-601587825328"],
+Cell[860702, 17083, 64741, 1346, 371, "Output",ExpressionUUID->"20f428f4-557e-4b02-9806-09b7176d1aab"]
 }, Open  ]],
-Cell[928945, 18387, 1019, 29, 71, "Input",ExpressionUUID->"32e6d59b-ca5f-40e9-b8be-e0187b3586eb"],
-Cell[929967, 18418, 169, 3, 28, "Input",ExpressionUUID->"36b9b4dc-b325-4516-ade4-48e7d86e7ea6"]
+Cell[CellGroupData[{
+Cell[925480, 18434, 513, 13, 50, "Input",ExpressionUUID->"e2cee827-9626-4639-9d6d-52a4c9aa00a7"],
+Cell[925996, 18449, 1742, 42, 109, "Output",ExpressionUUID->"4b69da3f-ba14-4b38-a71b-8a3391cd5861"]
+}, Open  ]],
+Cell[927753, 18494, 877, 18, 92, "Input",ExpressionUUID->"d29e3cd7-9abd-4cd6-a45f-d707901185f4"],
+Cell[928633, 18514, 858, 27, 92, "Input",ExpressionUUID->"22fafb38-c628-4209-a527-21e2a6c934dc"],
+Cell[CellGroupData[{
+Cell[929516, 18545, 452, 13, 28, "Input",ExpressionUUID->"c5cabd8c-77cb-4bb9-8426-a2c08ae3f21a"],
+Cell[929971, 18560, 10637, 229, 88, "Output",ExpressionUUID->"6ec89411-4d8f-4d10-b4a8-be14b5185577"]
+}, Open  ]],
+Cell[940623, 18792, 687, 17, 71, "Input",ExpressionUUID->"b13cf40e-672e-40e2-9847-e3982c7e475c"],
+Cell[CellGroupData[{
+Cell[941335, 18813, 845, 22, 50, "Input",ExpressionUUID->"f8fb13d9-5a38-40bb-8b95-bb1b8ab57355"],
+Cell[942183, 18837, 2246, 36, 374, "Output",ExpressionUUID->"b12c004f-6f81-4694-be05-faf9f8887f74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[944466, 18878, 320, 8, 28, "Input",ExpressionUUID->"ad574260-c155-497d-b26b-91b8b0684ccc"],
+Cell[944789, 18888, 23537, 462, 457, "Output",ExpressionUUID->"9dacd4b4-5a4d-4a67-aa62-7b9175563e6c"]
+}, Open  ]],
+Cell[968341, 19353, 1019, 29, 71, "Input",ExpressionUUID->"32e6d59b-ca5f-40e9-b8be-e0187b3586eb"],
+Cell[969363, 19384, 169, 3, 28, "Input",ExpressionUUID->"36b9b4dc-b325-4516-ade4-48e7d86e7ea6"]
 }, Open  ]]
 }, Open  ]]
 }
