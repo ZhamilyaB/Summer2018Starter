@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12548,        319]
-NotebookOptionsPosition[      9932,        268]
-NotebookOutlinePosition[     10310,        285]
-CellTagsIndexPosition[     10267,        282]
+NotebookDataLength[     22443,        523]
+NotebookOptionsPosition[     19540,        469]
+NotebookOutlinePosition[     19920,        486]
+CellTagsIndexPosition[     19877,        483]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -182,92 +182,293 @@ Cell[BoxData[
  CellChangeTimes->{{3.739656467164248*^9, 3.7396564789469137`*^9}},
  CellLabel->"In[47]:=",ExpressionUUID->"c1a3f6a5-9a0c-4d26-a893-68542ae2ea73"],
 
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"normalLines", "=", 
+   RowBox[{"Complement", "[", 
+    RowBox[{"listOfLines", ",", "questions"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.739656918669434*^9, 3.739656939201968*^9}, {
+  3.739657014626178*^9, 3.739657028374856*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"d450f835-f99f-4bcc-86b2-4c4a05399839"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"lines", "//", "Length"}]], "Input",
- CellChangeTimes->{{3.739655493285378*^9, 3.739655502317607*^9}},
- CellLabel->"In[28]:=",ExpressionUUID->"327170d1-de4e-4a98-b0fd-79619a417aec"],
+ RowBox[{"normalLines", "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.73965703447653*^9, 3.739657037786948*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"0b6f5e51-020f-4939-a9f7-c144372c1f55"],
 
-Cell[BoxData["293368"], "Output",
- CellChangeTimes->{3.739655502783101*^9},
- CellLabel->"Out[28]=",ExpressionUUID->"68056f7c-923e-4832-bdc9-73a60748b3e7"]
+Cell[BoxData["84384"], "Output",
+ CellChangeTimes->{3.739657038306025*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"8133760d-938d-4ad2-b3c2-4fff1cbbad59"]
 }, Open  ]],
 
-Cell[BoxData["\"\<L870\\tu0\\tm0\\tBIANCA\\tI'm kidding.  You know how \
-sometimes you just become this \\\"persona\\\"?  And you don't know how to \
-quit?\>\""], "Input",ExpressionUUID->"45860c00-5b33-4ba7-b4fc-809b0a9aa179"],
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"questions", "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.739657042182274*^9, 3.739657046004656*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"c7c204ce-f011-42fa-8096-2d1d1cdd9665"],
+
+Cell[BoxData["17219"], "Output",
+ CellChangeTimes->{3.7396570467363577`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"99a76034-1307-4270-8fe0-13a2bf9f8e02"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"normalLines", "=", 
+  RowBox[{"StringReplace", "[", 
+   RowBox[{"questions", ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<\>\"", "\[Rule]", "\"\<\>\""}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.73965732052387*^9, 
+  3.739657360449684*^9}},ExpressionUUID->"7f0186bb-924e-4c00-bf26-\
+04c7a64e2e8a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"questionsWithoutQuestion", "=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{"questions", ",", 
+     RowBox[{"\"\<?\>\"", "\[Rule]", "\"\<\>\""}]}], "]"}]}], ";"}]], "Input",\
+
+ CellChangeTimes->{{3.7396570977008142`*^9, 3.739657177569621*^9}, {
+  3.739657291047558*^9, 
+  3.7396573174351063`*^9}},ExpressionUUID->"be7160d4-5e06-4513-bce6-\
+6b7662c2e8ad"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"lines", "[", 
-  RowBox[{"[", "1", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.739655966092269*^9, 3.739655970225325*^9}},
- CellLabel->"In[32]:=",ExpressionUUID->"59baa3dc-4592-4b0e-8724-543094240c39"],
+ RowBox[{"questionsWithoutQuestion", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ";;", "10"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.739657144738784*^9, 3.739657150634592*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"82971ba2-aff1-4c46-a7d4-a06bf4f0e651"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"\<\"L1045\"\>", ",", "\<\"u0\"\>", ",", "\<\"m0\"\>", 
-   ",", "\<\"BIANCA\"\>", ",", "\<\"They do not!\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.739655999236491*^9},
- CellLabel->"Out[32]=",ExpressionUUID->"1b7fec68-11c5-489b-87d8-b286884c9f69"]
+  RowBox[{"\<\"She okay\"\>", 
+   ",", "\<\"I'm kidding.  You know how sometimes you just become this \\\"\\\
+\"persona\\\"\\\"  And you don't know how to quit\\\"\"\>", 
+   ",", "\<\"Like my fear of wearing pastels\"\>", 
+   ",", "\<\"What good stuff\"\>", ",", "\<\"What crap\"\>", 
+   ",", "\<\"do you listen to this crap\"\>", 
+   ",", "\<\"You always been this selfish\"\>", 
+   ",", "\<\"You never wanted to go out with 'me did you\"\>", 
+   ",", "\<\"I was\"\>", ",", "\<\"Have fun tonight\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.739657151089114*^9, 3.739657179629043*^9}, 
+   3.739657293287166*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"0fb81b9f-c951-49d0-a484-038cd5901f65"]
 }, Open  ]],
+
+Cell[BoxData["DeleteStopwords"], "Input",
+ CellChangeTimes->{{3.73965722765304*^9, 
+  3.7396572348913937`*^9}},ExpressionUUID->"f7bbba78-3eeb-4ade-8522-\
+222f4972f8a2"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"StringCases", "[", 
-  RowBox[{"\"\<The \\\"real you\\\".\>\"", ",", 
-   RowBox[{
-    RowBox[{"\"\<\\\"\>\"", "~~", "x__", "~~", " ", "\"\<\\\"\>\""}], 
-    "\[Rule]", "x"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.739655607819138*^9, 3.73965568290412*^9}},
- CellLabel->"In[29]:=",ExpressionUUID->"1500127e-a8e5-4ffa-a9c4-260f4f51d6aa"],
+ RowBox[{"Column", "@", 
+  RowBox[{"normalLines", "[", 
+   RowBox[{"[", 
+    RowBox[{"70", ";;", "200"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739657377433964*^9, 3.7396573895763597`*^9}, {
+  3.739657495427556*^9, 3.739657501895233*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"d657de98-8e36-44e4-b9a4-f8b146cd1400"],
 
 Cell[BoxData[
- RowBox[{"{", "\<\"real you\"\>", "}"}]], "Output",
- CellChangeTimes->{3.7396556836149197`*^9},
- CellLabel->"Out[29]=",ExpressionUUID->"f3f81ad0-37d6-4130-b3dd-4b0469af7515"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Flatten", "@", 
-  RowBox[{"StringCases", "[", 
-   RowBox[{
-    RowBox[{"lines", "[", 
-     RowBox[{"[", 
-      RowBox[{
-       RowBox[{"1", ";;", "159"}], ",", 
-       RowBox[{"-", "1"}]}], "]"}], "]"}], ",", 
-    RowBox[{
-     RowBox[{"__", "~~", "\"\<\\t\>\"", "~~", "x__"}], " ", "\[Rule]", 
-     "x"}]}], "]"}]}]], "Input",
- CellLabel->"In[31]:=",ExpressionUUID->"2ab124d8-d003-4097-9815-1fdf3edfb15c"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"I'm kidding.  You know how sometimes you just become this \
-\\\"persona\\\"?  And you don't know how to quit?\"\>", 
-   ",", "\<\"The \\\"real you\\\".\"\>", 
-   ",", "\<\"Then Guillermo says \\\"If you go any lighter you're gonna look \
-like an extra on 90210.\\\"\"\>", 
-   ",", "\<\"I looked for you back at the party but you always seemed to be \
-\\\"occupied\\\".\"\>", 
-   ",", "\<\"So yeah I've got the Sears catalog thing going -- and the tube \
-sock gig \\\" that's gonna be huge.  And then I'm up for an ad for Queen \
-Harry next week.\"\>", 
-   ",", "\<\"After that I swore I'd never do anything just because \
-\\\"everyone else\\\" was doing it.  And I haven't since. Except for Bogey's \
-party and my stunning gastro-intestinal display --\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.73965594678503*^9},
- CellLabel->"Out[31]=",ExpressionUUID->"a3e74622-6682-463b-a2e6-5d138baf25b2"]
+ TagBox[GridBox[{
+    {"\<\"About the ballet.\"\>"},
+    {"\<\"About the girl.\"\>"},
+    {"\<\"About - thirty-four seconds.\"\>"},
+    {"\<\"About this much.\"\>"},
+    {"\<\"About three weeks ago.\"\>"},
+    {"\<\"About time!\"\>"},
+    {"\<\"About to hang himself I should think.\"\>"},
+    {"\<\"About to pour his sulfa.  Sees the wound.  Stops.  Knows it's \
+fatal.\"\>"},
+    {"\<\"About twenty-four thousand.\"\>"},
+    {"\<\"About twenty minutes.\"\>"},
+    {"\<\"About two hours from now.\"\>"},
+    {"\<\"About two years ago.\"\>"},
+    {"\<\"About your next assignment Mrs. Peel ...\"\>"},
+    {"\<\"...above Murmansk and Finland.\"\>"},
+    {"\<\"A brain. Extremities.\"\>"},
+    {"\<\"ABRAMS\"\>"},
+    {"\<\"A brothel.\"\>"},
+    {"\<\"Absolutely!\"\>"},
+    {"\<\"Absolutely.\"\>"},
+    {"\<\"Absolutely...\"\>"},
+    {"\<\"Absolutely. Be good for you to talk to him.\"\>"},
+    {"\<\"Absolutely I'm 100% with you.\"\>"},
+    {"\<\"Absolutely. I'm with you on that one.\"\>"},
+    {"\<\"Absolutely.  Never trust a vegetarian.\"\>"},
+    {"\<\"Absolutely no idea.  Remembering one name's bad enough...\"\>"},
+    {"\<\"Absolutely not.\"\>"},
+    {"\<\"Absolutely not. But then I'm a Gemini and Geminis don't believe in \
+astrology.\"\>"},
+    {"\<\"Absolutely.  Of course I'll abide by whatever decision you make, \
+but I'd appreciate if you'll hear me out...\"\>"},
+    {"\<\"Absolutely sure.\"\>"},
+    {"\<\"Absolutely sure There's the triple suns on her gloves!\"\>"},
+    {"\<\"A capacity for gross fund recovery. Yeah we got that part.\"\>"},
+    {"\<\"A casa de Porfirio Zayas. He used to be a doctor on the other side. \
+Gunshot wounds fixing babies--if you can pay he can handle it.\"\>"},
+    {"\<\"A case like this could hang around for months and I'm up for this \
+player relations job with the \\\"\\\"Clips.\\\"\\\"  This gets out false or \
+not no one'll touch me.\\\"\"\>"},
+    {"\<\"Accelerators down.\"\>"},
+    {"\<\"-- Accident and Compensation Association.\"\>"},
+    {"\<\"\\\"\\\"Accident and Compensation\\\"\\\" -- no one can accuse the \
+firm of not supplying exactly what it promises.\\\"\"\>"},
+    {"\<\"According to Caltech this Webber guy was a bonafide genius and a \
+borderline nutcase.\"\>"},
+    {"\<\"According to Dr. Darling you're a psychopathic personality with \
+schizophrenic delusions suffering from recurring amnesia based on traumatic \
+repression leading to outbursts of anti-social and violent behavior.  \
+Q.E.D.\"\>"},
+    {"\<\"According to his date book and this was verified by his secretary \
+he had dinner with...Marcus Halberstam.\"\>"},
+    {"\<\"According to Mother Sir August owns half of the Highlands. A \
+millionaire. Former head of Special Projects at the Ministry. Now ...\"\>"},
+    {"\<\"According to the backer's list you raised $60000.  But the show you \
+produced only cost fifty-eight thousand.  There's two thousand dollars \
+unaccounted for.\"\>"},
+    {"\<\"According to this the daughter goes up to stay quiet often.  You'll \
+need to get yourself invited for the right weekend.\"\>"},
+    {"\<\"A cenotaph -- a monument to someone whose remains ended up \
+elsewhere. But look --\"\>"},
+    {"\<\"A census taker once tried to test me. I ate his liver with some \
+fava beans and a nice chianti... Fly back to school little Starling.\"\>"},
+    {"\<\"Aces Suits.\"\>"},
+    {"\<\"Ace the jacket.\"\>"},
+    {"\<\"A challenge on my life.\"\>"},
+    {"\<\"A champagne cocktail please.\"\>"},
+    {"\<\"A cheap hotel.\"\>"},
+    {"\<\"A cheap trick.\"\>"},
+    {"\<\"ACKLAND\"\>"},
+    {"\<\"A cocktail you asked for a cocktail.\"\>"},
+    {"\<\"A coke.\"\>"},
+    {"\<\"A common thief.\"\>"},
+    {"\<\"A companion. A female. Like me so she won't hate me.\"\>"},
+    {"\<\"A company Wehrmacht no artillery we took twenty-three prisoners \
+turned them over to intelligence.\"\>"},
+    {"\<\"A computer.\"\>"},
+    {"\<\"...aconite get it dat cheap.\"\>"},
+    {"\<\"'A Connecticut Yankee in King Arthur's Court' by Mark Twain.\"\>"},
+    {"\<\"A cop...\"\>"},
+    {"\<\"ACOSTA\"\>"},
+    {"\<\"A couple eggs and juice would be nice Mary.  Over.\"\>"},
+    {"\<\"A couple I know are getting married.\"\>"},
+    {"\<\"A couple of hours.\"\>"},
+    {"\<\"A couple of peons for the mob and...\"\>"},
+    {"\<\"A couple of weeks.\"\>"},
+    {"\<\"A couple of weeks.  It started in Portsmouth when they brought us \
+down for loading.\"\>"},
+    {"\<\"A couple of years and the debts will be paid off. And if she ever \
+re- marries the alimony stops... and then...\"\>"},
+    {"\<\"A cover ... for us.  I'm sorry...\"\>"},
+    {"\<\"A coyote.\"\>"},
+    {"\<\"Across the board sir.\"\>"},
+    {"\<\"Acting the way we do.\"\>"},
+    {"\<\"ACTOR\"\>"},
+    {"\<\"ACTRESS\"\>"},
+    {"\<\"...acts. I'll relay your message.\"\>"},
+    {"\<\"Actually I am though.\"\>"},
+    {"\<\"Actually I don't...\"\>"},
+    {"\<\"Actually. If you knew the exact route you could plant explosives \
+under a manhole cover and blow it up as it went over.\"\>"},
+    {"\<\"Actually I had a crash course from my mother the night before my \
+prom.\"\>"},
+    {"\<\"Actually I'm a movie star out for a walk.\"\>"},
+    {"\<\"Actually I think that I...\"\>"},
+    {"\<\"Actually it's probably more like $143.80 and one-half cent.  \
+There's always fractions over in a big corporation but they round it down to \
+the lowest whole number.\"\>"},
+    {"\<\"Actually. I've been in twice.\"\>"},
+    {"\<\"Actually I've been once today already.  I'll stay here with \
+him.\"\>"},
+    {"\<\"Actually I volunteered.\"\>"},
+    {"\<\"Actually Kayleigh the reason I came back to town was to talk to \
+you.\"\>"},
+    {"\<\"Actually my name's Austin Powers.\"\>"},
+    {"\<\"Actuallyno. I was wondering why Cliff likes to wear another man's \
+underpants.\"\>"},
+    {"\<\"Actually of course I won't operate, I don't do major surgery. Dr. \
+Hardy will operate and of course he'll be guided by your wishes in this \
+respect.\"\>"},
+    {"\<\"Actually only one cell survived..\"\>"},
+    {"\<\"Actually our best weapon against these satanic cocksuckers is this \
+man.  He's a preacher.\"\>"},
+    {"\<\"Actually she's silver-haired.\"\>"},
+    {"\<\"Actually sir you could be that someone.\"\>"},
+    {"\<\"Actually some of the richest people I know have the worst manners.  \
+Of course Mr. Harris being of old money knows his way around a table.  All \
+right now pay attention please.  Salad fork.\"\>"},
+    {"\<\"Actually someone did. I just didn't think I could eat \
+anything.\"\>"},
+    {"\<\"Actually that's none of your business Christie hut I can assure you \
+it certainly wasn't cheap.\"\>"},
+    {"\<\"Actually that's not gonna be necessary.\"\>"},
+    {"\<\"Actually...  That's what I been askin' myself.\"\>"},
+    {"\<\"Actually that's why I stopped by. He's realy sorry he wanted to \
+make it but then he...ran into a problem.\"\>"},
+    {"\<\"Actually the boy's quite astute. I am trying to kill him. My Evil \
+Associates have cautioned against it so here he is unfortunately \
+alive.\"\>"},
+    {"\<\"Actually the engines are SMEs. Hydrogenbase carbon propellant. \
+Couple generations past your last ride.  I'm not as dumb as you look.\"\>"},
+    {"\<\"Actually there was more this time. This time we found a picture \
+too.\"\>"},
+    {"\<\"Actually these tests weren't available twenty years ago.\"\>"},
+    {"\<\"Actually uh people seem to think the scar \\\"\\\"humanizes\\\"\\\" \
+you.\\\"\"\>"},
+    {"\<\"Actually we've only just met. But we're quiet good friends.\"\>"},
+    {"\<\"Actually yes.\"\>"},
+    {"\<\"\\\"\\\"A.D.\\\"\\\"\\\"\"\>"},
+    {"\<\"Adam!!\"\>"},
+    {"\<\"Adam...don't forget...don't forget ...\"\>"},
+    {"\<\"Adam I'd like to introduce you to my associate -- Mr. Brown.\"\>"},
+    {"\<\"Adam  I think for you we should go for \\\"\\\"sweet.\\\"\\\"\\\"\"\
+\>"},
+    {"\<\"Adam....you should go with Dr. Aron. It's the best thing.  The best \
+thing for you. I promise.\"\>"},
+    {"\<\"A daughter.\"\>"},
+    {"\<\"Adcox go with Pengelly and check the other side.\"\>"},
+    {"\<\"Added to which indignity I got three months left to retirement and \
+they saddle me with some blue-flamer fresh out of Quantico for a partner. \
+Some quarterback punk Johnny Unitas or something.\"\>"},
+    {"\<\"ADDISON\"\>"},
+    {"\<\"A deal's a deal.\"\>"},
+    {"\<\"A decision had to be made.\"\>"},
+    {"\<\"ADELE\"\>"},
+    {"\<\"A.D. is a C.P.A.\"\>"},
+    {"\<\"A divorce lawyer. A custody lawyer. You know 'cause of Jill.\"\>"},
+    {"\<\"Administration Ensign Blondell.\"\>"},
+    {"\<\"ADMIRAL ANDERSON\"\>"},
+    {"\<\"ADMIRAL DONALD\"\>"},
+    {"\<\"ADMIRAL HAYES\"\>"},
+    {"\<\"Admiral we're in position. All fighters accounted for.\"\>"},
+    {"\<\"A dog pissed on me!!  I'm gonna sue you for this!  You violated my \
+civil rights!\"\>"},
+    {"\<\"A doper werewolf.\"\>"},
+    {"\<\"Adorable!\"\>"},
+    {"\<\"Adrenochrome...\"\>"},
+    {"\<\"A dressing bag.\"\>"}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{
+  3.7396573900961103`*^9, {3.739657498670409*^9, 3.7396575022302713`*^9}},
+ CellLabel->"Out[59]=",ExpressionUUID->"a3e2daef-f40f-4a4a-9173-169eb84e8068"]
 }, Open  ]]
 },
 WindowSize->{808, 655},
-WindowMargins->{{196, Automatic}, {Automatic, 4}},
+WindowMargins->{{Automatic, 162}, {-47, Automatic}},
 WindowStatusArea->None,
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
@@ -304,22 +505,25 @@ Cell[5633, 153, 220, 3, 34, "Output",ExpressionUUID->"10d2f15e-0ca2-438f-9e2e-23
 Cell[5868, 159, 167, 3, 30, "Input",ExpressionUUID->"a58e7404-d832-4f7a-8cb2-3bfce10f9fcd"],
 Cell[6038, 164, 446, 11, 30, "Input",ExpressionUUID->"66bdd845-caf8-47b4-a043-204ab77892c8"],
 Cell[6487, 177, 259, 5, 30, "Input",ExpressionUUID->"c1a3f6a5-9a0c-4d26-a893-68542ae2ea73"],
+Cell[6749, 184, 352, 7, 30, "Input",ExpressionUUID->"d450f835-f99f-4bcc-86b2-4c4a05399839"],
 Cell[CellGroupData[{
-Cell[6771, 186, 204, 3, 30, "Input",ExpressionUUID->"327170d1-de4e-4a98-b0fd-79619a417aec"],
-Cell[6978, 191, 154, 2, 34, "Output",ExpressionUUID->"68056f7c-923e-4832-bdc9-73a60748b3e7"]
-}, Open  ]],
-Cell[7147, 196, 226, 2, 52, "Input",ExpressionUUID->"45860c00-5b33-4ba7-b4fc-809b0a9aa179"],
-Cell[CellGroupData[{
-Cell[7398, 202, 226, 4, 30, "Input",ExpressionUUID->"59baa3dc-4592-4b0e-8724-543094240c39"],
-Cell[7627, 208, 290, 5, 34, "Output",ExpressionUUID->"1b7fec68-11c5-489b-87d8-b286884c9f69"]
+Cell[7126, 195, 209, 3, 30, "Input",ExpressionUUID->"0b6f5e51-020f-4939-a9f7-c144372c1f55"],
+Cell[7338, 200, 153, 2, 34, "Output",ExpressionUUID->"8133760d-938d-4ad2-b3c2-4fff1cbbad59"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7954, 218, 360, 7, 30, "Input",ExpressionUUID->"1500127e-a8e5-4ffa-a9c4-260f4f51d6aa"],
-Cell[8317, 227, 188, 3, 34, "Output",ExpressionUUID->"f3f81ad0-37d6-4130-b3dd-4b0469af7515"]
+Cell[7528, 207, 208, 3, 30, "Input",ExpressionUUID->"c7c204ce-f011-42fa-8096-2d1d1cdd9665"],
+Cell[7739, 212, 155, 2, 34, "Output",ExpressionUUID->"99a76034-1307-4270-8fe0-13a2bf9f8e02"]
 }, Open  ]],
+Cell[7909, 217, 327, 8, 30, "Input",ExpressionUUID->"7f0186bb-924e-4c00-bf26-04c7a64e2e8a"],
+Cell[8239, 227, 392, 10, 30, "Input",ExpressionUUID->"be7160d4-5e06-4513-bce6-6b7662c2e8ad"],
 Cell[CellGroupData[{
-Cell[8542, 235, 430, 12, 30, "Input",ExpressionUUID->"2ab124d8-d003-4097-9815-1fdf3edfb15c"],
-Cell[8975, 249, 941, 16, 203, "Output",ExpressionUUID->"a3e74622-6682-463b-a2e6-5d138baf25b2"]
+Cell[8656, 241, 271, 5, 30, "Input",ExpressionUUID->"82971ba2-aff1-4c46-a7d4-a06bf4f0e651"],
+Cell[8930, 248, 722, 13, 119, "Output",ExpressionUUID->"0fb81b9f-c951-49d0-a484-038cd5901f65"]
+}, Open  ]],
+Cell[9667, 264, 168, 3, 30, "Input",ExpressionUUID->"f7bbba78-3eeb-4ade-8522-222f4972f8a2"],
+Cell[CellGroupData[{
+Cell[9860, 271, 341, 7, 30, "Input",ExpressionUUID->"d657de98-8e36-44e4-b9a4-f8b146cd1400"],
+Cell[10204, 280, 9320, 186, 2999, "Output",ExpressionUUID->"a3e2daef-f40f-4a4a-9173-169eb84e8068"]
 }, Open  ]]
 }
 ]
