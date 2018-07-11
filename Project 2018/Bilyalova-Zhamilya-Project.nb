@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     73450,       1503]
+NotebookDataLength[     73451,       1503]
 NotebookOptionsPosition[     63790,       1313]
-NotebookOutlinePosition[     68899,       1432]
-CellTagsIndexPosition[     68689,       1423]
+NotebookOutlinePosition[     68900,       1432]
+CellTagsIndexPosition[     68690,       1423]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1327,7 +1327,7 @@ NotebookEventActions:>{
        "LastModified", Deployed -> True, Background -> 
        Lighter[Gray, 0.5]]]]},
 WindowSize->{812, 752},
-WindowMargins->{{Automatic, 204}, {-28, Automatic}},
+WindowMargins->{{Automatic, -49}, {-190, Automatic}},
 WindowFrameElements->{"CloseBox"},
 DockedCells->Cell[
  "Wolfram Summer School 2018", FontFamily -> "Source Sans Pro", FontSize -> 
@@ -1403,12 +1403,12 @@ StyleDefinitions->Notebook[{
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "LastModified"->{
-  Cell[400, 13, 222, 4, 52, "TemplateInstructions",ExpressionUUID->"120a7b4f-ec27-4fed-b524-17a779a40b3b",
-   CellTags->"LastModified"]},
  "AuthorInfo"->{
   Cell[647, 21, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
    CellTags->"AuthorInfo"]},
+ "LastModified"->{
+  Cell[400, 13, 222, 4, 52, "TemplateInstructions",ExpressionUUID->"120a7b4f-ec27-4fed-b524-17a779a40b3b",
+   CellTags->"LastModified"]},
  "PosterContent"->{
   Cell[1910, 57, 234, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"e3c11918-b62c-4e4f-bc19-a4aa32cba637",
    CellTags->"PosterContent"]},
@@ -1422,11 +1422,11 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"LastModified", 67872, 1405},
- {"AuthorInfo", 68027, 1408},
- {"PosterContent", 68185, 1411},
- {"PresentationContent", 68353, 1414},
- {"ProjectNotes", 68522, 1417}
+ {"AuthorInfo", 67871, 1405},
+ {"LastModified", 68028, 1408},
+ {"PosterContent", 68186, 1411},
+ {"PresentationContent", 68354, 1414},
+ {"ProjectNotes", 68523, 1417}
  }
 *)
 (*NotebookFileOutline
