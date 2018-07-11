@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3202101,      56364]
-NotebookOptionsPosition[   3186638,      56098]
-NotebookOutlinePosition[   3187015,      56115]
-CellTagsIndexPosition[   3186972,      56112]
+NotebookDataLength[   3265225,      57629]
+NotebookOptionsPosition[   3248852,      57347]
+NotebookOutlinePosition[   3249229,      57364]
+CellTagsIndexPosition[   3249186,      57361]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -321,76 +321,188 @@ Cell[CellGroupData[{
 Cell["Changing parts of speech to numbers", "Subsubsection",
  TextAlignment->Center,ExpressionUUID->"4f127c50-da6a-4647-b38a-d8499a04f014"],
 
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-   RowBox[{"vectorNumbers", " ", "[", " ", "line_", " ", "]"}], " ", ":=", 
-   " ", "\n", " ", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"(", " ", 
-       RowBox[{
-        RowBox[{"TextStructure", "[", 
-         RowBox[{"line", ",", " ", "\"\<PartsOfSpeech\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"1", ",", "1", ",", "1", ",", "All", ",", "2", ",", "1"}], 
-         "]"}], "]"}], " ", ")"}], " ", "\n", "     ", "/.", " ", 
-      RowBox[{
-       RowBox[{"Missing", "[", "]"}], " ", "\[Rule]", " ", 
-       RowBox[{"{", 
-        RowBox[{"\"\<\>\"", ",", "\"\<Missing\>\""}], "}"}]}]}], ")"}], "[", 
-    RowBox[{"[", 
-     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], " ", "\n"}], "\n", 
- RowBox[{
-  RowBox[{
-   RowBox[{"positionWh", " ", "[", "line_", " ", "]"}], " ", ":=", " ", 
-   RowBox[{"StringContainsQ", "[", " ", 
-    RowBox[{
-     RowBox[{"StringSplit", "[", "line", "]"}], " ", ",", " ", "whQuestions", 
-     ",", " ", 
-     RowBox[{"IgnoreCase", " ", "\[Rule]", " ", "True"}]}], "]"}]}], 
-  "\n"}], "\n", 
- RowBox[{
-  RowBox[{
-   RowBox[{"numberPositionWh", " ", "[", " ", "line_", " ", "]"}], " ", ":=", 
-   " ", 
-   RowBox[{"With", "[", " ", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"whPosition", " ", "=", 
-       RowBox[{"Position", "[", 
-        RowBox[{
-         RowBox[{"positionWh", "[", " ", "line", " ", "]"}], ",", "True"}], 
-        "]"}]}], "}"}], " ", ",", "\[IndentingNewLine]", 
-     "                                ", 
-     RowBox[{"If", "[", " ", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"Length", "[", "whPosition", "]"}], " ", ">", "0"}], " ", ",",
-        " ", 
-       RowBox[{"whPosition", "[", 
-        RowBox[{"[", 
-         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", "0"}], "]"}]}], 
-    "\[IndentingNewLine]", "                           ", "]"}]}], " ", 
-  "\n"}], "\n", 
- RowBox[{
-  RowBox[{"whQuestionsChecker", " ", "[", " ", "lines_", " ", "]"}], " ", ":=", \
-" ", 
-  RowBox[{"StringContainsQ", "[", " ", 
-   RowBox[{"lines", " ", ",", " ", "whQuestions", ",", " ", 
-    RowBox[{"IgnoreCase", " ", "\[Rule]", " ", "True"}]}], "]"}]}]}], "Code",
- CellChangeTimes->{{3.740158920961334*^9, 3.740159136230294*^9}, {
-  3.740159202152775*^9, 3.74015920902262*^9}, {3.740173308836712*^9, 
-  3.740173428810568*^9}, {3.740173619647334*^9, 3.7401736949316196`*^9}, {
-  3.7401737680078583`*^9, 3.740173827042839*^9}, {3.7401741231712847`*^9, 
-  3.7401741336397333`*^9}, {3.740174215857518*^9, 3.740174303256592*^9}},
- CellLabel->"In[21]:=",ExpressionUUID->"3858494d-99ad-48e2-8ce2-1ec79120c73b"],
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"vectorNumbers", "[", "\"\<How are you\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.740268217321887*^9, 3.740268231254814*^9}},
+ CellLabel->
+  "In[239]:=",ExpressionUUID->"edadd29a-c7bb-4303-a9b9-5d31aaa23854"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "15", ",", "11"}], "}"}]], "Output",
+ CellChangeTimes->{3.74026823419731*^9},
+ CellLabel->
+  "Out[239]=",ExpressionUUID->"edf9b14a-16cd-4b19-9647-655003501366"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"numberPositionWh", "[", "\"\<What   are you where\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7402684367641153`*^9, 3.740268443235301*^9}, {
+  3.740268480286221*^9, 3.740268531869751*^9}},
+ CellLabel->
+  "In[244]:=",ExpressionUUID->"672f6a07-ee7e-425a-b5ce-1bea698cd326"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.7402684437004766`*^9, {3.740268481463125*^9, 3.740268532320066*^9}},
+ CellLabel->
+  "Out[244]=",ExpressionUUID->"5d6e0a45-2c2f-475d-8f36-52460e506ea1"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"createClasses3D", "[", " ", "keyValuelines_List", " ", "]"}], " ", 
-  ":=", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "creates", " ", "a", " ", "numerical", " ", "sequence", " ", 
+    "representing", " ", "Parts", " ", "Of", " ", "Speech"}], " ", "*)"}], 
+  "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"vectorNumbers", " ", "[", " ", "line_", " ", "]"}], " ", ":=", 
+    " ", "\n", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", " ", 
+         RowBox[{
+          RowBox[{"TextStructure", "[", 
+           RowBox[{"line", ",", " ", "\"\<PartsOfSpeech\>\""}], "]"}], "[", 
+          RowBox[{"[", 
+           RowBox[{"1", ",", "1", ",", "1", ",", "All", ",", "2", ",", "1"}], 
+           "]"}], "]"}], " ", ")"}], " ", "\n", "     ", "/.", " ", 
+        RowBox[{
+         RowBox[{"Missing", "[", "]"}], " ", "\[Rule]", " ", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\>\"", ",", "\"\<Missing\>\""}], "}"}]}]}], ")"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "2"}], "]"}], "]"}], " ", "/.", " ", "rules"}]}], 
+   "\n", "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"gets", " ", "position", " ", "of", " ", "WH", " ", "Question"}], 
+    " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"positionWh", " ", "[", "line_", " ", "]"}], " ", ":=", " ", 
+    RowBox[{"StringContainsQ", "[", " ", 
+     RowBox[{
+      RowBox[{"StringSplit", "[", "line", "]"}], " ", ",", " ", "whQuestions",
+       ",", " ", 
+      RowBox[{"IgnoreCase", " ", "\[Rule]", " ", "True"}]}], "]"}]}], "\n", 
+   "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "gives", " ", "the", " ", "position", " ", "of", " ", "the", " ", "first",
+      " ", "WH", " ", "Question"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"numberPositionWh", " ", "[", " ", "line_", " ", "]"}], " ", ":=",
+     " ", 
+    RowBox[{"With", "[", " ", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"whPosition", " ", "=", 
+        RowBox[{"Position", "[", 
+         RowBox[{
+          RowBox[{"positionWh", "[", " ", "line", " ", "]"}], ",", "True"}], 
+         "]"}]}], "}"}], " ", ",", "\[IndentingNewLine]", 
+      "                                    ", 
+      RowBox[{"If", "[", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "whPosition", "]"}], " ", ">", "0"}], " ", 
+        ",", " ", 
+        RowBox[{"whPosition", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", "0"}], "]"}]}], 
+     "\[IndentingNewLine]", "                               ", "]"}]}], " ", 
+   "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Gives", " ", "True", " ", "if", " ", "there", " ", "is", " ", "a", " ", 
+     "WH", " ", "Question", " ", "as", " ", "1", " ", "or", " ", "0"}], " ", 
+    "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"whQuestionsChecker", " ", "[", " ", "line_", " ", "]"}], " ", ":=",
+     " ", 
+    RowBox[{"StringContainsQ", "[", " ", 
+     RowBox[{"line", " ", ",", " ", "whQuestions", ",", " ", 
+      RowBox[{"IgnoreCase", " ", "\[Rule]", " ", "True"}]}], 
+     "]"}]}]}]}]], "Code",
+ CellChangeTimes->{{3.740158920961334*^9, 3.740159136230294*^9}, {
+   3.740159202152775*^9, 3.74015920902262*^9}, {3.740173308836712*^9, 
+   3.740173428810568*^9}, {3.740173619647334*^9, 3.7401736949316196`*^9}, {
+   3.7401737680078583`*^9, 3.740173827042839*^9}, {3.7401741231712847`*^9, 
+   3.7401741336397333`*^9}, {3.740174215857518*^9, 3.740174303256592*^9}, {
+   3.740268189611951*^9, 3.7402682062579536`*^9}, {3.740268546696813*^9, 
+   3.740268666912796*^9}, 3.7402687442407722`*^9, {3.7402687928721523`*^9, 
+   3.7402688168049994`*^9}, {3.740268929212185*^9, 3.74026901743974*^9}, {
+   3.740269058424848*^9, 3.7402690603989677`*^9}, {3.740269409368987*^9, 
+   3.740269409959236*^9}},
+ CellLabel->
+  "In[256]:=",ExpressionUUID->"3858494d-99ad-48e2-8ce2-1ec79120c73b"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"createClasses1D", "[", " ", "keyValuelines_List", " ", "]"}], " ",
+    ":=", " ", 
+   RowBox[{"Map", "[", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"Keys", "[", "#", "]"}], ",", "\[IndentingNewLine]", 
+         "                                                ", 
+         RowBox[{"vectorNumbers", "[", 
+          RowBox[{"Keys", "[", "#", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         "                                                ", 
+         RowBox[{"numberPositionWh", " ", "[", " ", 
+          RowBox[{"Keys", "[", "#", "]"}], " ", "]"}]}], "\n", 
+        "                                               ", "}"}], " ", "\n", 
+       "                                                ", "\[Rule]", " ", 
+       RowBox[{"Values", "[", "#", "]"}]}], " ", "\n", 
+      "                                             ", "&"}], ",", 
+     "\[IndentingNewLine]", "                                             ", 
+     "keyValuelines"}], "\n", "                                            ", 
+    "]"}]}], "\n", "                                            ", "\n", 
+  "                                            "}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"createClasses3D", "[", " ", "keyValuelines_List", " ", "]"}], " ",
+    ":=", " ", 
+   RowBox[{"Map", "[", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"Keys", "[", "#", "]"}], ",", "\[IndentingNewLine]", 
+         "                                                ", 
+         RowBox[{"vectorNumbers", "[", 
+          RowBox[{"Keys", "[", "#", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         "                                                ", 
+         RowBox[{"numberPositionWh", " ", "[", " ", 
+          RowBox[{"Keys", "[", "#", "]"}], " ", "]"}]}], "\n", 
+        "                                               ", "}"}], " ", "\n", 
+       "                                                ", "\[Rule]", " ", 
+       RowBox[{"Values", "[", "#", "]"}]}], " ", "\n", 
+      "                                             ", "&"}], ",", 
+     "\[IndentingNewLine]", "                                             ", 
+     "keyValuelines"}], "\n", "                                            ", 
+    "]"}]}], "\n", " ", "\n", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"3", "D", " ", "with", " ", "Boolean", " ", "field"}], " ", "*)"}],
+   "                                                                          \
+            "}], "\n", 
+ RowBox[{
+  RowBox[{
+  "createClasses3DBoolean", "[", " ", "keyValuelines_List", " ", "]"}], " ", ":=",
+   " ", 
   RowBox[{"Map", "[", " ", 
    RowBox[{
     RowBox[{
@@ -398,31 +510,1168 @@ Cell[BoxData[
       RowBox[{"{", " ", 
        RowBox[{
         RowBox[{"Keys", "[", "#", "]"}], ",", "\[IndentingNewLine]", 
-        "\[IndentingNewLine]", "                                        ", 
-        RowBox[{
-         RowBox[{"vectorNumbers", "[", 
-          RowBox[{"Keys", "[", "#", "]"}], "]"}], "/.", " ", "rules"}], ",", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
-        "                                    ", 
-        RowBox[{
-         RowBox[{"numberPositionWh", " ", "[", " ", 
-          RowBox[{"Keys", "[", "#", "]"}], " ", "]"}], "/.", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"True", "\[Rule]", "1"}], ",", 
-           RowBox[{"False", " ", "\[Rule]", "0"}]}], "}"}]}]}], "}"}], " ", 
-      "\[Rule]", 
-      RowBox[{"Values", "[", "#", "]"}]}], "&"}], ",", "\[IndentingNewLine]", 
-    "                                    ", "keyValuelines"}], 
-   "]"}]}]], "Code",
+        "                                                ", 
+        RowBox[{"vectorNumbers", "[", 
+         RowBox[{"Keys", "[", "#", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+        "                                                ", 
+        RowBox[{"whQuestionsChecker", " ", "[", " ", 
+         RowBox[{"Keys", "[", "#", "]"}], " ", "]"}]}], "\n", 
+       "                                               ", "}"}], " ", "\n", 
+      "                                                ", "\[Rule]", " ", 
+      RowBox[{"Values", "[", "#", "]"}]}], " ", "\n", 
+     "                                             ", "&"}], ",", 
+    "\[IndentingNewLine]", "                                             ", 
+    "keyValuelines"}], "\n", "                                            ", 
+   "]"}]}]}], "Code",
  CellChangeTimes->{{3.740172651222309*^9, 3.740172666288371*^9}, {
-  3.740172717613253*^9, 3.740172731216872*^9}, {3.740172775973336*^9, 
-  3.7401727941382513`*^9}, {3.7401728271714697`*^9, 3.740172876714428*^9}, {
-  3.740173030160413*^9, 3.7401730452574053`*^9}, {3.740173152404183*^9, 
-  3.740173221563806*^9}, {3.7401741658091793`*^9, 3.740174174312379*^9}, {
-  3.7401743108117857`*^9, 3.740174312339368*^9}, {3.7401744226087914`*^9, 
-  3.740174584474345*^9}},
- CellLabel->"In[25]:=",ExpressionUUID->"ab891b51-e553-4c17-aef9-b548085c2aec"],
+   3.740172717613253*^9, 3.740172731216872*^9}, {3.740172775973336*^9, 
+   3.7401727941382513`*^9}, {3.7401728271714697`*^9, 3.740172876714428*^9}, {
+   3.740173030160413*^9, 3.7401730452574053`*^9}, {3.740173152404183*^9, 
+   3.740173221563806*^9}, {3.7401741658091793`*^9, 3.740174174312379*^9}, {
+   3.7401743108117857`*^9, 3.740174312339368*^9}, {3.7401744226087914`*^9, 
+   3.740174584474345*^9}, 3.740268186575499*^9, {3.74026824169664*^9, 
+   3.7402682790864773`*^9}, {3.740268333406365*^9, 3.74026840646777*^9}, 
+   3.740268507901865*^9, {3.740269084040925*^9, 3.740269091856135*^9}, {
+   3.7402691747875443`*^9, 3.740269182929345*^9}, {3.740269217362052*^9, 
+   3.7402693040355787`*^9}},
+ CellLabel->
+  "In[260]:=",ExpressionUUID->"ab891b51-e553-4c17-aef9-b548085c2aec"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"createClasses3DBoolean", "[", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\"\<How are you\>\"", "\[Rule]", "\"\<Question\>\""}], ",", 
+    RowBox[{"\"\< are you\>\"", "\[Rule]", "\"\<Non Question\>\""}]}], " ", 
+   "}"}], " ", "]"}]], "Input",
+ CellChangeTimes->{{3.740269333531337*^9, 3.7402693639858303`*^9}, {
+  3.7402694436865664`*^9, 3.740269444837955*^9}},
+ CellLabel->
+  "In[265]:=",ExpressionUUID->"d3f7fe3a-6070-4242-a8ee-4d34879e3f37"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\<\"How are you\"\>", ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "15", ",", "11"}], "}"}], ",", "True"}], "}"}], 
+    "\[Rule]", "\<\"Question\"\>"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\<\" are you\"\>", ",", 
+      RowBox[{"{", 
+       RowBox[{"15", ",", "11"}], "}"}], ",", "False"}], "}"}], 
+    "\[Rule]", "\<\"Non Question\"\>"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.740269446046084*^9},
+ CellLabel->
+  "Out[265]=",ExpressionUUID->"7ba5e6d0-0f25-4039-b4ae-7418f05ec7e7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Classify", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<How are you\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "15", ",", "11"}], "}"}], ",", "True"}], "}"}], 
+     "\[Rule]", "\"\<Question\>\""}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\< are you\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"15", ",", "11"}], "}"}], ",", "False"}], "}"}], "\[Rule]", 
+     "\"\<Non Question\>\""}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.740269426416175*^9, 3.740269456715076*^9}},
+ CellLabel->
+  "In[266]:=",ExpressionUUID->"147e9b18-ca49-4e40-bc55-380e3c2cf8e9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ClassifierFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{{
+               PointSize[0.13], 
+               GrayLevel[0.45], 
+               
+               PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                1.1339776261519132`, 0.8056918676854272}, {0.5279892326667741,
+                 0.6574306661126254}, {0.022147046479890797`, 
+                1.4937877187998898`}}], 
+               GrayLevel[0.7], 
+               
+               PointBox[{{-0.9815166384819979, 
+                0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+               GrayLevel[0.55], 
+               AbsoluteThickness[1.5], 
+               LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+              Frame -> {{True, True}, {True, True}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                Thickness[Tiny], 
+                GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
+              GridLines -> {None, None}, 
+              LabelStyle -> {FontFamily -> "Arial"}, 
+              Method -> {"ScalingFunctions" -> None}, 
+              PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> True,
+               PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+              Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+             FrameTicks -> None, FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+             GrayLevel[0.94]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Text\"", ",", "\"NumericalSequence\"", ",", 
+                    "\"Boolean\""}], "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   ",", "\",\"", "\"Non Question\"", "\"Question\""}, 
+                   "RowWithSeparators"], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{{
+               PointSize[0.13], 
+               GrayLevel[0.45], 
+               
+               PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                1.1339776261519132`, 0.8056918676854272}, {0.5279892326667741,
+                 0.6574306661126254}, {0.022147046479890797`, 
+                1.4937877187998898`}}], 
+               GrayLevel[0.7], 
+               
+               PointBox[{{-0.9815166384819979, 
+                0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+               GrayLevel[0.55], 
+               AbsoluteThickness[1.5], 
+               LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+              Frame -> {{True, True}, {True, True}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                Thickness[Tiny], 
+                GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
+              GridLines -> {None, None}, 
+              LabelStyle -> {FontFamily -> "Arial"}, 
+              Method -> {"ScalingFunctions" -> None}, 
+              PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> True,
+               PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+              Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+             FrameTicks -> None, FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+             GrayLevel[0.94]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Text\"", ",", "\"NumericalSequence\"", ",", 
+                    "\"Boolean\""}], "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   ",", "\",\"", "\"Non Question\"", "\"Question\""}, 
+                   "RowWithSeparators"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"LogisticRegression\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Number of training examples: \"", 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ClassifierFunction[
+   Association[
+   "ExampleNumber" -> 2, "ClassNumber" -> 2, "Input" -> 
+    Association["Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset", 
+        Association[
+        "Input" -> Association[
+          "f1" -> Association["Type" -> "Text"], "f2" -> 
+           Association["Type" -> "NumericalSequence"], "f3" -> 
+           Association["Type" -> "Boolean"]], "Output" -> 
+         Association[
+          "f1" -> Association["Type" -> "Text", "Weight" -> 1], "f2" -> 
+           Association["Type" -> "NumericalSequence", "Weight" -> 1], "f3" -> 
+           Association["Type" -> "Boolean", "Weight" -> 1]], "Preprocessor" -> 
+         MachineLearning`MLProcessor["Sequence", 
+           Association["Processors" -> {
+              MachineLearning`MLProcessor["Transpose", 
+               Association["FeatureNumber" -> 3]], 
+              MachineLearning`MLProcessor["WrapMLDataset", 
+               Association[
+               "FeatureTypes" -> {"Text", "NumericalSequence", "Boolean"}, 
+                "FeatureKeys" -> {"f1", "f2", "f3"}, "FeatureWeights" -> 
+                Automatic, "ExampleWeights" -> Automatic, "RawExample" -> 
+                Missing["KeyAbsent", "RawExample"]]]}]], "ScalarFeature" -> 
+         False, "Invertibility" -> "Perfect", "Missing" -> "Allowed"]], 
+      "Processor" -> MachineLearning`MLProcessor["Sequence", 
+        Association[
+        "Input" -> Association[
+          "f3" -> Association["Type" -> "Boolean", "Weight" -> 1], "f1" -> 
+           Association["Type" -> "Text", "Weight" -> 1], "f2" -> 
+           Association["Type" -> "NumericalSequence", "Weight" -> 1]], 
+         "Output" -> 
+         Association[
+          "(f1f2f3)" -> 
+           Association[
+            "Weight" -> {0.25, 0.25, 0.25, 0.25, 1., 1.}, "Type" -> 
+             "NumericalVector"]], "Processors" -> {
+           MachineLearning`MLProcessor["ToVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f3" -> Association["Type" -> "Boolean", "Weight" -> 1]], 
+             "Output" -> 
+             Association[
+              "f3" -> Association["Type" -> "BooleanVector", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 8638625972092938175]], 
+           MachineLearning`MLProcessor["ConformBooleanVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f3" -> Association["Type" -> "BooleanVector", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 2181139535596031377, "Output" -> 
+             Association[
+              "f3" -> Association[
+                "Type" -> "BooleanVector", "Weight" -> 1]]]], 
+           MachineLearning`MLProcessor["BooleanVectorToNumericalVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f3" -> Association["Type" -> "BooleanVector", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 6345089180380480927, "Output" -> 
+             Association[
+              "f3" -> Association[
+                "Type" -> "NumericalVector", "Weight" -> 1]]]], 
+           MachineLearning`MLProcessor["Threads", 
+            Association[
+            "Input" -> Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1], "f2" -> 
+               Association["Type" -> "NumericalSequence", "Weight" -> 1], 
+               "f3" -> Association[
+                "Type" -> "NumericalVector", "Weight" -> 1]], "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1], "f2" -> 
+               Association["Type" -> "NumericalSequence", "Weight" -> 1], 
+               "f3" -> Association[
+                "Type" -> "NumericalVector", "Weight" -> 1]], "Processors" -> {
+               MachineLearning`MLProcessor["ImputeMissing", 
+                Association[
+                "Invertibility" -> "Perfect", "Missing" -> "Imputed", "Input" -> 
+                 Association[
+                  "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+                 "Fill" -> "", "Output" -> 
+                 Association[
+                  "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+                 "Type" -> "Text", "Version" -> {11.3, 0}, "ID" -> 
+                 631332860152842886]], 
+               MachineLearning`MLProcessor["ImputeMissing", 
+                Association[
+                "Invertibility" -> "Perfect", "Missing" -> "Imputed", "Input" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], 
+                 "Fill" -> {}, "Output" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], "Type" -> 
+                 "NumericalSequence", "Version" -> {11.3, 0}, "ID" -> 
+                 2682676190599947125]], 
+               MachineLearning`MLProcessor["ImputeMissing", 
+                Association[
+                "Invertibility" -> "Perfect", "Missing" -> "Imputed", "Input" -> 
+                 Association[
+                  "f3" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                 "Imputer" -> (DimensionReducerFunction[
+                   Association[
+                   "ExampleNumber" -> 2, "Imputer" -> 
+                    MachineLearning`MLProcessor["ImputeMissing", 
+                    Association[
+                    "Invertibility" -> "Perfect", "Missing" -> "Imputed", 
+                    "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                    "Fill" -> {0.5}, "Method" -> "Naive", "VectorLength" -> 1,
+                     "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], "Type" -> 
+                    "NumericalVector"]], "RandomImputer" -> 
+                    MachineLearning`MLProcessor["ImputeMissing", 
+                    Association[
+                    "Invertibility" -> "Perfect", "Missing" -> "Imputed", 
+                    "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                    "Mean" -> {0.5}, "StandardDeviation" -> {0.5}, "Method" -> 
+                    "NaiveSampler", "VectorLength" -> 1, "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], "Type" -> 
+                    "NumericalVector"]], "Preprocessor" -> 
+                    MachineLearning`MLProcessor["ToMLDataset", 
+                    Association[
+                    "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Length" -> 1]], "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                    "Preprocessor" -> 
+                    MachineLearning`MLProcessor["Sequence", 
+                    Association["Processors" -> {
+                    MachineLearning`MLProcessor["List"], 
+                    MachineLearning`MLProcessor["WrapMLDataset", 
+                    Association[
+                    "FeatureTypes" -> {"NumericalVector"}, 
+                    "FeatureKeys" -> {"f1"}, "FeatureWeights" -> Automatic, 
+                    "ExampleWeights" -> Automatic, "RawExample" -> 
+                    Missing["KeyAbsent", "RawExample"]]]}]], "ScalarFeature" -> 
+                    True, "Invertibility" -> "Perfect", "Missing" -> 
+                    "Allowed"]], "Processor" -> 
+                    MachineLearning`MLProcessor["Identity"], "Padder" -> 
+                    MachineLearning`MLProcessor["Identity"], "PostProcessor" -> 
+                    MachineLearning`MLProcessor["FromMLDataset", 
+                    Association[
+                    "DatasetFormat" -> Automatic, "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Length" -> 1]], 
+                    "InversePreprocessor" -> 
+                    MachineLearning`MLProcessor["Sequence", 
+                    Association["Processors" -> {
+                    MachineLearning`MLProcessor["List"], 
+                    MachineLearning`MLProcessor["WrapMLDataset", 
+                    Association[
+                    "FeatureTypes" -> {"NumericalVector"}, 
+                    "FeatureKeys" -> {"f1"}, "FeatureWeights" -> {1}, 
+                    "ExampleWeights" -> 1]]}]], "ScalarFeature" -> True, 
+                    "Invertibility" -> "Perfect", "Missing" -> "Allowed"]], 
+                    "Model" -> 
+                    Association[
+                    "Matrix" -> {{1.}}, "Processor" -> 
+                    MachineLearning`MLProcessor["Standardize", 
+                    Association[
+                    "Invertibility" -> "Perfect", "Missing" -> "Allowed", 
+                    "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                    "Mean" -> {0.5}, "StandardDeviation" -> {0.5}, "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]]]], 
+                    "FinalDimension" -> 1, "Method" -> "Linear"], 
+                    "PerformanceGoal" -> Automatic, "Invertibility" -> 
+                    "Approximate", "Log" -> 
+                    Association[
+                    "TrainingTime" -> 0.01175, "MaxTrainingMemory" -> 61144, 
+                    "DataMemory" -> 128, "FunctionMemory" -> 21752, 
+                    "LanguageVersion" -> {11.3, 0}, "Date" -> 
+                    DateObject[{
+                    2018, 7, 10, 22, 44, 17.904554`8.005538491789455}, 
+                    "Instant", "Gregorian", -5.], "ProcessorCount" -> 2, 
+                    "ProcessorType" -> "x86-64", "OperatingSystem" -> 
+                    "MacOSX", "SystemWordLength" -> 64, 
+                    "Evaluations" -> {}]]][#, "ImputedVectors", 
+                   PerformanceGoal -> "Quality"]& ), "Method" -> 
+                 "DimensionReduction", "VectorLength" -> 1, "Output" -> 
+                 Association[
+                  "f3" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], "Type" -> 
+                 "NumericalVector", "Version" -> {11.3, 0}, "ID" -> 
+                 5830460000005304866]]}, "Invertibility" -> "Perfect", 
+             "Missing" -> "Imputed"]], 
+           MachineLearning`MLProcessor["Threads", 
+            Association[
+            "Input" -> Association[
+              "f2" -> Association[
+                "Type" -> "NumericalSequence", "Weight" -> 1], "f3" -> 
+               Association["Type" -> "NumericalVector", "Weight" -> 1]], 
+             "Output" -> 
+             Association[
+              "f2" -> Association[
+                "Type" -> "NumericalSequence", "Weight" -> 1], "f3" -> 
+               Association["Type" -> "NumericalVector", "Weight" -> 1]], 
+             "Processors" -> {
+               MachineLearning`MLProcessor["Standardize", 
+                Association[
+                "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], "Mean" -> 
+                 10.8, "StandardDeviation" -> 5.310367218940701, "Output" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], 
+                 "Version" -> {11.3, 0}, "ID" -> 3886868189269964860]], 
+               MachineLearning`MLProcessor["Standardize", 
+                Association[
+                "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+                 Association[
+                  "f3" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                 "Mean" -> {0.5}, "StandardDeviation" -> {0.5}, "Output" -> 
+                 Association[
+                  "f3" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                 "Version" -> {11.3, 0}, "ID" -> 7098352295252712621]]}, 
+             "Invertibility" -> "Perfect", "Missing" -> "Allowed"]], 
+           MachineLearning`MLProcessor["ToLowerCase", 
+            Association[
+            "Invertibility" -> "Approximate", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 7255900053155452923, "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1]]]], 
+           MachineLearning`MLProcessor["RemoveDiacritics", 
+            Association[
+            "Invertibility" -> "Approximate", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 7649166098026585256, "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1]]]], 
+           MachineLearning`MLProcessor["Threads", 
+            Association[
+            "Input" -> Association[
+              "f1" -> Association["Type" -> "Text", "Weight" -> 1], "f2" -> 
+               Association["Type" -> "NumericalSequence", "Weight" -> 1]], 
+             "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "NumericalVector", "Weight" -> 1],
+                "f2" -> Association[
+                "Type" -> "NumericalVector", "Weight" -> 1]], "Processors" -> {
+               MachineLearning`MLProcessor["Sequence", 
+                Association[
+                "Input" -> 
+                 Association[
+                  "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+                 "Output" -> 
+                 Association[
+                  "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                 "Processors" -> {
+                   MachineLearning`MLProcessor["TextToNominalSequence", 
+                    Association[
+                    "Invertibility" -> "Perfect", "Missing" -> "Forbidden", 
+                    "Input" -> 
+                    Association[
+                    "f1" -> Association["Type" -> "Text", "Weight" -> 1]], 
+                    "Tokens" -> {{
+                    " ", "\n", "\t", "\:f39f", ",", ".", "!", "?", "\"", "'", 
+                    "(", ")", "$", "%", "&", "@", "*", "-", "+", "[", "]", 
+                    "{", "}", "\\", "|", "\\", ">", "/", "~", "`", "#", 
+                    "^"}, {":)", ":-)", ":D", ":-D", ";)", ";-)", "<3", ":p", 
+                    ":-p", ":P", ":-P", ":(", ":-(", "=(", ":/", ":-/", 
+                    "</3"}, {"=", "<", ";", ":"}}, "Method" -> "WordSegment", 
+                    "Version" -> {11.3, 0}, "ID" -> 5208716758835946799, 
+                    "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NominalSequence", "Weight" -> 1]]]], 
+                   MachineLearning`MLProcessor["NominalSequenceToTFIDFVector", 
+                    Association[
+                    "Invertibility" -> "Impossible", "Missing" -> "Forbidden",
+                     "Input" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NominalSequence", "Weight" -> 1]], "Index" -> 
+                    MachineLearning`SortedHashAssociation[
+                    Association[
+                    "KeyHashes" -> {-1301581135563639326, -981859577380256436,
+                     3287432777910049379, 4590148260836727052}, "Values" -> 
+                    None, "DefaultValue" -> -1, "HashFunction" -> 
+                    Function[{
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$}, 
+                    Switch[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, {
+                    BlankSequence[String]}, 
+                    Data`StringHash[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, "Murmur3-64"], 
+                    PatternTest[
+                    Blank[], 
+                    MachineLearning`PackageScope`PackedArrayQ[#, Integer, 
+                    1]& ], MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, 
+                    PatternTest[
+                    Blank[], 
+                    MachineLearning`PackageScope`PackedArrayQ[#, Integer, 
+                    2]& ], 
+                    
+                    Block[{MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q}, 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q = {
+                    Quotient[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, 2^48], 
+                    Quotient[
+                    Mod[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, 2^48], 2^32], 
+                    Quotient[
+                    Mod[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, 2^32], 2^16], 
+                    Mod[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$, 2^16]}; 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q = Transpose[
+                    MachineLearning`PackageScope`ToPackedArray[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q], {1, 3, 2}]; 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q = Transpose[
+                    Flatten[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q, 1]]; Data`StringHash[
+                    FromCharacterCode[
+                    Abs[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q]], "Murmur3-64"]], 
+                    Blank[List], 
+                    Map[Switch[#, 
+                    Blank[String], 
+                    Data`StringHash[#, "Murmur3-64"], 
+                    PatternTest[
+                    Blank[], Developer`MachineIntegerQ], #, {
+                    PatternTest[
+                    BlankSequence[], Developer`MachineIntegerQ]}, 
+                    
+                    Block[{MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q}, 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q = {
+                    Quotient[#, 2^48], 
+                    Quotient[
+                    Mod[#, 2^48], 2^32], 
+                    Quotient[
+                    Mod[#, 2^32], 2^16], 
+                    Mod[#, 2^16]}; 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q = 
+                    Flatten[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q]; Data`StringHash[
+                    FromCharacterCode[
+                    Abs[
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`q]], "Murmur3-64"]], 
+                    Blank[], 
+                    Data`StringHash[
+                    StringJoin[
+                    ToString[#, InputForm], "Cn.i9)P$"], "Murmur3-64"]]& , 
+                    MachineLearning`file132SortedHashAssociation`\
+PackagePrivate`keys$]]], "Version" -> {11.3, 0}]], 
+                    "InverseDocumentFrequency" -> {-0.6931471805599453, \
+-0.6931471805599453, -0.6931471805599453, -1.3862943611198906`}, 
+                    "Version" -> {11.3, 0}, "ID" -> 6413031506679139115, 
+                    "Output" -> 
+                    Association[
+                    "f1" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]]]]}, 
+                 "Invertibility" -> "Impossible", "Missing" -> "Forbidden"]], 
+               
+               MachineLearning`MLProcessor["Sequence", 
+                Association[
+                "Input" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], "Output" -> 
+                 Association[
+                  "f2" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]], 
+                 "Processors" -> {
+                   MachineLearning`MLProcessor["NumericalSequencePartition", 
+                    Association[
+                    "Invertibility" -> "Impossible", "Missing" -> "Allowed", 
+                    "Input" -> 
+                    Association[
+                    "f2" -> Association[
+                    "Type" -> "NumericalSequence", "Weight" -> 1]], 
+                    "WindowSize" -> 1, "Offset" -> 1, "Version" -> {11.3, 0}, 
+                    "ID" -> 3519824094447848605, "Output" -> 
+                    Association[
+                    "f2" -> Association[
+                    "Type" -> "NumericalVectorSequence", "Weight" -> 1]]]], 
+                   MachineLearning`MLProcessor["MeanSequenceVector", 
+                    Association[
+                    "Invertibility" -> "Approximate", "Missing" -> "Imputed", 
+                    "Input" -> 
+                    Association[
+                    "f2" -> Association[
+                    "Type" -> "NumericalVectorSequence", "Weight" -> 1]], 
+                    "vectorLength" -> 1, "Version" -> {11.3, 0}, "ID" -> 
+                    1107852814282405113, "Output" -> 
+                    Association[
+                    "f2" -> Association[
+                    "Type" -> "NumericalVector", "Weight" -> 1]]]]}, 
+                 "Invertibility" -> "Impossible", "Missing" -> "Imputed"]]}, 
+             "Invertibility" -> "Impossible", "Missing" -> "Forbidden"]], 
+           MachineLearning`MLProcessor["MergeVectors", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "NumericalVector", "Weight" -> 1],
+                "f2" -> Association[
+                "Type" -> "NumericalVector", "Weight" -> 1], "f3" -> 
+               Association["Type" -> "NumericalVector", "Weight" -> 1]], 
+             "Spans" -> {
+               Span[1, 4], 
+               Span[5, 5], 
+               Span[6, 6]}, "Wrappers" -> {SparseArray, Identity, Identity}, 
+             "Output" -> 
+             Association[
+              "(f1f2f3)" -> 
+               Association[
+                "Weight" -> {0.25, 0.25, 0.25, 0.25, 1., 1.}, "Type" -> 
+                 "NumericalVector"]], "Version" -> {11.3, 0}, "ID" -> 
+             599417332904572119]]}, "Invertibility" -> "Impossible", 
+         "Missing" -> "Imputed"]]], "Output" -> 
+    Association["Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset", 
+        Association[
+        "Input" -> Association["f1" -> Association["Type" -> "Nominal"]], 
+         "Output" -> 
+         Association["f1" -> Association["Type" -> "Nominal", "Weight" -> 1]],
+          "Preprocessor" -> MachineLearning`MLProcessor["Sequence", 
+           Association["Processors" -> {
+              MachineLearning`MLProcessor["List"], 
+              MachineLearning`MLProcessor["WrapMLDataset", 
+               Association[
+               "FeatureTypes" -> {"Nominal"}, "FeatureKeys" -> {"f1"}, 
+                "FeatureWeights" -> Automatic, "ExampleWeights" -> Automatic, 
+                "RawExample" -> Missing["KeyAbsent", "RawExample"]]]}]], 
+         "ScalarFeature" -> True, "Invertibility" -> "Perfect", "Missing" -> 
+         "Allowed"]], "Processor" -> MachineLearning`MLProcessor["Sequence", 
+        Association[
+        "Input" -> Association[
+          "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], "Output" -> 
+         Association["f1" -> Association["Type" -> "Nominal", "Weight" -> 1]],
+          "Processors" -> {
+           MachineLearning`MLProcessor["ToVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], 
+             "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 1418825959472685849]], 
+           MachineLearning`MLProcessor["IntegerEncodeNominalVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
+             "Index" -> {
+               Association["Non Question" -> 1, "Question" -> 2]}, 
+             "MissingCode" -> 0, "Version" -> {11.3, 0}, "ID" -> 
+             3532479278403072131, "Output" -> 
+             Association[
+              "f1" -> Association[
+                "Type" -> "NominalVector", "Weight" -> 1]]]], 
+           MachineLearning`MLProcessor["FromVector", 
+            Association[
+            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
+             Association[
+              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
+             "Output" -> 
+             Association[
+              "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], 
+             "Version" -> {11.3, 0}, "ID" -> 4394685197250597917]], 
+           MachineLearning`MLProcessor["FirstValues", 
+            Association[
+            "Info" -> Association[
+              "Type" -> "Nominal", "Weight" -> 1, "SetSize" -> 2], "Key" -> 
+             "f1", "Invertibility" -> "Perfect", "Missing" -> "Allowed"]]}, 
+         "Invertibility" -> "Perfect", "Missing" -> "Allowed"]], 
+      "ProbabilityPostprocessor" -> Identity, "Name" -> "class", "Marginal" -> 
+      Association["Non Question" -> 0.5, "Question" -> 0.5]], "Prior" -> 
+    Automatic, "Utility" -> 
+    SparseArray[
+     Automatic, {2, 3}, 0., {1, {{0, 1, 2}, {{2}, {3}}}, {1., 1.}}], 
+    "Threshold" -> 0, "TieBreaker" -> RandomChoice, "PerformanceGoal" -> 
+    Automatic, "BatchProcessing" -> Automatic, "Model" -> 
+    Association["LogProbabilitiesFunction" -> LinearLayer[
+        Association[
+        "Type" -> "Linear", "Arrays" -> 
+         Association[
+          "Weights" -> 
+           RawArray[
+             "Real32",{{-0.08177914470434189, -0.08177914470434189, \
+-0.16355828940868378`, 0.7928918600082397, 
+             1.9775253534317017`, -5.745673179626465}}], "Biases" -> 
+           RawArray["Real32",{-0.08822290599346161}]], "Parameters" -> 
+         Association[
+          "OutputDimensions" -> {1}, "$OutputSize" -> 1, "$InputSize" -> 6, 
+           "$InputDimensions" -> {6}], "Inputs" -> 
+         Association[
+          "Input" -> NeuralNetworks`TensorT[{6}, NeuralNetworks`RealT]], 
+         "Outputs" -> 
+         Association[
+          "Output" -> NeuralNetworks`TensorT[{1}, NeuralNetworks`RealT]]], 
+        Association["Version" -> "11.3.5"]], "Processor" -> 
+      MachineLearning`MLProcessor["FirstValues", 
+        Association[
+        "Info" -> Association[
+          "Weight" -> {0.3333333333333333, 0.19444444444444445`, 
+            0.19444444444444445`, 0.19444444444444445`, 0.19444444444444445`, 
+            0.9444444444444444, 0.9444444444444444}, "Type" -> 
+           "NumericalVector"], "Key" -> "(f1f2f3)", "Invertibility" -> 
+         "Perfect", "Missing" -> "Allowed"]], "Method" -> 
+      "LogisticRegression", "Options" -> 
+      Association[
+       "L1Regularization" -> 
+        Association["Value" -> 0, "Options" -> Association[]], 
+        "L2Regularization" -> 
+        Association["Value" -> 0.001, "Options" -> Association[]], 
+        "OptimizationMethod" -> 
+        Association["Value" -> "LBFGS", "Options" -> Association[]], 
+        MaxIterations -> 
+        Association["Value" -> 30, "Options" -> Association[]]]], 
+    "TrainingInformation" -> 
+    Association[
+     "LossName" -> "MeanCrossEntropy", "BestModelInformation" -> Dataset[
+        Association[
+        "MeanCrossEntropy" -> 
+         PlusMinus[0.34730335960889597`, 0.34814161920611686`], "Accuracy" -> 
+         PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 0.000731, 
+         "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 0.135672, 
+         "TrainingMemory" -> 70968, "ModelMemory" -> 8696, "ExperimentCount" -> 
+         1, "ModelUtility" -> 1.0359779458624203`, "MeanCrossEntropyHistory" -> {
+           PlusMinus[0.34730335960889597`, 0.24617329975391]}, 
+         "AccuracyHistory" -> {
+           PlusMinus[0.75, 0.4330127018922194]}, 
+         "Configuration" -> {
+          "LogisticRegression", "L1Regularization" -> 0, "L2Regularization" -> 
+           0.001, "OptimizationMethod" -> Automatic, MaxIterations -> 30}], 
+        TypeSystem`Struct[{
+         "MeanCrossEntropy", "Accuracy", "EvaluationTime", "TestSize", 
+          "TrainingSize", "TrainingTime", "TrainingMemory", "ModelMemory", 
+          "ExperimentCount", "ModelUtility", "MeanCrossEntropyHistory", 
+          "AccuracyHistory", "Configuration"}, {
+         TypeSystem`AnyType, TypeSystem`AnyType, 
+          TypeSystem`Atom[Real], 
+          TypeSystem`Atom[Integer], 
+          TypeSystem`Atom[Integer], 
+          TypeSystem`Atom[Real], 
+          TypeSystem`Atom[Integer], 
+          TypeSystem`Atom[Integer], 
+          TypeSystem`Atom[Integer], 
+          TypeSystem`Atom[Real], 
+          TypeSystem`Vector[TypeSystem`AnyType, 1], 
+          TypeSystem`Vector[TypeSystem`AnyType, 1], 
+          TypeSystem`Tuple[{
+            TypeSystem`Atom[String], TypeSystem`AnyType, TypeSystem`AnyType, 
+            TypeSystem`AnyType, TypeSystem`AnyType}]}], 
+        Association["ID" -> 152261028338756]], "Configurations" -> Dataset[
+        Association[
+        Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 0.001], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.34730335960889597`, 0.34814161920611686`], 
+              "Accuracy" -> PlusMinus[0.75, 0.6123724356957947], 
+              "EvaluationTime" -> 0.000731, "TestSize" -> 1, "TrainingSize" -> 
+              2, "TrainingTime" -> 0.135672, "TrainingMemory" -> 70968, 
+              "ModelMemory" -> 8696, "ExperimentCount" -> 1, "ModelUtility" -> 
+              1.0359779458624203`, "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.34730335960889597`, 0.24617329975391]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000731, "MeanCrossEntropy" -> 
+             PlusMinus[0.34730335960889597`, 0.34814161920611686`], 
+             "ModelMemory" -> 8696, "TrainingMemory" -> 70968, "TrainingTime" -> 
+             0.13838544], "Index" -> 1], 
+         Association[
+          "Value" -> "NaiveBayes", "Options" -> 
+           Association["SmoothingParameter" -> Association["Value" -> 0.2]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.6931471805599452, 0.34886581868923816`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000401, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.005941, "TrainingMemory" -> 46552, "ModelMemory" -> 15800, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.5661553795541611, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.6931471805599452, 0.24668538611935686`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000401, "MeanCrossEntropy" -> 
+             PlusMinus[0.6931471805599452, 0.34886581868923816`], 
+             "ModelMemory" -> 15800, "TrainingMemory" -> 46552, 
+             "TrainingTime" -> 0.0060598200000000005`], "Index" -> 2], 
+         Association[
+          "Value" -> "DecisionTree", "Options" -> 
+           Association[
+            "DistributionSmoothing" -> Association["Value" -> 1], 
+             "FeatureFraction" -> Association["Value" -> 1]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.6931471805599452, 0.34886581868923816`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000465, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.00463, "TrainingMemory" -> 66728, "ModelMemory" -> 5608, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.5661566868140581, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.6931471805599452, 0.24668538611935686`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000465, "MeanCrossEntropy" -> 
+             PlusMinus[0.6931471805599452, 0.34886581868923816`], 
+             "ModelMemory" -> 5608, "TrainingMemory" -> 66728, "TrainingTime" -> 
+             0.0047225999999999995`], "Index" -> 3], 
+         Association[
+          "Value" -> "NearestNeighbors", "Options" -> 
+           Association[
+            "NeighborsNumber" -> Association["Value" -> Automatic], 
+             "DistributionSmoothing" -> Association["Value" -> 0.5], 
+             "NearestMethod" -> Association["Value" -> Automatic]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.4377343686769499, 0.27411694212887155`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000311, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.003965, "TrainingMemory" -> 44312, "ModelMemory" -> 6160, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.8769173953850672, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.4377343686769499, 0.19382994861744546`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000311, "MeanCrossEntropy" -> 
+             PlusMinus[0.4377343686769499, 0.27411694212887155`], 
+             "ModelMemory" -> 6160, "TrainingMemory" -> 44312, "TrainingTime" -> 
+             0.0040443], "Index" -> 4], 
+         Association[
+          "Value" -> "RandomForest", "Options" -> 
+           Association[
+            "FeatureFraction" -> Association["Value" -> Automatic], 
+             "LeafSize" -> Association["Value" -> Automatic], "TreeNumber" -> 
+             Association["Value" -> Automatic], "DistributionSmoothing" -> 
+             Association["Value" -> 0.5], "Implementation" -> 
+             Association["Value" -> Automatic]]] -> Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.5855914907514727, 0.2651261758599898], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.005643, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.413977, "TrainingMemory" -> 134160, "ModelMemory" -> 85136, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.5480214671664112, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.5855914907514727, 0.18747251682065594`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.005643, "MeanCrossEntropy" -> 
+             PlusMinus[0.5855914907514727, 0.2651261758599898], "ModelMemory" -> 
+             85136, "TrainingMemory" -> 134160, "TrainingTime" -> 
+             0.42225653999999996`], "Index" -> 5], 
+         Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 1000.], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.692588728481985, 0.34831148948009616`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000361, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.010978, "TrainingMemory" -> 62432, "ModelMemory" -> 8696, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.5666534695963774, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.692588728481985, 0.24629341617656278`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000361, "MeanCrossEntropy" -> 
+             PlusMinus[0.692588728481985, 0.34831148948009616`], 
+             "ModelMemory" -> 8696, "TrainingMemory" -> 62432, "TrainingTime" -> 
+             0.01119756], "Index" -> 6], 
+         Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 0.1], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association[
+          "Experiments" -> {}, "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 1, "MeanCrossEntropy" -> 1, "ModelMemory" -> 
+             1, "TrainingMemory" -> 1, "TrainingTime" -> 1], "Index" -> 7], 
+         Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 0.00001], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association[
+          "Experiments" -> {}, "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 1, "MeanCrossEntropy" -> 1, "ModelMemory" -> 
+             1, "TrainingMemory" -> 1, "TrainingTime" -> 1], "Index" -> 8], 
+         Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 10.], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.6453468605538579, 0.30519574635469365`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000312, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.009827, "TrainingMemory" -> 63296, "ModelMemory" -> 8696, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.6114676734216533, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.6453468605538579, 0.21580598183669342`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000312, "MeanCrossEntropy" -> 
+             PlusMinus[0.6453468605538579, 0.30519574635469365`], 
+             "ModelMemory" -> 8696, "TrainingMemory" -> 63296, "TrainingTime" -> 
+             0.010023540000000001`], "Index" -> 9], 
+         Association[
+          "Value" -> "LogisticRegression", "Options" -> 
+           Association[
+            "L1Regularization" -> Association["Value" -> 0], 
+             "L2Regularization" -> Association["Value" -> 100000.], 
+             "OptimizationMethod" -> Association["Value" -> Automatic], 
+             MaxIterations -> Association["Value" -> 30]]] -> 
+         Association["Experiments" -> {
+             Association[
+             "MeanCrossEntropy" -> 
+              PlusMinus[0.6931415867618496, 0.34886026169071616`], "Accuracy" -> 
+              PlusMinus[0.75, 0.6123724356957947], "EvaluationTime" -> 
+              0.000321, "TestSize" -> 1, "TrainingSize" -> 2, "TrainingTime" -> 
+              0.00841, "TrainingMemory" -> 61808, "ModelMemory" -> 8696, 
+              "ExperimentCount" -> 1, "ModelUtility" -> 0.5661613371958234, 
+              "MeanCrossEntropyHistory" -> {
+                PlusMinus[0.6931415867618496, 0.24668145672801892`]}, 
+              "AccuracyHistory" -> {
+                PlusMinus[0.75, 0.4330127018922194]}]}, 
+           "PredictedPerformances" -> 
+           Association[
+            "EvaluationTime" -> 0.000321, "MeanCrossEntropy" -> 
+             PlusMinus[0.6931415867618496, 0.34886026169071616`], 
+             "ModelMemory" -> 8696, "TrainingMemory" -> 61808, "TrainingTime" -> 
+             0.008578200000000001], "Index" -> 10]], 
+        TypeSystem`Assoc[
+         TypeSystem`Struct[{"Value", "Options"}, {
+           TypeSystem`Atom[
+            TypeSystem`Enumeration[
+            "DecisionTree", "LogisticRegression", "NaiveBayes", 
+             "NearestNeighbors", "RandomForest"]], 
+           TypeSystem`Assoc[TypeSystem`AnyType, 
+            TypeSystem`Struct[{"Value"}, {TypeSystem`AnyType}], 
+            TypeSystem`AnyLength]}], 
+         TypeSystem`Struct[{"Experiments", "PredictedPerformances", "Index"}, {
+           TypeSystem`Vector[
+            
+            TypeSystem`Struct[{
+             "MeanCrossEntropy", "Accuracy", "EvaluationTime", "TestSize", 
+              "TrainingSize", "TrainingTime", "TrainingMemory", "ModelMemory",
+               "ExperimentCount", "ModelUtility", "MeanCrossEntropyHistory", 
+              "AccuracyHistory"}, {TypeSystem`AnyType, TypeSystem`AnyType, 
+              TypeSystem`Atom[Real], 
+              TypeSystem`Atom[Integer], 
+              TypeSystem`Atom[Integer], 
+              TypeSystem`Atom[Real], 
+              TypeSystem`Atom[Integer], 
+              TypeSystem`Atom[Integer], 
+              TypeSystem`Atom[Integer], 
+              TypeSystem`Atom[Real], 
+              TypeSystem`Vector[TypeSystem`AnyType, 1], 
+              TypeSystem`Vector[TypeSystem`AnyType, 1]}], 
+            TypeSystem`AnyLength], 
+           
+           TypeSystem`Struct[{
+            "EvaluationTime", "MeanCrossEntropy", "ModelMemory", 
+             "TrainingMemory", "TrainingTime"}, {
+             TypeSystem`Atom[Real], TypeSystem`AnyType, 
+             TypeSystem`Atom[Integer], 
+             TypeSystem`Atom[Integer], 
+             TypeSystem`Atom[Real]}], 
+           TypeSystem`Atom[Integer]}], 10], 
+        Association["ID" -> 152256733371460]], "MaxTrainingSize" -> 2, 
+      "LastReportingTime" -> 3.740251459923313`16.325475790287168*^9, 
+      "PreprocessorEvaluationTime" -> 4.39453125`2.*^-6, "PreprocessorMemory" -> 
+      108920, "RoundPartitioning" -> Dataset[{
+         Association[
+         "TrainingSizes" -> 2, "TimeBudgets" -> 1., "ElapsedTimes" -> 
+          1.012127, "ExperimentCounts" -> 8]}, 
+        TypeSystem`Vector[
+         TypeSystem`Struct[{
+          "TrainingSizes", "TimeBudgets", "ElapsedTimes", 
+           "ExperimentCounts"}, {
+           TypeSystem`Atom[Integer], 
+           TypeSystem`Atom[Real], 
+           TypeSystem`Atom[Real], 
+           TypeSystem`Atom[Integer]}], 1], 
+        Association[
+        "Origin" -> HoldComplete[GeneralUtilities`AssociationTranspose, 
+           Dataset`DatasetHandle[152265323306052]], "ID" -> 
+         152269618273348]]], "Log" -> 
+    Association["Example" -> MachineLearning`MLDataset[
+        Association[
+        "f1" -> Association[
+          "Type" -> "Text", "Weight" -> 1, "Values" -> {" are you"}, "ID" -> 
+           7806654962102425149], "f2" -> 
+         Association[
+          "Type" -> "NumericalSequence", "Weight" -> 1, 
+           "Values" -> {{15, 11}}, "ID" -> 5814909113149441914], "f3" -> 
+         Association[
+          "Type" -> "Boolean", "Weight" -> 1, "Values" -> {False}, "ID" -> 
+           4698339753739146873]], 
+        Association[
+        "ExampleNumber" -> 1, "ExampleWeights" -> 1, "RawExample" -> False]], 
+      "TrainingTime" -> 2.305535, "MaxTrainingMemory" -> 1159792, 
+      "DataMemory" -> 656, "FunctionMemory" -> 227048, 
+      "LanguageVersion" -> {11.3, 0}, "Date" -> 
+      DateObject[{2018, 7, 10, 22, 44, 19.966088`8.052867964900285}, 
+        "Instant", "Gregorian", -5.], "ProcessorCount" -> 2, "ProcessorType" -> 
+      "x86-64", "OperatingSystem" -> "MacOSX", "SystemWordLength" -> 64, 
+      "Evaluations" -> {}]]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.740269433368369*^9, 3.740269460055825*^9}},
+ CellLabel->
+  "Out[266]=",ExpressionUUID->"d75af67a-abac-4db7-b896-38a57dbe87e0"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -56142,228 +57391,244 @@ Cell[12066, 303, 643, 12, 52, "Input",ExpressionUUID->"6d32f185-1917-4908-acc4-7
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[12746, 320, 139, 1, 45, "Subsubsection",ExpressionUUID->"4f127c50-da6a-4647-b38a-d8499a04f014"],
-Cell[12888, 323, 2611, 64, 243, "Code",ExpressionUUID->"3858494d-99ad-48e2-8ce2-1ec79120c73b"],
-Cell[15502, 389, 1636, 35, 148, "Code",ExpressionUUID->"ab891b51-e553-4c17-aef9-b548085c2aec"],
 Cell[CellGroupData[{
-Cell[17163, 428, 557, 11, 73, "Input",ExpressionUUID->"621753e3-5192-426f-9d3e-a5389c16577f"],
-Cell[17723, 441, 270575, 4677, 39368, "Output",ExpressionUUID->"00159c7c-460d-47c5-9c34-be38657edb1e"],
-Cell[288301, 5120, 410915, 6538, 81620, "Output",ExpressionUUID->"661d721c-73d0-45e7-9811-17cf5653e3ae"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[699253, 11663, 550, 8, 26, "Input",ExpressionUUID->"acc5da05-a365-477f-ae92-e56a51691613"],
-Cell[699806, 11673, 9012, 235, 184, "Output",ExpressionUUID->"1d434127-c03c-49b1-b3c3-73baa1654308"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[708855, 11913, 268, 4, 26, "Input",ExpressionUUID->"ea6b8975-9f0e-406a-aba9-9e0b42017dca"],
-Cell[709126, 11919, 7504, 200, 97, "Output",ExpressionUUID->"239106b5-5e45-48ae-883e-e74296ce8cde"]
+Cell[12910, 325, 233, 4, 30, "Input",ExpressionUUID->"edadd29a-c7bb-4303-a9b9-5d31aaa23854"],
+Cell[13146, 331, 209, 5, 34, "Output",ExpressionUUID->"edf9b14a-16cd-4b19-9647-655003501366"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[716667, 12124, 883, 22, 94, "Input",ExpressionUUID->"f396e2c8-171e-47cb-9d07-66cd33c817a6"],
-Cell[717553, 12148, 10163, 257, 310, "Output",ExpressionUUID->"b0060f1e-0151-407d-909b-19caef69237b"],
-Cell[727719, 12407, 9858, 245, 310, "Output",ExpressionUUID->"93e29bf7-90c6-4acd-84ba-6928f759815d"]
+Cell[13392, 341, 299, 6, 30, "Input",ExpressionUUID->"672f6a07-ee7e-425a-b5ce-1bea698cd326"],
+Cell[13694, 349, 204, 4, 34, "Output",ExpressionUUID->"5d6e0a45-2c2f-475d-8f36-52460e506ea1"]
+}, Open  ]],
+Cell[13913, 356, 3748, 89, 300, "Code",ExpressionUUID->"3858494d-99ad-48e2-8ce2-1ec79120c73b"],
+Cell[17664, 447, 4525, 90, 566, "Code",ExpressionUUID->"ab891b51-e553-4c17-aef9-b548085c2aec"],
+Cell[CellGroupData[{
+Cell[22214, 541, 472, 10, 30, "Input",ExpressionUUID->"d3f7fe3a-6070-4242-a8ee-4d34879e3f37"],
+Cell[22689, 553, 588, 17, 34, "Output",ExpressionUUID->"7ba5e6d0-0f25-4039-b4ae-7418f05ec7e7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23314, 575, 659, 18, 52, InheritFromParent,ExpressionUUID->"147e9b18-ca49-4e40-bc55-380e3c2cf8e9"],
+Cell[23976, 595, 55364, 1077, 93, "Output",ExpressionUUID->"d75af67a-abac-4db7-b896-38a57dbe87e0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79377, 1677, 557, 11, 73, "Input",ExpressionUUID->"621753e3-5192-426f-9d3e-a5389c16577f"],
+Cell[79937, 1690, 270575, 4677, 39368, "Output",ExpressionUUID->"00159c7c-460d-47c5-9c34-be38657edb1e"],
+Cell[350515, 6369, 410915, 6538, 81620, "Output",ExpressionUUID->"661d721c-73d0-45e7-9811-17cf5653e3ae"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[761467, 12912, 550, 8, 26, "Input",ExpressionUUID->"acc5da05-a365-477f-ae92-e56a51691613"],
+Cell[762020, 12922, 9012, 235, 184, "Output",ExpressionUUID->"1d434127-c03c-49b1-b3c3-73baa1654308"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[771069, 13162, 268, 4, 26, "Input",ExpressionUUID->"ea6b8975-9f0e-406a-aba9-9e0b42017dca"],
+Cell[771340, 13168, 7504, 200, 97, "Output",ExpressionUUID->"239106b5-5e45-48ae-883e-e74296ce8cde"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[778881, 13373, 883, 22, 94, "Input",ExpressionUUID->"f396e2c8-171e-47cb-9d07-66cd33c817a6"],
+Cell[779767, 13397, 10163, 257, 310, "Output",ExpressionUUID->"b0060f1e-0151-407d-909b-19caef69237b"],
+Cell[789933, 13656, 9858, 245, 310, "Output",ExpressionUUID->"93e29bf7-90c6-4acd-84ba-6928f759815d"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[737626, 12658, 137, 1, 45, "Subsubsection",ExpressionUUID->"cab4ee65-639b-4750-a1e4-975f2577e569"],
+Cell[799840, 13907, 137, 1, 45, "Subsubsection",ExpressionUUID->"cab4ee65-639b-4750-a1e4-975f2577e569"],
 Cell[CellGroupData[{
-Cell[737788, 12663, 274, 5, 30, "Input",ExpressionUUID->"d71059b3-665b-4950-867f-9bf72a6d367d"],
-Cell[738065, 12670, 243, 3, 34, "Output",ExpressionUUID->"d07504cd-4cf9-458b-bdb7-008023386f33"]
+Cell[800002, 13912, 274, 5, 30, "Input",ExpressionUUID->"d71059b3-665b-4950-867f-9bf72a6d367d"],
+Cell[800279, 13919, 243, 3, 34, "Output",ExpressionUUID->"d07504cd-4cf9-458b-bdb7-008023386f33"]
 }, Open  ]],
-Cell[738323, 12676, 449, 11, 30, "Input",ExpressionUUID->"8413af67-812f-44eb-acb6-871039fc40cf"],
-Cell[738775, 12689, 479, 14, 30, "Input",ExpressionUUID->"18054f2b-965c-49cb-8804-2a7fbfca729b"],
-Cell[739257, 12705, 384, 9, 30, "Input",ExpressionUUID->"6106833c-4a76-4063-a956-dec4209f4060"],
-Cell[739644, 12716, 173, 3, 30, "Input",ExpressionUUID->"eb2ff9fe-4247-4574-abae-11656fdb5bbb"],
+Cell[800537, 13925, 449, 11, 30, "Input",ExpressionUUID->"8413af67-812f-44eb-acb6-871039fc40cf"],
+Cell[800989, 13938, 479, 14, 30, "Input",ExpressionUUID->"18054f2b-965c-49cb-8804-2a7fbfca729b"],
+Cell[801471, 13954, 384, 9, 30, "Input",ExpressionUUID->"6106833c-4a76-4063-a956-dec4209f4060"],
+Cell[801858, 13965, 173, 3, 30, "Input",ExpressionUUID->"eb2ff9fe-4247-4574-abae-11656fdb5bbb"],
 Cell[CellGroupData[{
-Cell[739842, 12723, 255, 4, 30, "Input",ExpressionUUID->"14e880f6-e239-45e4-9145-3be8f2c8060e"],
-Cell[740100, 12729, 225, 3, 34, "Output",ExpressionUUID->"2dd5deed-1af9-4aab-bf7e-c1bae71d6c03"]
+Cell[802056, 13972, 255, 4, 30, "Input",ExpressionUUID->"14e880f6-e239-45e4-9145-3be8f2c8060e"],
+Cell[802314, 13978, 225, 3, 34, "Output",ExpressionUUID->"2dd5deed-1af9-4aab-bf7e-c1bae71d6c03"]
 }, Open  ]],
-Cell[740340, 12735, 243, 6, 30, "Input",ExpressionUUID->"3fd53a69-1c65-49c9-91ca-518a28b4a4dd"]
+Cell[802554, 13984, 243, 6, 30, "Input",ExpressionUUID->"3fd53a69-1c65-49c9-91ca-518a28b4a4dd"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[740620, 12746, 149, 1, 37, "Subsubsection",ExpressionUUID->"b49d2da7-adc3-45f2-b7b6-c68f0e7ec730"],
-Cell[740772, 12749, 219, 2, 35, "Text",ExpressionUUID->"92a8c79e-daf1-4081-b17e-f49b05eabc91"],
+Cell[802834, 13995, 149, 1, 37, "Subsubsection",ExpressionUUID->"b49d2da7-adc3-45f2-b7b6-c68f0e7ec730"],
+Cell[802986, 13998, 219, 2, 35, "Text",ExpressionUUID->"92a8c79e-daf1-4081-b17e-f49b05eabc91"],
 Cell[CellGroupData[{
-Cell[741016, 12755, 393, 8, 30, "Input",ExpressionUUID->"dedd85af-eeb0-43cf-80b7-74bc2f15bb0a"],
-Cell[741412, 12765, 8130, 211, 163, "Output",ExpressionUUID->"1cd8f8d6-5d36-4fe5-9e2b-af900e0ba35d"]
+Cell[803230, 14004, 393, 8, 30, "Input",ExpressionUUID->"dedd85af-eeb0-43cf-80b7-74bc2f15bb0a"],
+Cell[803626, 14014, 8130, 211, 163, "Output",ExpressionUUID->"1cd8f8d6-5d36-4fe5-9e2b-af900e0ba35d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[749579, 12981, 565, 14, 30, "Input",ExpressionUUID->"c5e8a140-ec24-4682-b35a-20a6f28713cc"],
-Cell[750147, 12997, 8154, 211, 163, "Output",ExpressionUUID->"fbe5d00d-94d5-4e4c-b98b-102d3458e57d"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[758350, 13214, 156, 1, 37, "Subsubsection",ExpressionUUID->"7b6c53ad-8577-466a-bfed-e5f158adc6fb"],
-Cell[CellGroupData[{
-Cell[758531, 13219, 477, 10, 30, "Input",ExpressionUUID->"a7b6d6cc-7ef0-467e-9dde-60e19e6c7fe6"],
-Cell[759011, 13231, 8217, 213, 163, "Output",ExpressionUUID->"9a4341fb-1f3f-4ad4-81f1-7ccd6cf748df"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[767265, 13449, 216, 4, 30, "Input",ExpressionUUID->"262ad8a5-14f2-4740-b5c7-783cf07c0df5"],
-Cell[767484, 13455, 7895, 206, 142, "Output",ExpressionUUID->"c540d6ec-14c7-46f2-9753-7539db0ebb43"]
+Cell[811793, 14230, 565, 14, 30, "Input",ExpressionUUID->"c5e8a140-ec24-4682-b35a-20a6f28713cc"],
+Cell[812361, 14246, 8154, 211, 163, "Output",ExpressionUUID->"fbe5d00d-94d5-4e4c-b98b-102d3458e57d"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[775428, 13667, 117, 1, 37, "Subsubsection",ExpressionUUID->"df29d1d5-fc99-48cd-ba8c-31b7c9564335"],
+Cell[820564, 14463, 156, 1, 37, "Subsubsection",ExpressionUUID->"7b6c53ad-8577-466a-bfed-e5f158adc6fb"],
 Cell[CellGroupData[{
-Cell[775570, 13672, 350, 7, 30, "Input",ExpressionUUID->"f5a5e964-4f0a-4b95-af97-34c669344325"],
-Cell[775923, 13681, 8064, 210, 121, "Output",ExpressionUUID->"9254a232-b237-409f-82e1-f249b2e9a6da"]
+Cell[820745, 14468, 477, 10, 30, "Input",ExpressionUUID->"a7b6d6cc-7ef0-467e-9dde-60e19e6c7fe6"],
+Cell[821225, 14480, 8217, 213, 163, "Output",ExpressionUUID->"9a4341fb-1f3f-4ad4-81f1-7ccd6cf748df"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[784024, 13896, 288, 6, 30, "Input",ExpressionUUID->"d2d17123-2450-4c92-8bfd-9e4f335ae4d6"],
-Cell[784315, 13904, 8044, 209, 121, "Output",ExpressionUUID->"9d0c226a-1f98-46de-8e8b-e53c969185f2"]
-}, Open  ]],
-Cell[792374, 14116, 511, 11, 30, "Input",ExpressionUUID->"e9a06111-4bd6-4f73-a69f-7b65f263d0ed"],
-Cell[792888, 14129, 471, 11, 30, "Input",ExpressionUUID->"e81c76ef-496b-451f-8f6b-f779b847fb8c"],
-Cell[793362, 14142, 554, 12, 30, "Input",ExpressionUUID->"f56e3b0e-2dc7-4fd9-ae0b-89a1a7a7f4f5"],
-Cell[793919, 14156, 497, 12, 30, "Input",ExpressionUUID->"cf5afbb1-9047-4c6c-8417-4e467840f6f3"]
+Cell[829479, 14698, 216, 4, 30, "Input",ExpressionUUID->"262ad8a5-14f2-4740-b5c7-783cf07c0df5"],
+Cell[829698, 14704, 7895, 206, 142, "Output",ExpressionUUID->"c540d6ec-14c7-46f2-9753-7539db0ebb43"]
+}, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[794453, 14173, 112, 1, 37, "Subsubsection",ExpressionUUID->"c3e68d7b-1c05-456d-a16e-0a3835c9a007"],
-Cell[794568, 14176, 1193, 32, 136, "Input",ExpressionUUID->"ed243bc7-b166-488c-96c2-e32ab1bcf9e8"],
-Cell[795764, 14210, 3422, 81, 661, "Code",ExpressionUUID->"f24b21c2-f4e4-4ce9-adab-28ec9139ee26"],
+Cell[837642, 14916, 117, 1, 37, "Subsubsection",ExpressionUUID->"df29d1d5-fc99-48cd-ba8c-31b7c9564335"],
 Cell[CellGroupData[{
-Cell[799211, 14295, 1417, 38, 115, "Input",ExpressionUUID->"e5881c42-c5f6-4ba6-a1de-87adfe55fb2f"],
-Cell[800631, 14335, 2301, 60, 161, "Output",ExpressionUUID->"bf186162-f187-4f7b-a97d-bf9ad8f4bfd7"]
-}, Open  ]],
-Cell[802947, 14398, 5903, 150, 451, "Input",ExpressionUUID->"54f1815f-e286-4c78-b929-24096a8edd1c"],
-Cell[CellGroupData[{
-Cell[808875, 14552, 6111, 154, 451, "Input",ExpressionUUID->"dd5bebd2-95f7-460e-81d7-b41b2e84a9a0"],
-Cell[814989, 14708, 11109, 224, 120, "Output",ExpressionUUID->"6b90ff0b-125c-4cbf-9b27-462161bafb5a"]
+Cell[837784, 14921, 350, 7, 30, "Input",ExpressionUUID->"f5a5e964-4f0a-4b95-af97-34c669344325"],
+Cell[838137, 14930, 8064, 210, 121, "Output",ExpressionUUID->"9254a232-b237-409f-82e1-f249b2e9a6da"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[826135, 14937, 3175, 79, 220, "Input",ExpressionUUID->"92773ba6-c513-48fc-b7e8-6215dd347448"],
-Cell[829313, 15018, 8721, 177, 119, "Output",ExpressionUUID->"f4d27a2a-681d-4304-90a6-cddc7955eef6"]
+Cell[846238, 15145, 288, 6, 30, "Input",ExpressionUUID->"d2d17123-2450-4c92-8bfd-9e4f335ae4d6"],
+Cell[846529, 15153, 8044, 209, 121, "Output",ExpressionUUID->"9d0c226a-1f98-46de-8e8b-e53c969185f2"]
+}, Open  ]],
+Cell[854588, 15365, 511, 11, 30, "Input",ExpressionUUID->"e9a06111-4bd6-4f73-a69f-7b65f263d0ed"],
+Cell[855102, 15378, 471, 11, 30, "Input",ExpressionUUID->"e81c76ef-496b-451f-8f6b-f779b847fb8c"],
+Cell[855576, 15391, 554, 12, 30, "Input",ExpressionUUID->"f56e3b0e-2dc7-4fd9-ae0b-89a1a7a7f4f5"],
+Cell[856133, 15405, 497, 12, 30, "Input",ExpressionUUID->"cf5afbb1-9047-4c6c-8417-4e467840f6f3"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[856667, 15422, 112, 1, 37, "Subsubsection",ExpressionUUID->"c3e68d7b-1c05-456d-a16e-0a3835c9a007"],
+Cell[856782, 15425, 1193, 32, 136, "Input",ExpressionUUID->"ed243bc7-b166-488c-96c2-e32ab1bcf9e8"],
+Cell[857978, 15459, 3422, 81, 661, "Code",ExpressionUUID->"f24b21c2-f4e4-4ce9-adab-28ec9139ee26"],
+Cell[CellGroupData[{
+Cell[861425, 15544, 1417, 38, 115, "Input",ExpressionUUID->"e5881c42-c5f6-4ba6-a1de-87adfe55fb2f"],
+Cell[862845, 15584, 2301, 60, 161, "Output",ExpressionUUID->"bf186162-f187-4f7b-a97d-bf9ad8f4bfd7"]
+}, Open  ]],
+Cell[865161, 15647, 5903, 150, 451, "Input",ExpressionUUID->"54f1815f-e286-4c78-b929-24096a8edd1c"],
+Cell[CellGroupData[{
+Cell[871089, 15801, 6111, 154, 451, "Input",ExpressionUUID->"dd5bebd2-95f7-460e-81d7-b41b2e84a9a0"],
+Cell[877203, 15957, 11109, 224, 112, "Output",ExpressionUUID->"6b90ff0b-125c-4cbf-9b27-462161bafb5a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[838071, 15200, 226, 3, 30, "Input",ExpressionUUID->"e12b0564-1f3c-4105-a841-3f359f8fa3f0"],
-Cell[838300, 15205, 9618, 251, 321, "Output",ExpressionUUID->"b7314f76-072f-4d8c-b6f1-700665964a8f"]
+Cell[888349, 16186, 3175, 79, 220, "Input",ExpressionUUID->"92773ba6-c513-48fc-b7e8-6215dd347448"],
+Cell[891527, 16267, 8721, 177, 111, "Output",ExpressionUUID->"f4d27a2a-681d-4304-90a6-cddc7955eef6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[900285, 16449, 226, 3, 30, "Input",ExpressionUUID->"e12b0564-1f3c-4105-a841-3f359f8fa3f0"],
+Cell[900514, 16454, 9618, 251, 321, "Output",ExpressionUUID->"b7314f76-072f-4d8c-b6f1-700665964a8f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[847967, 15462, 167, 3, 54, "Subsection",ExpressionUUID->"4f87d1e5-e9c2-400c-b56b-14ca6ccffed4"],
+Cell[910181, 16711, 167, 3, 54, "Subsection",ExpressionUUID->"4f87d1e5-e9c2-400c-b56b-14ca6ccffed4"],
 Cell[CellGroupData[{
-Cell[848159, 15469, 795, 16, 73, "Input",ExpressionUUID->"ab593a78-068a-4748-ad79-479c6bfcab2b"],
-Cell[848957, 15487, 1008, 19, 77, "Output",ExpressionUUID->"da6a0587-bc3d-4810-b62f-a1e1ad284771"]
+Cell[910373, 16718, 795, 16, 73, "Input",ExpressionUUID->"ab593a78-068a-4748-ad79-479c6bfcab2b"],
+Cell[911171, 16736, 1008, 19, 77, "Output",ExpressionUUID->"da6a0587-bc3d-4810-b62f-a1e1ad284771"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[850002, 15511, 6418, 159, 451, "Input",ExpressionUUID->"7c99db0d-c727-4d26-826f-ec0910fc5904"],
-Cell[856423, 15672, 92403, 1669, 93, "Output",ExpressionUUID->"6c670d68-be30-4e1a-9524-065c42da0c60"]
+Cell[912216, 16760, 6418, 159, 451, "Input",ExpressionUUID->"7c99db0d-c727-4d26-826f-ec0910fc5904"],
+Cell[918637, 16921, 92403, 1669, 93, "Output",ExpressionUUID->"6c670d68-be30-4e1a-9524-065c42da0c60"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[948863, 17346, 3148, 79, 220, "Input",ExpressionUUID->"d078db54-3fb5-4f7d-a830-7291119b8496"],
-Cell[952014, 17427, 119272, 2069, 92, "Output",ExpressionUUID->"e5cc3856-4b2d-4dc7-a1be-ea3687cbe143"]
+Cell[1011077, 18595, 3148, 79, 220, "Input",ExpressionUUID->"d078db54-3fb5-4f7d-a830-7291119b8496"],
+Cell[1014228, 18676, 119272, 2069, 92, "Output",ExpressionUUID->"e5cc3856-4b2d-4dc7-a1be-ea3687cbe143"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1071323, 19501, 160, 2, 30, "Input",ExpressionUUID->"76f749cb-8628-4673-a9de-a9c265a377e4"],
-Cell[1071486, 19505, 9602, 251, 321, "Output",ExpressionUUID->"4abb7f32-3900-4a1a-8331-9545f2c51f6d"]
+Cell[1133537, 20750, 160, 2, 30, "Input",ExpressionUUID->"76f749cb-8628-4673-a9de-a9c265a377e4"],
+Cell[1133700, 20754, 9602, 251, 321, "Output",ExpressionUUID->"4abb7f32-3900-4a1a-8331-9545f2c51f6d"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1081137, 19762, 190, 3, 54, "Subsection",ExpressionUUID->"442669c2-296c-487d-933d-58838e62affc"],
-Cell[1081330, 19767, 353, 7, 30, "Input",ExpressionUUID->"05a4d2b2-86a2-487b-b829-35fa2b7bc77f"],
+Cell[1143351, 21011, 190, 3, 54, "Subsection",ExpressionUUID->"442669c2-296c-487d-933d-58838e62affc"],
+Cell[1143544, 21016, 353, 7, 30, "Input",ExpressionUUID->"05a4d2b2-86a2-487b-b829-35fa2b7bc77f"],
 Cell[CellGroupData[{
-Cell[1081708, 19778, 2166, 43, 283, "Input",ExpressionUUID->"4a77f52a-47fc-426a-8bb2-14b305238994"],
-Cell[1083877, 19823, 11179, 226, 120, "Output",ExpressionUUID->"1bdcb11f-61c2-446e-9d92-9fffae167afb"]
+Cell[1143922, 21027, 2166, 43, 283, "Input",ExpressionUUID->"4a77f52a-47fc-426a-8bb2-14b305238994"],
+Cell[1146091, 21072, 11179, 226, 112, "Output",ExpressionUUID->"1bdcb11f-61c2-446e-9d92-9fffae167afb"]
 }, Open  ]],
-Cell[1095071, 20052, 157, 3, 30, "Input",ExpressionUUID->"4f5700aa-442d-48ee-a951-c2cd0b983e3a"],
+Cell[1157285, 21301, 157, 3, 30, "Input",ExpressionUUID->"4f5700aa-442d-48ee-a951-c2cd0b983e3a"],
 Cell[CellGroupData[{
-Cell[1095253, 20059, 878, 20, 52, "Input",ExpressionUUID->"8934d3ef-dd87-4142-8bed-ceca9391344b"],
-Cell[1096134, 20081, 8717, 177, 119, "Output",ExpressionUUID->"8f05786e-4d35-4ea5-a1c6-ddb2c4c49d78"]
+Cell[1157467, 21308, 878, 20, 52, "Input",ExpressionUUID->"8934d3ef-dd87-4142-8bed-ceca9391344b"],
+Cell[1158348, 21330, 8717, 177, 111, "Output",ExpressionUUID->"8f05786e-4d35-4ea5-a1c6-ddb2c4c49d78"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1104888, 20263, 228, 3, 30, "Input",ExpressionUUID->"57535679-2960-420a-8ceb-6b07723069ad"],
-Cell[1105119, 20268, 18642, 399, 321, 9467, 248, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"08a5ca49-d4a9-4876-bad7-b433fea73cd8"]
+Cell[1167102, 21512, 228, 3, 30, "Input",ExpressionUUID->"57535679-2960-420a-8ceb-6b07723069ad"],
+Cell[1167333, 21517, 18642, 399, 321, 9467, 248, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"08a5ca49-d4a9-4876-bad7-b433fea73cd8"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1123810, 20673, 155, 3, 54, "Subsection",ExpressionUUID->"91183821-3108-44aa-a87f-8a7c1fe0310e"],
-Cell[1123968, 20678, 2197, 44, 262, "Input",ExpressionUUID->"20ce2fee-f182-4a76-8ef1-f2420b0008d3"]
+Cell[1186024, 21922, 155, 3, 54, "Subsection",ExpressionUUID->"91183821-3108-44aa-a87f-8a7c1fe0310e"],
+Cell[1186182, 21927, 2197, 44, 262, "Input",ExpressionUUID->"20ce2fee-f182-4a76-8ef1-f2420b0008d3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1126202, 20727, 203, 4, 54, "Subsection",ExpressionUUID->"0c2cda38-6288-407b-b6e4-407de0a266a2"],
+Cell[1188416, 21976, 203, 4, 54, "Subsection",ExpressionUUID->"0c2cda38-6288-407b-b6e4-407de0a266a2"],
 Cell[CellGroupData[{
-Cell[1126430, 20735, 2179, 44, 220, "Input",ExpressionUUID->"0699803f-03ac-4b06-b522-2b05fb15ab8a"],
-Cell[1128612, 20781, 74663, 1379, 93, "Output",ExpressionUUID->"e6a6149c-29f2-4424-94c0-f516ca1c9f4f"]
+Cell[1188644, 21984, 2179, 44, 220, "Input",ExpressionUUID->"0699803f-03ac-4b06-b522-2b05fb15ab8a"],
+Cell[1190826, 22030, 74663, 1379, 93, "Output",ExpressionUUID->"e6a6149c-29f2-4424-94c0-f516ca1c9f4f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1203312, 22165, 771, 18, 52, "Input",ExpressionUUID->"c88b7817-10bf-4c38-8017-f8f1193ed1f7"],
-Cell[1204086, 22185, 90393, 1615, 92, "Output",ExpressionUUID->"96549ca8-5001-4e69-b5ba-12f1ae4e3c56"]
+Cell[1265526, 23414, 771, 18, 52, "Input",ExpressionUUID->"c88b7817-10bf-4c38-8017-f8f1193ed1f7"],
+Cell[1266300, 23434, 90393, 1615, 92, "Output",ExpressionUUID->"96549ca8-5001-4e69-b5ba-12f1ae4e3c56"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1294516, 23805, 160, 2, 30, "Input",ExpressionUUID->"6cfdd4a1-d410-4d1f-8ed6-4fbf050556f7"],
-Cell[1294679, 23809, 9583, 251, 321, "Output",ExpressionUUID->"a914b72a-70f2-4af1-9e0f-187b994358e8"]
+Cell[1356730, 25054, 160, 2, 30, "Input",ExpressionUUID->"6cfdd4a1-d410-4d1f-8ed6-4fbf050556f7"],
+Cell[1356893, 25058, 9583, 251, 321, "Output",ExpressionUUID->"a914b72a-70f2-4af1-9e0f-187b994358e8"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1304311, 24066, 252, 4, 54, "Subsection",ExpressionUUID->"aa2ca46c-0868-46f9-9183-0ab00f37703b"],
+Cell[1366525, 25315, 252, 4, 54, "Subsection",ExpressionUUID->"aa2ca46c-0868-46f9-9183-0ab00f37703b"],
 Cell[CellGroupData[{
-Cell[1304588, 24074, 2199, 43, 220, "Input",ExpressionUUID->"3e953368-3ba7-48e4-9f56-3cd26b2f2974"],
-Cell[1306790, 24119, 104033, 1860, 65, "Output",ExpressionUUID->"bf9e3740-1061-453f-bc41-e36d43b8ba70"]
+Cell[1366802, 25323, 2199, 43, 220, "Input",ExpressionUUID->"3e953368-3ba7-48e4-9f56-3cd26b2f2974"],
+Cell[1369004, 25368, 104033, 1860, 65, "Output",ExpressionUUID->"bf9e3740-1061-453f-bc41-e36d43b8ba70"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1410860, 25984, 874, 20, 52, "Input",ExpressionUUID->"ff3e3682-e8a6-4fab-a152-1dffd7dd02f9"],
-Cell[1411737, 26006, 243772, 3996, 92, "Output",ExpressionUUID->"7a329f44-a841-4e2a-9c9d-6cc60b045aec"]
+Cell[1473074, 27233, 874, 20, 52, "Input",ExpressionUUID->"ff3e3682-e8a6-4fab-a152-1dffd7dd02f9"],
+Cell[1473951, 27255, 243772, 3996, 92, "Output",ExpressionUUID->"7a329f44-a841-4e2a-9c9d-6cc60b045aec"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1655546, 30007, 160, 2, 30, "Input",ExpressionUUID->"a28f438c-b49b-4104-a35a-3130cb085a1f"],
-Cell[1655709, 30011, 9627, 250, 321, "Output",ExpressionUUID->"2ff93e4d-7ab4-43cd-b9e3-5ab0f946d6b6"]
+Cell[1717760, 31256, 160, 2, 30, "Input",ExpressionUUID->"a28f438c-b49b-4104-a35a-3130cb085a1f"],
+Cell[1717923, 31260, 9627, 250, 321, "Output",ExpressionUUID->"2ff93e4d-7ab4-43cd-b9e3-5ab0f946d6b6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1665385, 30267, 190, 3, 54, "Subsection",ExpressionUUID->"8c8c4504-2f1d-43ec-95ba-13964edcd4f7"],
-Cell[1665578, 30272, 757, 14, 52, "Input",ExpressionUUID->"2c39e4b2-e44e-4951-a038-6f2d45c565eb"],
+Cell[1727599, 31516, 190, 3, 54, "Subsection",ExpressionUUID->"8c8c4504-2f1d-43ec-95ba-13964edcd4f7"],
+Cell[1727792, 31521, 757, 14, 52, "Input",ExpressionUUID->"2c39e4b2-e44e-4951-a038-6f2d45c565eb"],
 Cell[CellGroupData[{
-Cell[1666360, 30290, 312, 5, 30, "Input",ExpressionUUID->"8ffd62dc-42f0-4668-98ee-f7ee71c8aef2"],
-Cell[1666675, 30297, 152, 2, 34, "Output",ExpressionUUID->"7276e46d-bd20-462d-90b4-aa990e1d8d55"]
+Cell[1728574, 31539, 312, 5, 30, "Input",ExpressionUUID->"8ffd62dc-42f0-4668-98ee-f7ee71c8aef2"],
+Cell[1728889, 31546, 152, 2, 34, "Output",ExpressionUUID->"7276e46d-bd20-462d-90b4-aa990e1d8d55"]
 }, Open  ]],
-Cell[1666842, 30302, 1481, 38, 167, "Code",ExpressionUUID->"b05ded02-c2b4-4cfe-b820-81ccea690354"],
+Cell[1729056, 31551, 1481, 38, 167, "Code",ExpressionUUID->"b05ded02-c2b4-4cfe-b820-81ccea690354"],
 Cell[CellGroupData[{
-Cell[1668348, 30344, 521, 13, 30, "Input",ExpressionUUID->"2e8f4877-cfc2-4e55-833b-a6cd59c8c11f"],
-Cell[1668872, 30359, 1307, 20, 77, "Output",ExpressionUUID->"007e139a-ba5d-40c2-bba4-d6b60ac6e021"]
+Cell[1730562, 31593, 521, 13, 30, "Input",ExpressionUUID->"2e8f4877-cfc2-4e55-833b-a6cd59c8c11f"],
+Cell[1731086, 31608, 1307, 20, 77, "Output",ExpressionUUID->"007e139a-ba5d-40c2-bba4-d6b60ac6e021"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1670228, 30385, 249, 4, 54, "Subsection",ExpressionUUID->"e1bfd86c-b4d9-4adb-ab28-100e769c4867"],
+Cell[1732442, 31634, 249, 4, 54, "Subsection",ExpressionUUID->"e1bfd86c-b4d9-4adb-ab28-100e769c4867"],
 Cell[CellGroupData[{
-Cell[1670502, 30393, 2347, 46, 241, "Input",ExpressionUUID->"2fa3af23-900f-4dfb-b4da-54d74ec65c98"],
-Cell[1672852, 30441, 11278, 230, 120, "Output",ExpressionUUID->"df4306c6-f894-4f11-9c3e-2f4b711cf376"]
+Cell[1732716, 31642, 2347, 46, 241, "Input",ExpressionUUID->"2fa3af23-900f-4dfb-b4da-54d74ec65c98"],
+Cell[1735066, 31690, 11278, 230, 112, "Output",ExpressionUUID->"df4306c6-f894-4f11-9c3e-2f4b711cf376"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1684167, 30676, 863, 21, 52, "Input",ExpressionUUID->"b6d3bf9f-acfc-4af8-b284-392b2d2d911a"],
-Cell[1685033, 30699, 149711, 2554, 92, "Output",ExpressionUUID->"56daeab6-970f-4540-9c3d-5f354b7675a9"]
+Cell[1746381, 31925, 863, 21, 52, "Input",ExpressionUUID->"b6d3bf9f-acfc-4af8-b284-392b2d2d911a"],
+Cell[1747247, 31948, 149711, 2554, 92, "Output",ExpressionUUID->"56daeab6-970f-4540-9c3d-5f354b7675a9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1834781, 33258, 164, 3, 30, "Input",ExpressionUUID->"d28206d5-a1db-4b18-95a0-545724d10c77"],
-Cell[1834948, 33263, 9377, 243, 321, "Output",ExpressionUUID->"cdc81bd9-a871-4ad4-8cd2-04a7a030c728"]
+Cell[1896995, 34507, 164, 3, 30, "Input",ExpressionUUID->"d28206d5-a1db-4b18-95a0-545724d10c77"],
+Cell[1897162, 34512, 9377, 243, 321, "Output",ExpressionUUID->"cdc81bd9-a871-4ad4-8cd2-04a7a030c728"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1844374, 33512, 302, 5, 54, "Subsection",ExpressionUUID->"2288b0f8-e3ba-4450-b920-1b5299f6b207"],
+Cell[1906588, 34761, 302, 5, 54, "Subsection",ExpressionUUID->"2288b0f8-e3ba-4450-b920-1b5299f6b207"],
 Cell[CellGroupData[{
-Cell[1844701, 33521, 2369, 46, 241, "Input",ExpressionUUID->"e8e6a9d9-f107-4823-9ebf-2bb0f0877576"],
-Cell[1847073, 33569, 927, 20, 110, "Message",ExpressionUUID->"606f3cee-4934-4088-9042-53ea0ceb1eeb"],
-Cell[1848003, 33591, 613, 13, 59, "Message",ExpressionUUID->"5808ba42-816f-43cd-b483-43b839a774c9"],
-Cell[1848619, 33606, 223740, 3857, 93, "Output",ExpressionUUID->"3cc3eea0-8d0b-4f7d-91f0-d4e5ef96dfba"]
+Cell[1906915, 34770, 2369, 46, 241, "Input",ExpressionUUID->"e8e6a9d9-f107-4823-9ebf-2bb0f0877576"],
+Cell[1909287, 34818, 927, 20, 110, "Message",ExpressionUUID->"606f3cee-4934-4088-9042-53ea0ceb1eeb"],
+Cell[1910217, 34840, 613, 13, 59, "Message",ExpressionUUID->"5808ba42-816f-43cd-b483-43b839a774c9"],
+Cell[1910833, 34855, 223740, 3857, 93, "Output",ExpressionUUID->"3cc3eea0-8d0b-4f7d-91f0-d4e5ef96dfba"]
 }, Open  ]],
-Cell[2072374, 37466, 126, 2, 30, "Input",ExpressionUUID->"57cab30a-2b88-4a46-9b94-4a8b098b6a50"],
+Cell[2134588, 38715, 126, 2, 30, "Input",ExpressionUUID->"57cab30a-2b88-4a46-9b94-4a8b098b6a50"],
 Cell[CellGroupData[{
-Cell[2072525, 37472, 909, 21, 52, "Input",ExpressionUUID->"62f46b42-ed9a-43b6-b3ba-cec748b2d139"],
-Cell[2073437, 37495, 234463, 3861, 92, "Output",ExpressionUUID->"c184602a-b01f-44df-acf8-2315027aa312"]
+Cell[2134739, 38721, 909, 21, 52, "Input",ExpressionUUID->"62f46b42-ed9a-43b6-b3ba-cec748b2d139"],
+Cell[2135651, 38744, 234463, 3861, 92, "Output",ExpressionUUID->"c184602a-b01f-44df-acf8-2315027aa312"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2307937, 41361, 164, 3, 30, "Input",ExpressionUUID->"35bdf15f-09a1-4d42-addf-77b85136d58a"],
-Cell[2308104, 41366, 9712, 253, 321, "Output",ExpressionUUID->"034ae511-7fce-4269-88b6-bfae1686d8dd"]
+Cell[2370151, 42610, 164, 3, 30, "Input",ExpressionUUID->"35bdf15f-09a1-4d42-addf-77b85136d58a"],
+Cell[2370318, 42615, 9712, 253, 321, "Output",ExpressionUUID->"034ae511-7fce-4269-88b6-bfae1686d8dd"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2317865, 41625, 169, 3, 54, "Subsection",ExpressionUUID->"2298f457-5436-4d6a-9745-8ff50e9c541e"],
+Cell[2380079, 42874, 169, 3, 54, "Subsection",ExpressionUUID->"2298f457-5436-4d6a-9745-8ff50e9c541e"],
 Cell[CellGroupData[{
-Cell[2318059, 41632, 1242, 20, 30, "Input",ExpressionUUID->"100815b3-0c1c-4255-a438-8e4d81573b71"],
-Cell[2319304, 41654, 390516, 6588, 65, "Output",ExpressionUUID->"52511c1b-2fe5-4b52-8146-9b6169d5c0eb"]
+Cell[2380273, 42881, 1242, 20, 30, "Input",ExpressionUUID->"100815b3-0c1c-4255-a438-8e4d81573b71"],
+Cell[2381518, 42903, 390516, 6588, 65, "Output",ExpressionUUID->"52511c1b-2fe5-4b52-8146-9b6169d5c0eb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2709857, 48247, 292, 5, 30, "Input",ExpressionUUID->"0ebe265f-65f5-43f3-bc60-c54c05c3fd1c"],
-Cell[2710152, 48254, 476458, 7840, 92, "Output",ExpressionUUID->"46e0e853-c080-449c-8611-8833d146b084"]
+Cell[2772071, 49496, 292, 5, 30, "Input",ExpressionUUID->"0ebe265f-65f5-43f3-bc60-c54c05c3fd1c"],
+Cell[2772366, 49503, 476458, 7840, 92, "Output",ExpressionUUID->"46e0e853-c080-449c-8611-8833d146b084"]
 }, Open  ]]
 }, Open  ]]
 }
