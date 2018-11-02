@@ -8,7 +8,3 @@ Hyperlink["https://www.wolframcloud.com/objects/zhamilya.bilyalova/\
 Questionator", \
 "https://www.wolframcloud.com/objects/zhamilya.bilyalova/\
 Questionator"]
-
-How to run my code:...
-
-https://wolfr.am/wss2018github
